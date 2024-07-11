@@ -1,0 +1,160 @@
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 2
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"mc_configuration_registers.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	ApplicationConfig_reg
+  20              		.global	MotorConfig_reg
+  21              		.global	FOCConfig_reg
+  22              		.global	PWR_BOARD_NAME
+  23              		.global	globalConfig_reg
+  24              		.global	FIRMWARE_NAME
+  25              		.global	CTL_BOARD
+  26              		.section	.data.ApplicationConfig_reg,"aw"
+  27              		.align	2
+  30              	ApplicationConfig_reg:
+  31 0000 00000000 		.word	M1_ApplicationConfig_reg
+  32              		.section	.data.FOCConfig_reg,"aw"
+  33              		.align	2
+  36              	FOCConfig_reg:
+  37 0000 00000000 		.word	M1_FOCConfig_reg
+  38              		.section	.data.MotorConfig_reg,"aw"
+  39              		.align	2
+  42              	MotorConfig_reg:
+  43 0000 00000000 		.word	M1_MotorConfig_reg
+  44              		.section	.data.PWR_BOARD_NAME,"aw"
+  45              		.align	2
+  48              	PWR_BOARD_NAME:
+  49 0000 00000000 		.word	M1_PWR_BOARD
+  50              		.section	.rodata.CTL_BOARD,"a"
+  51              		.align	2
+  54              	CTL_BOARD:
+  55 0000 4E55434C 		.ascii	"NUCLEO-L476RG\000"
+  55      454F2D4C 
+  55      34373652 
+  55      4700
+  56              		.section	.rodata.FIRMWARE_NAME,"a"
+  57              		.align	2
+  60              	FIRMWARE_NAME:
+  61 0000 5354204D 		.ascii	"ST MC SDK\011Ver.6.2.1\000"
+  61      43205344 
+  61      4B095665 
+  61      722E362E 
+  61      322E3100 
+  62              		.section	.rodata.M1_ApplicationConfig_reg,"a"
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s 			page 2
+
+
+  63              		.align	2
+  66              	M1_ApplicationConfig_reg:
+  67 0000 B80B0000 		.word	3000
+  68 0004 7C265140 		.word	1079060092
+  69 0008 CDCC4C3F 		.word	1061997773
+  70 000c 1C00     		.short	28
+  71 000e 00       		.byte	0
+  72 000f 00       		.space	1
+  73              		.section	.rodata.M1_FOCConfig_reg,"a"
+  74              		.align	2
+  77              	M1_FOCConfig_reg:
+  78 0000 01       		.byte	1
+  79 0001 00       		.byte	0
+  80 0002 00       		.byte	0
+  81 0003 01       		.byte	1
+  82 0004 803E0000 		.word	16000
+  83 0008 D007     		.short	2000
+  84 000a 0006     		.short	1536
+  85 000c 0080     		.short	-32768
+  86              		.section	.rodata.M1_MotorConfig_reg,"a"
+  87              		.align	2
+  90              	M1_MotorConfig_reg:
+  91 0000 00000040 		.word	1073741824
+  92 0004 CDCC4C3E 		.word	1045220557
+  93 0008 CDCCBC40 		.word	1086115021
+  94 000c 00000000 		.space	4
+  95 0010 6F128339 		.word	964891247
+  96 0014 6F128339 		.word	964891247
+  97 0018 CDCC4C3F 		.word	1061997773
+  98 001c 00000000 		.space	8
+  98      00000000 
+  99 0024 30323442 		.ascii	"024BX4\000"
+  99      583400
+ 100 002b 00000000 		.space	17
+ 100      00000000 
+ 100      00000000 
+ 100      00000000 
+ 100      00
+ 101              		.section	.rodata.M1_PWR_BOARD,"a"
+ 102              		.align	2
+ 105              	M1_PWR_BOARD:
+ 106 0000 582D4E55 		.ascii	"X-NUCLEO-IHM16M1\000"
+ 106      434C454F 
+ 106      2D49484D 
+ 106      31364D31 
+ 106      00
+ 107              		.section	.rodata.globalConfig_reg,"a"
+ 108              		.align	2
+ 111              	globalConfig_reg:
+ 112 0000 00010206 		.word	100794624
+ 113 0004 01       		.byte	1
+ 114 0005 02       		.byte	2
+ 115 0006 0A       		.byte	10
+ 116 0007 00       		.byte	0
+ 117 0008 00       		.byte	0
+ 118 0009 00       		.space	1
+ 119              		.text
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s 			page 3
+
+
+ 120              	.Letext0:
+ 121              		.file 1 "c:\\programdata\\chocolatey\\lib\\gcc-arm-embedded\\tools\\gcc-arm-none-eabi-10.3-2021.10
+ 122              		.file 2 "c:\\programdata\\chocolatey\\lib\\gcc-arm-embedded\\tools\\gcc-arm-none-eabi-10.3-2021.10
+ 123              		.file 3 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_tim.h"
+ 124              		.file 4 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_dma.h"
+ 125              		.file 5 "Inc/mc_type.h"
+ 126              		.file 6 "Inc/mc_configuration_registers.h"
+ 127              		.file 7 "Src/mc_configuration_registers.c"
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 mc_configuration_registers.c
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:30     .data.ApplicationConfig_reg:00000000 ApplicationConfig_reg
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:42     .data.MotorConfig_reg:00000000 MotorConfig_reg
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:36     .data.FOCConfig_reg:00000000 FOCConfig_reg
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:48     .data.PWR_BOARD_NAME:00000000 PWR_BOARD_NAME
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:111    .rodata.globalConfig_reg:00000000 globalConfig_reg
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:60     .rodata.FIRMWARE_NAME:00000000 FIRMWARE_NAME
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:54     .rodata.CTL_BOARD:00000000 CTL_BOARD
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:27     .data.ApplicationConfig_reg:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:66     .rodata.M1_ApplicationConfig_reg:00000000 M1_ApplicationConfig_reg
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:33     .data.FOCConfig_reg:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:77     .rodata.M1_FOCConfig_reg:00000000 M1_FOCConfig_reg
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:39     .data.MotorConfig_reg:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:90     .rodata.M1_MotorConfig_reg:00000000 M1_MotorConfig_reg
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:45     .data.PWR_BOARD_NAME:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:105    .rodata.M1_PWR_BOARD:00000000 M1_PWR_BOARD
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:51     .rodata.CTL_BOARD:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:57     .rodata.FIRMWARE_NAME:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:63     .rodata.M1_ApplicationConfig_reg:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:74     .rodata.M1_FOCConfig_reg:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:87     .rodata.M1_MotorConfig_reg:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:102    .rodata.M1_PWR_BOARD:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:108    .rodata.globalConfig_reg:00000000 $d
+
+NO UNDEFINED SYMBOLS

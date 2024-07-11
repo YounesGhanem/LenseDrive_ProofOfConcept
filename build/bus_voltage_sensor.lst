@@ -1,0 +1,319 @@
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccUL7L0h.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 2
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"bus_voltage_sensor.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.VBS_GetBusVoltage_d,"ax",%progbits
+  20              		.align	1
+  21              		.p2align 2,,3
+  22              		.weak	VBS_GetBusVoltage_d
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	VBS_GetBusVoltage_d:
+  28              	.LVL0:
+  29              	.LFB1088:
+  30              		.file 1 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c"
+   1:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** /**
+   2:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   ******************************************************************************
+   3:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @file    bus_voltage_sensor.c
+   4:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @author  Motor Control SDK Team, ST Microelectronics
+   5:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @brief   This file provides firmware functions that implement the features
+   6:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   *          of the BusVoltageSensor component of the Motor Control SDK.
+   7:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   *
+   8:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   ******************************************************************************
+   9:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @attention
+  10:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   *
+  11:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * <h2><center>&copy; Copyright (c) 2023 STMicroelectronics.
+  12:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * All rights reserved.</center></h2>
+  13:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   *
+  14:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * This software component is licensed by ST under Ultimate Liberty license
+  15:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * SLA0044, the "License"; You may not use this file except in compliance with
+  16:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * the License. You may obtain a copy of the License at:
+  17:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   *                             www.st.com/SLA0044
+  18:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   *
+  19:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   ******************************************************************************
+  20:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @ingroup BusVoltageSensor
+  21:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   */
+  22:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** 
+  23:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** /* Includes ------------------------------------------------------------------*/
+  24:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** 
+  25:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #include "bus_voltage_sensor.h"
+  26:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** 
+  27:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** 
+  28:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** /** @addtogroup MCSDK
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccUL7L0h.s 			page 2
+
+
+  29:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @{
+  30:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   */
+  31:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** 
+  32:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** /** @defgroup BusVoltageSensor Bus Voltage Sensing
+  33:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @brief Bus Voltage Sensor components of the Motor Control SDK
+  34:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   *
+  35:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * Two Bus Voltage Sensor implementations are provided (selection done according to BUS_VOLTAGE_RE
+  36:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   *
+  37:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * - The @ref RDividerBusVoltageSensor "Resistor Divider Bus Voltage Sensor" operates as the name 
+  38:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * - The @ref VirtualBusVoltageSensor "Virtual Bus Voltage Sensor" does not make measurement but r
+  39:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   *   returns an application fixed defined value (expected VBus value).
+  40:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   *
+  41:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   *   Two formats are used to return VBus measurement:
+  42:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   *   - Volt
+  43:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   *   - u16Volt that represents the ADC converted signal measuring the voltage at sensing network a
+  44:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @f[
+  45:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * u16Volt = (ADC\_REFERENCE\_VOLTAGE / VBUS\_PARTITIONING\_FACTOR) / 65536
+  46:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @f]
+  47:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   *
+  48:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @{
+  49:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   */
+  50:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** 
+  51:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** /**
+  52:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @brief  It return latest Vbus conversion result expressed in u16Volt format
+  53:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @param  pHandle related Handle of BusVoltageSensor_Handle_t
+  54:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @retval uint16_t Latest Vbus conversion result in u16Volt format
+  55:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   */
+  56:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** __weak uint16_t VBS_GetBusVoltage_d(const BusVoltageSensor_Handle_t *pHandle)
+  57:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** {
+  31              		.loc 1 57 1 view -0
+  32              		.cfi_startproc
+  33              		@ args = 0, pretend = 0, frame = 0
+  34              		@ frame_needed = 0, uses_anonymous_args = 0
+  35              		@ link register save eliminated.
+  58:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #ifdef NULL_PTR_CHECK_BUS_VOLT
+  59:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   uint16_t temp_latestConv;
+  60:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   if (MC_NULL == pHandle)
+  61:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   {
+  62:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****     temp_latestConv = 0;
+  63:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   }
+  64:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   else
+  65:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   {
+  66:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****     temp_latestConv = pHandle->LatestConv;
+  67:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   }
+  68:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   return (temp_latestConv);
+  69:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #else
+  70:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   return (pHandle->LatestConv);
+  36              		.loc 1 70 3 view .LVU1
+  71:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #endif
+  72:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** }
+  37              		.loc 1 72 1 is_stmt 0 view .LVU2
+  38 0000 8088     		ldrh	r0, [r0, #4]
+  39              	.LVL1:
+  40              		.loc 1 72 1 view .LVU3
+  41 0002 7047     		bx	lr
+  42              		.cfi_endproc
+  43              	.LFE1088:
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccUL7L0h.s 			page 3
+
+
+  45              		.section	.text.VBS_GetAvBusVoltage_d,"ax",%progbits
+  46              		.align	1
+  47              		.p2align 2,,3
+  48              		.weak	VBS_GetAvBusVoltage_d
+  49              		.syntax unified
+  50              		.thumb
+  51              		.thumb_func
+  53              	VBS_GetAvBusVoltage_d:
+  54              	.LVL2:
+  55              	.LFB1089:
+  73:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** 
+  74:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #if defined (CCMRAM)
+  75:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #if defined (__ICCARM__)
+  76:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #pragma location = ".ccmram"
+  77:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #elif defined (__CC_ARM) || defined(__GNUC__)
+  78:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** __attribute__((section(".ccmram")))
+  79:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #endif
+  80:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #endif
+  81:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** /**
+  82:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @brief  It return latest averaged Vbus measurement expressed in u16Volt format
+  83:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @param  pHandle related Handle of BusVoltageSensor_Handle_t
+  84:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @retval uint16_t Latest averaged Vbus measurement in u16Volt format
+  85:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   */
+  86:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** __weak uint16_t VBS_GetAvBusVoltage_d(const BusVoltageSensor_Handle_t *pHandle)
+  87:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** {
+  56              		.loc 1 87 1 is_stmt 1 view -0
+  57              		.cfi_startproc
+  58              		@ args = 0, pretend = 0, frame = 0
+  59              		@ frame_needed = 0, uses_anonymous_args = 0
+  60              		@ link register save eliminated.
+  88:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #ifdef NULL_PTR_CHECK_BUS_VOLT
+  89:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   uint16_t temp_avBusVoltage_d;
+  90:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** 
+  91:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   if (MC_NULL == pHandle)
+  92:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   {
+  93:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****     temp_avBusVoltage_d = 0U;
+  94:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   }
+  95:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   else
+  96:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   {
+  97:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****     temp_avBusVoltage_d = pHandle->AvBusVoltage_d;
+  98:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   }
+  99:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   return (temp_avBusVoltage_d);
+ 100:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #else
+ 101:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   return (pHandle->AvBusVoltage_d);
+  61              		.loc 1 101 3 view .LVU5
+ 102:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #endif
+ 103:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** }
+  62              		.loc 1 103 1 is_stmt 0 view .LVU6
+  63 0000 C088     		ldrh	r0, [r0, #6]
+  64              	.LVL3:
+  65              		.loc 1 103 1 view .LVU7
+  66 0002 7047     		bx	lr
+  67              		.cfi_endproc
+  68              	.LFE1089:
+  70              		.section	.text.VBS_GetAvBusVoltage_V,"ax",%progbits
+  71              		.align	1
+  72              		.p2align 2,,3
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccUL7L0h.s 			page 4
+
+
+  73              		.weak	VBS_GetAvBusVoltage_V
+  74              		.syntax unified
+  75              		.thumb
+  76              		.thumb_func
+  78              	VBS_GetAvBusVoltage_V:
+  79              	.LVL4:
+  80              	.LFB1090:
+ 104:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** 
+ 105:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** 
+ 106:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** /**
+ 107:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @brief  It return latest averaged Vbus measurement expressed in Volt format
+ 108:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @param  pHandle related Handle of BusVoltageSensor_Handle_t
+ 109:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @retval uint16_t Latest averaged Vbus measurement in Volt format
+ 110:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   */
+ 111:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** __weak uint16_t VBS_GetAvBusVoltage_V(const BusVoltageSensor_Handle_t *pHandle)
+ 112:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** {
+  81              		.loc 1 112 1 is_stmt 1 view -0
+  82              		.cfi_startproc
+  83              		@ args = 0, pretend = 0, frame = 0
+  84              		@ frame_needed = 0, uses_anonymous_args = 0
+  85              		@ link register save eliminated.
+ 113:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   uint32_t temp;
+  86              		.loc 1 113 3 view .LVU9
+ 114:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #ifdef NULL_PTR_CHECK_BUS_VOLT
+ 115:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   if (MC_NULL == pHandle)
+ 116:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   {
+ 117:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****     temp = 0U;
+ 118:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   }
+ 119:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   else
+ 120:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   {
+ 121:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #endif
+ 122:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****     temp = (uint32_t)(pHandle->AvBusVoltage_d);
+  87              		.loc 1 122 5 view .LVU10
+  88              		.loc 1 122 10 is_stmt 0 view .LVU11
+  89 0000 C388     		ldrh	r3, [r0, #6]
+  90              	.LVL5:
+ 123:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****     temp *= pHandle->ConversionFactor;
+  91              		.loc 1 123 5 is_stmt 1 view .LVU12
+  92              		.loc 1 123 20 is_stmt 0 view .LVU13
+  93 0002 4088     		ldrh	r0, [r0, #2]
+  94              	.LVL6:
+  95              		.loc 1 123 10 view .LVU14
+  96 0004 03FB00F0 		mul	r0, r3, r0
+  97              	.LVL7:
+ 124:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****     temp /= 65536U;
+  98              		.loc 1 124 5 is_stmt 1 view .LVU15
+ 125:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #ifdef NULL_PTR_CHECK_BUS_VOLT
+ 126:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   }
+ 127:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #endif
+ 128:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   return ((uint16_t)temp);
+  99              		.loc 1 128 3 view .LVU16
+ 129:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** }
+ 100              		.loc 1 129 1 is_stmt 0 view .LVU17
+ 101 0008 000C     		lsrs	r0, r0, #16
+ 102              	.LVL8:
+ 103              		.loc 1 129 1 view .LVU18
+ 104 000a 7047     		bx	lr
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccUL7L0h.s 			page 5
+
+
+ 105              		.cfi_endproc
+ 106              	.LFE1090:
+ 108              		.section	.text.VBS_CheckVbus,"ax",%progbits
+ 109              		.align	1
+ 110              		.p2align 2,,3
+ 111              		.weak	VBS_CheckVbus
+ 112              		.syntax unified
+ 113              		.thumb
+ 114              		.thumb_func
+ 116              	VBS_CheckVbus:
+ 117              	.LVL9:
+ 118              	.LFB1091:
+ 130:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** 
+ 131:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** /**
+ 132:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @brief  It returns #MC_OVER_VOLT, #MC_UNDER_VOLT or #MC_NO_ERROR depending on
+ 133:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   *         bus voltage and protection threshold values
+ 134:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @param  pHandle related Handle of BusVoltageSensor_Handle_t
+ 135:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   * @retval uint16_t Fault code error
+ 136:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   */
+ 137:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** __weak uint16_t VBS_CheckVbus(const BusVoltageSensor_Handle_t *pHandle)
+ 138:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** {
+ 119              		.loc 1 138 1 is_stmt 1 view -0
+ 120              		.cfi_startproc
+ 121              		@ args = 0, pretend = 0, frame = 0
+ 122              		@ frame_needed = 0, uses_anonymous_args = 0
+ 123              		@ link register save eliminated.
+ 139:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #ifdef NULL_PTR_CHECK_BUS_VOLT
+ 140:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   uint16_t temp_faultState;
+ 141:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** 
+ 142:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   if (MC_NULL ==  pHandle)
+ 143:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   {
+ 144:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****     temp_faultState = 0U;
+ 145:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   }
+ 146:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   else
+ 147:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   {
+ 148:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****     temp_faultState = pHandle->FaultState;
+ 149:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   }
+ 150:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   return (temp_faultState);
+ 151:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #else
+ 152:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c ****   return (pHandle->FaultState);
+ 124              		.loc 1 152 3 view .LVU20
+ 153:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** #endif
+ 154:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c **** }
+ 125              		.loc 1 154 1 is_stmt 0 view .LVU21
+ 126 0000 0089     		ldrh	r0, [r0, #8]
+ 127              	.LVL10:
+ 128              		.loc 1 154 1 view .LVU22
+ 129 0002 7047     		bx	lr
+ 130              		.cfi_endproc
+ 131              	.LFE1091:
+ 133              		.text
+ 134              	.Letext0:
+ 135              		.file 2 "c:\\programdata\\chocolatey\\lib\\gcc-arm-embedded\\tools\\gcc-arm-none-eabi-10.3-2021.10
+ 136              		.file 3 "c:\\programdata\\chocolatey\\lib\\gcc-arm-embedded\\tools\\gcc-arm-none-eabi-10.3-2021.10
+ 137              		.file 4 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_tim.h"
+ 138              		.file 5 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_dma.h"
+ 139              		.file 6 "Inc/mc_type.h"
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccUL7L0h.s 			page 6
+
+
+ 140              		.file 7 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/bus_voltage_sensor.h"
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccUL7L0h.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 bus_voltage_sensor.c
+C:\Users\ep_ygh\AppData\Local\Temp\ccUL7L0h.s:20     .text.VBS_GetBusVoltage_d:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccUL7L0h.s:27     .text.VBS_GetBusVoltage_d:00000000 VBS_GetBusVoltage_d
+C:\Users\ep_ygh\AppData\Local\Temp\ccUL7L0h.s:46     .text.VBS_GetAvBusVoltage_d:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccUL7L0h.s:53     .text.VBS_GetAvBusVoltage_d:00000000 VBS_GetAvBusVoltage_d
+C:\Users\ep_ygh\AppData\Local\Temp\ccUL7L0h.s:71     .text.VBS_GetAvBusVoltage_V:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccUL7L0h.s:78     .text.VBS_GetAvBusVoltage_V:00000000 VBS_GetAvBusVoltage_V
+C:\Users\ep_ygh\AppData\Local\Temp\ccUL7L0h.s:109    .text.VBS_CheckVbus:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccUL7L0h.s:116    .text.VBS_CheckVbus:00000000 VBS_CheckVbus
+
+NO UNDEFINED SYMBOLS

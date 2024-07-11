@@ -1,0 +1,70 @@
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccIWOPjM.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 2
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"mc_parameters.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	scaleParams_M1
+  20              		.global	R3_1_ParamsM1
+  21              		.section	.data.scaleParams_M1,"aw"
+  22              		.align	2
+  25              	scaleParams_M1:
+  26 0000 9A54013A 		.word	973165722
+  27 0004 7C26D138 		.word	953230972
+  28 0008 00A0D73D 		.word	1037541376
+  29 000c 00000000 		.space	4
+  30              		.section	.rodata.R3_1_ParamsM1,"a"
+  31              		.align	2
+  34              	R3_1_ParamsM1:
+  35 0000 00000450 		.word	1342439424
+  36 0004 002C0140 		.word	1073818624
+  37 0008 01D00300 		.word	249857
+  38 000c 01C60300 		.word	247297
+  39 0010 01C60300 		.word	247297
+  40 0014 01060400 		.word	263681
+  41 0018 01060400 		.word	263681
+  42 001c 01D00300 		.word	249857
+  43 0020 5400     		.short	84
+  44 0022 2A00     		.short	42
+  45 0024 0C00     		.short	12
+  46 0026 6000     		.short	96
+  47 0028 3000     		.short	48
+  48 002a 00000000 		.space	4
+  49 002e 01       		.byte	1
+  50 002f 00       		.space	1
+  51              		.text
+  52              	.Letext0:
+  53              		.file 1 "c:\\programdata\\chocolatey\\lib\\gcc-arm-embedded\\tools\\gcc-arm-none-eabi-10.3-2021.10
+  54              		.file 2 "c:\\programdata\\chocolatey\\lib\\gcc-arm-embedded\\tools\\gcc-arm-none-eabi-10.3-2021.10
+  55              		.file 3 "Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h"
+  56              		.file 4 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_tim.h"
+  57              		.file 5 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_dma.h"
+  58              		.file 6 "Inc/mc_interface.h"
+  59              		.file 7 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/L4xx/Inc/r3_1_l4xx_pwm_curr_fdbk.h"
+  60              		.file 8 "Src/mc_parameters.c"
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccIWOPjM.s 			page 2
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 mc_parameters.c
+C:\Users\ep_ygh\AppData\Local\Temp\ccIWOPjM.s:25     .data.scaleParams_M1:00000000 scaleParams_M1
+C:\Users\ep_ygh\AppData\Local\Temp\ccIWOPjM.s:34     .rodata.R3_1_ParamsM1:00000000 R3_1_ParamsM1
+C:\Users\ep_ygh\AppData\Local\Temp\ccIWOPjM.s:22     .data.scaleParams_M1:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccIWOPjM.s:31     .rodata.R3_1_ParamsM1:00000000 $d
+
+NO UNDEFINED SYMBOLS
