@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
   26:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****        of all STM32L4xx devices. It includes
   27:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****       (#) Flash Memory Erase functions:
   28:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****            (++) Lock and Unlock the FLASH interface using HAL_FLASH_Unlock() and
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 2
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 2
 
 
   29:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****                 HAL_FLASH_Lock() functions
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
   83:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** static HAL_StatusTypeDef FLASH_OB_WRPConfig(uint32_t WRPArea, uint32_t WRPStartOffset, uint32_t WRD
   84:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** static HAL_StatusTypeDef FLASH_OB_RDPConfig(uint32_t RDPLevel);
   85:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** static HAL_StatusTypeDef FLASH_OB_UserConfig(uint32_t UserType, uint32_t UserConfig);
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 3
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 3
 
 
   86:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** static HAL_StatusTypeDef FLASH_OB_PCROPConfig(uint32_t PCROPConfig, uint32_t PCROPStartAddr, uint32
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  126:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   HAL_StatusTypeDef status;
   39              		.loc 1 126 1 is_stmt 0 view .LVU5
   40 0000 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 4
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 4
 
 
   41              	.LCFI0:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  146:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****       if(READ_BIT(FLASH->ACR, FLASH_ACR_DCEN) != 0U)
  147:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****       {
  148:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****         /* Disable data cache  */
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 5
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 5
 
 
  149:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****         __HAL_FLASH_DATA_CACHE_DISABLE();
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  203:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****         {
  204:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****           /* In case of error, stop erase procedure and return the faulty address */
  205:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****           *PageError = page_index;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 6
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 6
 
 
  206:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****           break;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  107              		.loc 1 160 7 is_stmt 1 view .LVU32
  108 0040 1A68     		ldr	r2, [r3]
  109 0042 22F48062 		bic	r2, r2, #1024
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 7
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 7
 
 
  110 0046 1A60     		str	r2, [r3]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  240:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   /* Deactivate the cache if they are activated to avoid data misbehavior */
  241:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   if(READ_BIT(FLASH->ACR, FLASH_ACR_ICEN) != 0U)
  242:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   {
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 8
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 8
 
 
  243:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     if(READ_BIT(FLASH->ACR, FLASH_ACR_DCEN) != 0U)
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  297:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** HAL_StatusTypeDef HAL_FLASHEx_OBProgram(FLASH_OBProgramInitTypeDef *pOBInit)
  298:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** {
  299:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   HAL_StatusTypeDef status = HAL_OK;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 9
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 9
 
 
  300:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  354:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   __HAL_UNLOCK(&pFlash);
  355:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
  356:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   return status;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 10
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 10
 
 
  357:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** }
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  411:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
  412:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** #if defined (FLASH_CFGR_LVEN)
  413:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** /** @defgroup FLASHEx_Exported_Functions_Group2 Extended specific configuration functions
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 11
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 11
 
 
  414:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****  *  @brief   Extended specific configuration functions
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  468:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     else
  469:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
  470:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****       /* Not allow to force Flash LVE pin if not in voltage range 2 */
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 12
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 12
 
 
  471:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****       status = HAL_ERROR;
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  525:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
  526:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****       SET_BIT(FLASH->CR, FLASH_CR_MER2);
  527:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 13
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 13
 
 
  528:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** #endif
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  139              		.loc 1 200 9 view .LVU43
  140 0066 DFF82091 		ldr	r9, .L32+8
  141 006a 06E0     		b	.L16
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 14
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 14
 
 
  142              	.LVL6:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  173 0080 6369     		ldr	r3, [r4, #20]
  174 0082 14BF     		ite	ne
  175 0084 23F40063 		bicne	r3, r3, #2048
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 15
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 15
 
 
  576:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     }
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  217              		.loc 1 197 18 is_stmt 0 view .LVU74
  218 00c8 0646     		mov	r6, r0
  219              	.LVL12:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 16
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 16
 
 
  220              	.L11:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  607:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     __HAL_FLASH_INSTRUCTION_CACHE_ENABLE();
  253              		.loc 1 607 5 view .LVU88
  254 00f0 1168     		ldr	r1, [r2]
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 17
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 17
 
 
  255 00f2 41F40071 		orr	r1, r1, #512
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  131:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
  294              		.loc 1 131 3 view .LVU102
  295 011e 0226     		movs	r6, #2
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 18
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 18
 
 
  219:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  336              	.L9:
  524:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
  337              		.loc 1 524 5 view .LVU117
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 19
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 19
 
 
  524:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  165:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     }
  380              		.loc 1 165 7 is_stmt 1 view .LVU130
  165:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 20
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 20
 
 
  381              		.loc 1 165 32 is_stmt 0 view .LVU131
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  428 000e 0121     		movs	r1, #1
  429 0010 1970     		strb	r1, [r3]
  233:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 21
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 21
 
 
  430              		.loc 1 233 3 is_stmt 1 discriminator 2 view .LVU141
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  266:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
  466              		.loc 1 266 3 discriminator 4 view .LVU160
  268:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 22
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 22
 
 
  467              		.loc 1 268 3 discriminator 4 view .LVU161
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  504              		.loc 1 524 7 is_stmt 0 view .LVU178
  505 0052 A407     		lsls	r4, r4, #30
  506              	.LVL28:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 23
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 23
 
 
  524:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  246:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****       pFlash.CacheToReactivate = FLASH_CACHE_ICACHE_DCACHE_ENABLED;
  550              		.loc 1 246 7 is_stmt 1 view .LVU190
  551 0076 1168     		ldr	r1, [r2]
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 24
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 24
 
 
  247:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     }
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  572:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     }
  588              		.loc 1 572 7 is_stmt 0 view .LVU209
  589 0094 5369     		ldr	r3, [r2, #20]
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 25
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 25
 
 
  570:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  633              	.LBE37:
  288:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
  634              		.loc 1 288 1 view .LVU221
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 26
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 26
 
 
  635 00ca 7047     		bx	lr
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  683 0006 3B78     		ldrb	r3, [r7]	@ zero_extendqisi2
  684 0008 012B     		cmp	r3, #1
  685 000a 00F03881 		beq	.L93
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 27
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 27
 
 
  302:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  343:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
  723              		.loc 1 343 43 is_stmt 0 view .LVU247
  724 0030 D4E90868 		ldrd	r6, r8, [r4, #32]
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 28
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 28
 
 
  343:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  669:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****                  (WRPStartOffset | (WRDPEndOffset << 16)));
  670:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     }
  671:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     else if(WRPArea == OB_WRPAREA_BANK1_AREAB)
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 29
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 29
 
 
  672:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  726:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   */
  727:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** static HAL_StatusTypeDef FLASH_OB_RDPConfig(uint32_t RDPLevel)
  728:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** {
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 30
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 30
 
 
  729:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   HAL_StatusTypeDef status;
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  783:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   if(status == HAL_OK)
  784:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   {
  785:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     if((UserType & OB_USER_BOR_LEV) != 0U)
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 31
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 31
 
 
  786:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  840:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****       /* Set value and mask for IWDG_STOP option byte */
  841:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****       optr_reg_val |= (UserConfig & FLASH_OPTR_IWDG_STOP);
  842:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****       optr_reg_mask |= FLASH_OPTR_IWDG_STOP;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 32
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 32
 
 
  843:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     }
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  897:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** #endif
  898:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
  899:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     if((UserType & OB_USER_nBOOT1) != 0U)
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 33
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 33
 
 
  900:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  954:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
  955:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     /* Configure the option bytes register */
  956:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     MODIFY_REG(FLASH->OPTR, optr_reg_mask, optr_reg_val);
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 34
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 34
 
 
  957:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  731              		.loc 1 1010 12 is_stmt 0 view .LVU250
  732 0038 4CF25030 		movw	r0, #50000
  733              	.LBE47:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 35
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 35
 
 
  734              	.LBE46:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
 1019:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
  766              		.loc 1 1019 8 view .LVU269
  767 0054 40F02B81 		bne	.L88
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 36
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 36
 
 
 1021:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****       bank2_addr = FLASH_BASE + FLASH_BANK_SIZE;
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
 1056:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****       }
 1057:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     }
 1058:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     else
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 37
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 37
 
 
 1059:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** #endif
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  818              	.LVL50:
 1079:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****         MODIFY_REG(FLASH->PCROP2ER, FLASH_PCROP2ER_PCROP2_END, reg_value);
  819              		.loc 1 1079 36 is_stmt 0 view .LVU290
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 38
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 38
 
 
  820 0096 A8EB0303 		sub	r3, r8, r3
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  853              	.LBE48:
  854              	.LBE51:
  346:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****       {
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 39
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 39
 
 
  855              		.loc 1 346 9 view .LVU301
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  893              		.loc 1 783 3 is_stmt 1 view .LVU317
  783:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   {
  894              		.loc 1 783 5 is_stmt 0 view .LVU318
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 40
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 40
 
 
  895 00e8 0028     		cmp	r0, #0
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  805:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
  931              		.loc 1 805 7 is_stmt 0 view .LVU337
  932 010e 7107     		lsls	r1, r6, #29
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 41
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 41
 
 
  933 0110 04D5     		bpl	.L74
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  832:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     }
  968              		.loc 1 832 21 view .LVU357
  969 0132 42F48032 		orr	r2, r2, #65536
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 42
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 42
 
 
  831:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****       optr_reg_mask |= FLASH_OPTR_IWDG_SW;
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  1005              		.loc 1 855 5 view .LVU376
  855:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
  1006              		.loc 1 855 7 is_stmt 0 view .LVU377
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 43
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 43
 
 
  1007 0154 7006     		lsls	r0, r6, #25
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  1042 0174 08F40011 		and	r1, r8, #2097152
  894:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** #endif
  1043              		.loc 1 894 21 view .LVU397
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 44
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 44
 
 
  1044 0178 42F40012 		orr	r2, r2, #2097152
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  919:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
  1080              		.loc 1 919 5 view .LVU416
  919:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 45
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 45
 
 
  1081              		.loc 1 919 7 is_stmt 0 view .LVU417
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  1121              	.LVL79:
  968:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** }
  1122              		.loc 1 968 3 is_stmt 0 view .LVU432
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 46
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 46
 
 
  1123              	.LBE54:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  331:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   {
  1163              		.loc 1 331 14 view .LVU447
  1164 01ea 2368     		ldr	r3, [r4]
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 47
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 47
 
 
  326:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     }
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  666:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
  1202              		.loc 1 666 7 is_stmt 0 view .LVU465
  1203 0202 002D     		cmp	r5, #0
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 48
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 48
 
 
  1204 0204 43D1     		bne	.L63
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  1245              		.loc 1 299 21 view .LVU478
  1246 0236 18BF     		it	ne
  1247 0238 0125     		movne	r5, #1
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 49
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 49
 
 
  1248 023a F2E6     		b	.L61
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  1290 0262 4CF25030 		movw	r0, #50000
  1291              	.LVL100:
  746:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 50
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 50
 
 
  1292              		.loc 1 746 14 view .LVU491
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  1334              	.LBE55:
  1335              	.LBE72:
  1336              	.LBB73:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 51
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 51
 
 
  1337              	.LBB66:
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
 1027:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     }
  1378              		.loc 1 1027 18 view .LVU517
  1379 02c6 4FF00063 		mov	r3, #134217728
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 52
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 52
 
 
  1380 02ca D4E6     		b	.L89
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  1426              		.loc 1 1064 9 is_stmt 1 view .LVU525
 1065:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
  1427              		.loc 1 1065 9 view .LVU526
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 53
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 53
 
 
  1428 0308 0C48     		ldr	r0, .L154
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  1471              	.L155:
  1472              		.align	2
  1473              	.L154:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 54
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 54
 
 
  1474 033c 00200240 		.word	1073881088
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
 1105:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   * @brief  Return the FLASH Write Protection Option Bytes value.
 1106:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   *
 1107:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   * @param[in]  WRPArea: specifies the area to be returned.
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 55
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 55
 
 
 1108:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   *          This parameter can be one of the following values:
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
 1162:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   *            @arg OB_RDP_LEVEL_2: Full chip protection
 1163:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   */
 1164:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** static uint32_t FLASH_OB_GetRDP(void)
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 56
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 56
 
 
  1517              		.loc 1 1164 17 view .LVU548
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
 1183:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   *         IWDG_SW(Bit16), IWDG_STOP(Bit17), IWDG_STDBY(Bit18), WWDG_SW(Bit19),
 1184:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   *         BFB2(Bit20), DUALBANK(Bit21), nBOOT1(Bit23), SRAM2_PE(Bit24) and SRAM2_RST(Bit25).
 1185:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   *      For STM32L43x/STM32L44x devices :
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 57
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 57
 
 
 1186:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   *         BOR_LEV(Bit8-10), nRST_STOP(Bit12), nRST_STDBY(Bit13), nRST_SHDW(Bit14),
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  397:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** #else
  1588              		.loc 1 397 5 is_stmt 0 view .LVU576
  1589 0038 18D9     		bls	.L180
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 58
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 58
 
 
  1590 003a 7047     		bx	lr
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  382:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     /* Get write protection on the selected area */
  1629              		.loc 1 382 5 is_stmt 1 view .LVU592
  382:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     /* Get write protection on the selected area */
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 59
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 59
 
 
  1630              		.loc 1 382 25 is_stmt 0 view .LVU593
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  1668              	.LBB102:
  1669              	.LBB103:
 1196:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 60
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 60
 
 
 1197:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  1685              		.loc 1 1221 3 view .LVU616
  1686              		.loc 1 1229 3 view .LVU617
  1687              		.loc 1 1229 7 is_stmt 0 view .LVU618
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 61
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 61
 
 
  1688 0076 0B68     		ldr	r3, [r1]
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
 1245:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   {
 1246:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     if(((*PCROPConfig) & FLASH_BANK_BOTH) == FLASH_BANK_1)
 1247:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     {
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 62
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 62
 
 
 1248:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****       reg_value       = (READ_REG(FLASH->PCROP1SR) & FLASH_PCROP1SR_PCROP1_STRT);
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  1738 00a6 03EAC101 		and	r1, r3, r1, lsl #3
  1739              	.LVL134:
  1740              		.loc 1 1285 42 view .LVU639
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 63
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 63
 
 
  1741 00aa 2144     		add	r1, r1, r4
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  1782              	.LBE106:
  1783              	.LBE111:
  406:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 64
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 64
 
 
  1784              		.loc 1 406 1 view .LVU655
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
 1232:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   }
  1824              		.loc 1 1232 29 is_stmt 0 view .LVU670
  1825 00de 8C42     		cmp	r4, r1
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 65
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 65
 
 
  1826 00e0 1FD0     		beq	.L170
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  1867              		.cfi_offset 4, -8
  1868              		.cfi_offset 5, -4
 1133:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 66
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 66
 
 
  1869              		.loc 1 1133 20 view .LVU684
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
 1232:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   }
  1909              		.loc 1 1232 29 view .LVU699
  1910 0122 074C     		ldr	r4, .L184+20
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 67
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 67
 
 
 1231:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****     bank2_addr = FLASH_BASE + FLASH_BANK_SIZE;
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  1958 0010 5361     		str	r3, [r2, #20]
  585:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c ****   SET_BIT(FLASH->CR, FLASH_CR_PER);
  1959              		.loc 1 585 3 view .LVU709
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 68
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 68
 
 
  1960 0012 094B     		ldr	r3, .L189
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  596:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c **** 
  2008              		.loc 1 596 22 view .LVU718
  2009 000a DBB2     		uxtb	r3, r3
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 69
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 69
 
 
  2010              	.LVL153:
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  2049              		.loc 1 615 5 is_stmt 1 view .LVU733
  2050 0040 1A68     		ldr	r2, [r3]
  2051 0042 22F48052 		bic	r2, r2, #4096
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 70
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 70
 
 
  2052 0046 1A60     		str	r2, [r3]
@@ -4173,31 +4173,31 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 1
  2077              		.file 4 "Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h"
  2078              		.file 5 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h"
  2079              		.file 6 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h"
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s 			page 71
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s 			page 71
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32l4xx_hal_flash_ex.c
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:20     .text.HAL_FLASHEx_Erase:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:27     .text.HAL_FLASHEx_Erase:00000000 HAL_FLASHEx_Erase
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:387    .text.HAL_FLASHEx_Erase:00000180 $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:394    .text.HAL_FLASHEx_Erase_IT:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:401    .text.HAL_FLASHEx_Erase_IT:00000000 HAL_FLASHEx_Erase_IT
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:646    .text.HAL_FLASHEx_Erase_IT:000000d0 $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:652    .text.HAL_FLASHEx_OBProgram:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:659    .text.HAL_FLASHEx_OBProgram:00000000 HAL_FLASHEx_OBProgram
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:1384   .text.HAL_FLASHEx_OBProgram:000002cc $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:1398   .text.HAL_FLASHEx_OBProgram:000002e4 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:1474   .text.HAL_FLASHEx_OBProgram:0000033c $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:1483   .text.HAL_FLASHEx_OBGetConfig:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:1490   .text.HAL_FLASHEx_OBGetConfig:00000000 HAL_FLASHEx_OBGetConfig
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:1917   .text.HAL_FLASHEx_OBGetConfig:0000012c $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:1929   .text.FLASH_PageErase:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:1936   .text.FLASH_PageErase:00000000 FLASH_PageErase
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:1982   .text.FLASH_PageErase:00000038 $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:1987   .text.FLASH_FlushCaches:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:1994   .text.FLASH_FlushCaches:00000000 FLASH_FlushCaches
-C:\Users\ep_ygh\AppData\Local\Temp\ccDrMvCX.s:2068   .text.FLASH_FlushCaches:00000058 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:20     .text.HAL_FLASHEx_Erase:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:27     .text.HAL_FLASHEx_Erase:00000000 HAL_FLASHEx_Erase
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:387    .text.HAL_FLASHEx_Erase:00000180 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:394    .text.HAL_FLASHEx_Erase_IT:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:401    .text.HAL_FLASHEx_Erase_IT:00000000 HAL_FLASHEx_Erase_IT
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:646    .text.HAL_FLASHEx_Erase_IT:000000d0 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:652    .text.HAL_FLASHEx_OBProgram:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:659    .text.HAL_FLASHEx_OBProgram:00000000 HAL_FLASHEx_OBProgram
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:1384   .text.HAL_FLASHEx_OBProgram:000002cc $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:1398   .text.HAL_FLASHEx_OBProgram:000002e4 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:1474   .text.HAL_FLASHEx_OBProgram:0000033c $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:1483   .text.HAL_FLASHEx_OBGetConfig:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:1490   .text.HAL_FLASHEx_OBGetConfig:00000000 HAL_FLASHEx_OBGetConfig
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:1917   .text.HAL_FLASHEx_OBGetConfig:0000012c $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:1929   .text.FLASH_PageErase:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:1936   .text.FLASH_PageErase:00000000 FLASH_PageErase
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:1982   .text.FLASH_PageErase:00000038 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:1987   .text.FLASH_FlushCaches:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:1994   .text.FLASH_FlushCaches:00000000 FLASH_FlushCaches
+C:\Users\ep_ygh\AppData\Local\Temp\ccaXrTYb.s:2068   .text.FLASH_FlushCaches:00000058 $d
 
 UNDEFINED SYMBOLS
 FLASH_WaitForLastOperation

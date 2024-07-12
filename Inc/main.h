@@ -72,6 +72,10 @@ void Error_Handler(void);
 #define UART_TX_GPIO_Port GPIOA
 #define UART_RX_Pin GPIO_PIN_3
 #define UART_RX_GPIO_Port GPIOA
+#define DBG_DAC_CH1_Pin GPIO_PIN_4
+#define DBG_DAC_CH1_GPIO_Port GPIOA
+#define DBG_DAC_CH2_Pin GPIO_PIN_5
+#define DBG_DAC_CH2_GPIO_Port GPIOA
 #define M1_TEMPERATURE_Pin GPIO_PIN_4
 #define M1_TEMPERATURE_GPIO_Port GPIOC
 #define M1_CURR_AMPL_W_Pin GPIO_PIN_0
@@ -86,6 +90,19 @@ void Error_Handler(void);
 #define M1_PWM_EN_V_GPIO_Port GPIOB
 #define M1_PWM_EN_W_Pin GPIO_PIN_15
 #define M1_PWM_EN_W_GPIO_Port GPIOB
+#define M1_ENCODER_A_Pin GPIO_PIN_6
+#define M1_ENCODER_A_GPIO_Port GPIOC
+#define M1_ENCODER_B_Pin GPIO_PIN_7
+#define M1_ENCODER_B_GPIO_Port GPIOC
+//Hall H1 --> PC6
+#define M1_HALLSENSOR_H1_PIN GPIO_PIN_6
+#define M1_HALLSENSOR_H1_PORT GPIOC
+//Hall H2 --> PC7
+#define M1_HALLSENSOR_H2_PIN GPIO_PIN_7
+#define M1_HALLSENSOR_H2_PORT GPIOC
+//Hall H3 --> PC8
+#define M1_HALLSENSOR_H2_PIN GPIO_PIN_8
+#define M1_HALLSENSOR_H2_PORT GPIOC
 #define M1_PWM_UH_Pin GPIO_PIN_8
 #define M1_PWM_UH_GPIO_Port GPIOA
 #define M1_PWM_VH_Pin GPIO_PIN_9

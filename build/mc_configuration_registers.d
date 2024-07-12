@@ -20,6 +20,8 @@ build/mc_configuration_registers.o: Src/mc_configuration_registers.c \
  Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h \
  Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h \
  Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h \
+ Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac.h \
+ Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac_ex.h \
  Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h \
  Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h \
  Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h \
@@ -46,7 +48,12 @@ build/mc_configuration_registers.o: Src/mc_configuration_registers.c \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_torq_ctrl.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h \
+ Inc/mc_perf.h \
+ MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/trajectory_ctrl.h \
+ MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_torq_ctrl.h \
+ MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/enc_align_ctrl.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h \
+ MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/L4xx/Inc/r3_1_l4xx_pwm_curr_fdbk.h \
  Inc/pwm_curr_fdbk.h Inc/parameters_conversion.h Inc/mc_math.h \
  Inc/parameters_conversion_l4xx.h Inc/pmsm_motor_parameters.h \
@@ -75,6 +82,8 @@ Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h:
 Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:
 Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h:
 Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h:
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac.h:
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac_ex.h:
 Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h:
 Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h:
 Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h:
@@ -105,7 +114,12 @@ Inc/pwm_curr_fdbk.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_torq_ctrl.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h:
+Inc/mc_perf.h:
+MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/trajectory_ctrl.h:
+MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_torq_ctrl.h:
+MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/enc_align_ctrl.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h:
+MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/L4xx/Inc/r3_1_l4xx_pwm_curr_fdbk.h:
 Inc/pwm_curr_fdbk.h:
 Inc/parameters_conversion.h:

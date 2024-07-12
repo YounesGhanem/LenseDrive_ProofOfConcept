@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s 			page 1
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s 			page 1
   61      722E362E 
   61      322E3100 
   62              		.section	.rodata.M1_ApplicationConfig_reg,"a"
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s 			page 2
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s 			page 2
 
 
   63              		.align	2
@@ -72,14 +72,14 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s 			page 1
   73              		.section	.rodata.M1_FOCConfig_reg,"a"
   74              		.align	2
   77              	M1_FOCConfig_reg:
-  78 0000 01       		.byte	1
+  78 0000 03       		.byte	3
   79 0001 00       		.byte	0
   80 0002 00       		.byte	0
   81 0003 01       		.byte	1
   82 0004 803E0000 		.word	16000
-  83 0008 D007     		.short	2000
-  84 000a 0006     		.short	1536
-  85 000c 0080     		.short	-32768
+  83 0008 E803     		.short	1000
+  84 000a 0067     		.short	26368
+  85 000c 0040     		.short	16384
   86              		.section	.rodata.M1_MotorConfig_reg,"a"
   87              		.align	2
   90              	M1_MotorConfig_reg:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s 			page 1
  117 0008 00       		.byte	0
  118 0009 00       		.space	1
  119              		.text
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s 			page 3
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s 			page 3
 
 
  120              	.Letext0:
@@ -129,32 +129,32 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s 			page 1
  125              		.file 5 "Inc/mc_type.h"
  126              		.file 6 "Inc/mc_configuration_registers.h"
  127              		.file 7 "Src/mc_configuration_registers.c"
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s 			page 4
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 mc_configuration_registers.c
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:30     .data.ApplicationConfig_reg:00000000 ApplicationConfig_reg
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:42     .data.MotorConfig_reg:00000000 MotorConfig_reg
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:36     .data.FOCConfig_reg:00000000 FOCConfig_reg
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:48     .data.PWR_BOARD_NAME:00000000 PWR_BOARD_NAME
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:111    .rodata.globalConfig_reg:00000000 globalConfig_reg
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:60     .rodata.FIRMWARE_NAME:00000000 FIRMWARE_NAME
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:54     .rodata.CTL_BOARD:00000000 CTL_BOARD
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:27     .data.ApplicationConfig_reg:00000000 $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:66     .rodata.M1_ApplicationConfig_reg:00000000 M1_ApplicationConfig_reg
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:33     .data.FOCConfig_reg:00000000 $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:77     .rodata.M1_FOCConfig_reg:00000000 M1_FOCConfig_reg
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:39     .data.MotorConfig_reg:00000000 $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:90     .rodata.M1_MotorConfig_reg:00000000 M1_MotorConfig_reg
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:45     .data.PWR_BOARD_NAME:00000000 $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:105    .rodata.M1_PWR_BOARD:00000000 M1_PWR_BOARD
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:51     .rodata.CTL_BOARD:00000000 $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:57     .rodata.FIRMWARE_NAME:00000000 $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:63     .rodata.M1_ApplicationConfig_reg:00000000 $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:74     .rodata.M1_FOCConfig_reg:00000000 $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:87     .rodata.M1_MotorConfig_reg:00000000 $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:102    .rodata.M1_PWR_BOARD:00000000 $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccIbSsqA.s:108    .rodata.globalConfig_reg:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:30     .data.ApplicationConfig_reg:00000000 ApplicationConfig_reg
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:42     .data.MotorConfig_reg:00000000 MotorConfig_reg
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:36     .data.FOCConfig_reg:00000000 FOCConfig_reg
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:48     .data.PWR_BOARD_NAME:00000000 PWR_BOARD_NAME
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:111    .rodata.globalConfig_reg:00000000 globalConfig_reg
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:60     .rodata.FIRMWARE_NAME:00000000 FIRMWARE_NAME
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:54     .rodata.CTL_BOARD:00000000 CTL_BOARD
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:27     .data.ApplicationConfig_reg:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:66     .rodata.M1_ApplicationConfig_reg:00000000 M1_ApplicationConfig_reg
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:33     .data.FOCConfig_reg:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:77     .rodata.M1_FOCConfig_reg:00000000 M1_FOCConfig_reg
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:39     .data.MotorConfig_reg:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:90     .rodata.M1_MotorConfig_reg:00000000 M1_MotorConfig_reg
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:45     .data.PWR_BOARD_NAME:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:105    .rodata.M1_PWR_BOARD:00000000 M1_PWR_BOARD
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:51     .rodata.CTL_BOARD:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:57     .rodata.FIRMWARE_NAME:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:63     .rodata.M1_ApplicationConfig_reg:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:74     .rodata.M1_FOCConfig_reg:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:87     .rodata.M1_MotorConfig_reg:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:102    .rodata.M1_PWR_BOARD:00000000 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccmvXV4m.s:108    .rodata.globalConfig_reg:00000000 $d
 
 NO UNDEFINED SYMBOLS

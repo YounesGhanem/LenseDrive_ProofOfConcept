@@ -27,6 +27,7 @@
 #include "mcp.h"
 #include "mcp_config.h"
 #include "mcpa.h"
+#include "dac_ui.h"
 #include "mc_configuration_registers.h"
 
 uint8_t RI_SetRegisterGlobal(uint16_t regID, uint8_t typeID, uint8_t *data, uint16_t *size, int16_t dataAvailable)
@@ -56,6 +57,7 @@ uint8_t RI_SetRegisterGlobal(uint16_t regID, uint8_t typeID, uint8_t *data, uint
 
     case TYPE_DATA_16BIT:
     {
+      uint16_t regdata16 = *(uint16_t *)data; //cstat !MISRAC2012-Rule-11.3
       switch (regID)
       {
 
@@ -64,6 +66,18 @@ uint8_t RI_SetRegisterGlobal(uint16_t regID, uint8_t typeID, uint8_t *data, uint
         case MC_REG_MOTOR_POWER:
         {
           retVal = MCP_ERROR_RO_REG;
+          break;
+        }
+
+        case MC_REG_DAC_OUT1:
+        {
+          DAC_SetChannelConfig(&DAC_Handle , DAC_CH1, regdata16);
+          break;
+        }
+
+        case MC_REG_DAC_OUT2:
+        {
+          DAC_SetChannelConfig(&DAC_Handle , DAC_CH2, regdata16);
           break;
         }
 
@@ -195,34 +209,18 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
 
           if ((uint8_t)MCM_SPEED_MODE == regdata8)
           {
-            MCI_SetSpeedMode(pMCIN);
+            MCI_ExecSpeedRamp(pMCIN, MCI_GetMecSpeedRefUnit(pMCIN), 0);
           }
           else
           {
             /* Nothing to do */
           }
 
-          if ((uint8_t)regdata8 == MCM_OPEN_LOOP_CURRENT_MODE)
-          {
-            MCI_SetOpenLoopCurrent(pMCIN);
-          }
-          else
-          {
-            /* Nothing to do */
-          }
-
-          if ((uint8_t)regdata8 == MCM_OPEN_LOOP_VOLTAGE_MODE)
-          {
-            MCI_SetOpenLoopVoltage(pMCIN);
-          }
-          else
-          {
-            /* Nothing to do */
-          }
           break;
         }
 
-        case MC_REG_RUC_STAGE_NBR:
+        case MC_REG_POSITION_CTRL_STATE:
+        case MC_REG_POSITION_ALIGN_STATE:
         {
           retVal = MCP_ERROR_RO_REG;
           break;
@@ -339,47 +337,8 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
         case MC_REG_V_D:
         case MC_REG_V_ALPHA:
         case MC_REG_V_BETA:
-        {
-          retVal = MCP_ERROR_RO_REG;
-          break;
-        }
-
-        case MC_REG_STOPLL_C1:
-        {
-          int16_t hC1;
-          int16_t hC2;
-          STO_PLL_GetObserverGains(&STO_PLL_M1, &hC1, &hC2);
-          STO_PLL_SetObserverGains(&STO_PLL_M1, (int16_t)regdata16, hC2);
-          break;
-        }
-
-        case MC_REG_STOPLL_C2:
-        {
-          int16_t hC1;
-          int16_t hC2;
-          STO_PLL_GetObserverGains(&STO_PLL_M1, &hC1, &hC2);
-          STO_PLL_SetObserverGains(&STO_PLL_M1, hC1, (int16_t)regdata16);
-          break;
-        }
-
-        case MC_REG_STOPLL_KI:
-        {
-          PID_SetKI (&(&STO_PLL_M1)->PIRegulator, (int16_t)regdata16);
-          break;
-        }
-
-        case MC_REG_STOPLL_KP:
-        {
-          PID_SetKP (&(&STO_PLL_M1)->PIRegulator, (int16_t)regdata16);
-          break;
-        }
-
-        case MC_REG_STOPLL_EL_ANGLE:
-        case MC_REG_STOPLL_ROT_SPEED:
-        case MC_REG_STOPLL_I_ALPHA:
-        case MC_REG_STOPLL_I_BETA:
-        case MC_REG_STOPLL_BEMF_ALPHA:
-        case MC_REG_STOPLL_BEMF_BETA:
+        case MC_REG_ENCODER_EL_ANGLE:
+        case MC_REG_ENCODER_SPEED:
         {
           retVal = MCP_ERROR_RO_REG;
           break;
@@ -388,6 +347,24 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
         case MC_REG_DAC_USER1:
         case MC_REG_DAC_USER2:
           break;
+
+        case MC_REG_POSITION_KP:
+        {
+          PID_SetKP(&PID_PosParamsM1, regdata16);
+          break;
+        }
+
+        case MC_REG_POSITION_KI:
+        {
+          PID_SetKI(&PID_PosParamsM1, regdata16);
+          break;
+        }
+
+        case MC_REG_POSITION_KD:
+        {
+          PID_SetKD(&PID_PosParamsM1, regdata16);
+          break;
+        }
 
         case MC_REG_SPEED_KP_DIV:
         {
@@ -443,31 +420,21 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
           break;
         }
 
-        case MC_REG_STOPLL_KI_DIV:
+        case MC_REG_POSITION_KP_DIV:
         {
-          PID_SetKIDivisorPOW2 (&(&STO_PLL_M1)->PIRegulator,regdata16);
+          PID_SetKPDivisorPOW2(&PID_PosParamsM1, regdata16);
           break;
         }
 
-        case MC_REG_STOPLL_KP_DIV:
+        case MC_REG_POSITION_KI_DIV:
         {
-          PID_SetKPDivisorPOW2 (&(&STO_PLL_M1)->PIRegulator,regdata16);
+          PID_SetKIDivisorPOW2(&PID_PosParamsM1, regdata16);
           break;
         }
 
-        case MC_REG_FOC_VQREF:
+        case MC_REG_POSITION_KD_DIV:
         {
-          OL_UpdateVoltage(&OpenLoop_ParamsM1, ((regdata16 * 32767) / 100));
-          break;
-        }
-
-        case MC_REG_PULSE_VALUE:
-        case MC_REG_BEMF_ZCR:
-        case MC_REG_BEMF_U:
-        case MC_REG_BEMF_V:
-        case MC_REG_BEMF_W:
-        {
-          retVal = MCP_ERROR_RO_REG;
+          PID_SetKDDivisorPOW2(&PID_PosParamsM1, regdata16);
           break;
         }
 
@@ -497,13 +464,6 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
         case MC_REG_SPEED_REF:
         {
           MCI_ExecSpeedRamp(pMCIN,((((int16_t)regdata32) * ((int16_t)SPEED_UNIT)) / (int16_t)U_RPM), 0);
-          break;
-        }
-
-        case MC_REG_STOPLL_EST_BEMF:
-        case MC_REG_STOPLL_OBS_BEMF:
-        {
-          retVal = MCP_ERROR_RO_REG;
           break;
         }
 
@@ -579,28 +539,15 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
             break;
           }
 
-          case MC_REG_REVUP_DATA:
+          case MC_REG_POSITION_RAMP:
           {
-            int32_t rpm;
-            RevUpCtrl_PhaseParams_t revUpPhase;
-            uint8_t i;
-            uint8_t nbrOfPhase = (((uint8_t)rawSize) / 8U);
-
-            if (((0U != ((rawSize) % 8U))) || ((nbrOfPhase > RUC_MAX_PHASE_NUMBER) != 0))
-            {
-              retVal = MCP_ERROR_BAD_RAW_FORMAT;
-            }
-            else
-            {
-              for (i = 0; i <nbrOfPhase; i++)
-              {
-              rpm = *(int32_t *) &rawData[i * 8U]; //cstat !MISRAC2012-Rule-11.3
-              revUpPhase.hFinalMecSpeedUnit = (((int16_t)rpm) * ((int16_t)SPEED_UNIT)) / ((int16_t)U_RPM);
-              revUpPhase.hFinalTorque = *((int16_t *) &rawData[4U + (i * 8U)]); //cstat !MISRAC2012-Rule-11.3
-              revUpPhase.hDurationms  = *((uint16_t *) &rawData[6U +(i * 8U)]); //cstat !MISRAC2012-Rule-11.3
-              (void)RUC_SetPhase(&RevUpControlM1, i, &revUpPhase);
-              }
-            }
+            FloatToU32 Position;
+            FloatToU32 Duration;
+            /* 32 bits access are split into 2x16 bits access */
+            Position.U32_Val = ((int32_t)(*(int16_t *)&rawData[2]))<<16 | *(uint16_t *)rawData;
+            /* 32 bits access are split into 2x16 bits access */
+            Duration.U32_Val = ((int32_t)(*(int16_t *)&rawData[6]))<<16 | *(uint16_t *)&rawData[4];
+            MCI_ExecPositionCommand(pMCIN, Position.Float_Val, Duration.Float_Val);
             break;
           }
 
@@ -641,6 +588,8 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
 
 uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16_t *size,int16_t freeSpace){
     uint8_t retVal = MCP_CMD_OK;
+    uint8_t motorID=0;
+    MCI_Handle_t *pMCIN = &Mci[motorID];
     switch (typeID)
     {
       case TYPE_DATA_8BIT:
@@ -666,10 +615,22 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
 
       case TYPE_DATA_16BIT:
       {
+       int16_t *regdata16 = (int16_t *) data; //cstat !MISRAC2012-Rule-11.3
         if (freeSpace >= 2)
         {
           switch (regID)
           {
+            case MC_REG_DAC_OUT1:
+            {
+              *regdata16 = (int16_t)DAC_GetChannelConfig(&DAC_Handle , DAC_CH1);
+              break;
+            }
+
+            case MC_REG_DAC_OUT2:
+            {
+              *regdata16 = (int16_t)DAC_GetChannelConfig(&DAC_Handle , DAC_CH2);
+              break;
+            }
             case MC_REG_DAC_USER1:
             case MC_REG_DAC_USER2:
               break;
@@ -691,10 +652,34 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
 
       case TYPE_DATA_32BIT:
       {
+        uint32_t *regdataU32 = (uint32_t *)data; //cstat !MISRAC2012-Rule-11.3
         if (freeSpace >= 4)
         {
           switch (regID)
           {
+            case MC_REG_PERF_CPU_LOAD:
+            {
+              FloatToU32 ReadVal;
+              ReadVal.Float_Val = MC_Perf_GetCPU_Load(pMCIN->pPerfMeasure);
+              *regdataU32 = ReadVal.U32_Val;
+              break;
+            }
+
+            case MC_REG_PERF_MIN_CPU_LOAD:
+            {
+              FloatToU32 ReadVal;
+              ReadVal.Float_Val = MC_Perf_GetMinCPU_Load(pMCIN->pPerfMeasure);
+              *regdataU32 = ReadVal.U32_Val;
+              break;
+            }
+
+            case MC_REG_PERF_MAX_CPU_LOAD:
+            {
+              FloatToU32 ReadVal;
+              ReadVal.Float_Val = MC_Perf_GetMaxCPU_Load(pMCIN->pPerfMeasure);
+              *regdataU32 = ReadVal.U32_Val;
+              break;
+            }
 
             default:
             {
@@ -809,9 +794,15 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
               break;
             }
 
-            case MC_REG_RUC_STAGE_NBR:
+            case MC_REG_POSITION_CTRL_STATE:
             {
-              *data = (uint8_t)RUC_GetNumberOfPhases(&RevUpControlM1);
+              *data = (uint8_t) TC_GetControlPositionStatus(&PosCtrlM1);
+              break;
+            }
+
+            case MC_REG_POSITION_ALIGN_STATE:
+            {
+              *data = (uint8_t) TC_GetAlignmentStatus(&PosCtrlM1);
               break;
             }
 
@@ -977,77 +968,39 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
               break;
             }
 
-            case MC_REG_STOPLL_EL_ANGLE:
+            case MC_REG_ENCODER_EL_ANGLE:
             {
-              //cstat !MISRAC2012-Rule-11.3
-              *regdata16 = SPD_GetElAngle((SpeednPosFdbk_Handle_t *)&STO_PLL_M1);
+              *regdata16 = SPD_GetElAngle ((SpeednPosFdbk_Handle_t*) &ENCODER_M1); //cstat !MISRAC2012-Rule-11.3
               break;
             }
 
-            case MC_REG_STOPLL_ROT_SPEED:
+            case MC_REG_ENCODER_SPEED:
             {
-              //cstat !MISRAC2012-Rule-11.3
-              *regdata16 = SPD_GetS16Speed((SpeednPosFdbk_Handle_t *)&STO_PLL_M1);
-              break;
-            }
-
-            case MC_REG_STOPLL_I_ALPHA:
-            {
-              *regdata16 = STO_PLL_GetEstimatedCurrent(&STO_PLL_M1).alpha;
-              break;
-            }
-
-            case MC_REG_STOPLL_I_BETA:
-            {
-              *regdata16 = STO_PLL_GetEstimatedCurrent(&STO_PLL_M1).beta;
-              break;
-            }
-
-            case MC_REG_STOPLL_BEMF_ALPHA:
-            {
-              *regdata16 = STO_PLL_GetEstimatedBemf(&STO_PLL_M1).alpha;
-              break;
-            }
-
-            case MC_REG_STOPLL_BEMF_BETA:
-            {
-              *regdata16 = STO_PLL_GetEstimatedBemf(&STO_PLL_M1).beta;
-              break;
-            }
-
-            case MC_REG_STOPLL_C1:
-            {
-              int16_t hC1;
-              int16_t hC2;
-              STO_PLL_GetObserverGains(&STO_PLL_M1, &hC1, &hC2);
-              *regdata16 = hC1;
-              break;
-            }
-
-            case MC_REG_STOPLL_C2:
-            {
-              int16_t hC1;
-              int16_t hC2;
-              STO_PLL_GetObserverGains(&STO_PLL_M1, &hC1, &hC2);
-              *regdata16 = hC2;
-              break;
-            }
-
-            case MC_REG_STOPLL_KI:
-            {
-              *regdata16 = PID_GetKI (&(&STO_PLL_M1)->PIRegulator);
-              break;
-            }
-
-            case MC_REG_STOPLL_KP:
-            {
-              *regdata16 = PID_GetKP (&(&STO_PLL_M1)->PIRegulator);
+              *regdata16 = SPD_GetS16Speed ((SpeednPosFdbk_Handle_t*) &ENCODER_M1); //cstat !MISRAC2012-Rule-11.3
               break;
             }
 
             case MC_REG_DAC_USER1:
             case MC_REG_DAC_USER2:
               break;
+
+            case MC_REG_POSITION_KP:
+            {
+              *regdata16 = PID_GetKP( &PID_PosParamsM1);
+              break;
+            }
+
+            case MC_REG_POSITION_KI:
+            {
+              *regdata16 = PID_GetKI( &PID_PosParamsM1);
+              break;
+            }
+
+            case MC_REG_POSITION_KD:
+            {
+              *regdata16 = PID_GetKD( &PID_PosParamsM1);
+              break;
+            }
 
             case MC_REG_SPEED_KP_DIV:
             {
@@ -1102,21 +1055,21 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
               break;
             }
 
-            case MC_REG_STOPLL_KI_DIV:
+            case MC_REG_POSITION_KP_DIV:
             {
-              *regdataU16 = PID_GetKIDivisorPOW2(&(&STO_PLL_M1)->PIRegulator);
+              *regdataU16 = PID_GetKPDivisorPOW2(&PID_PosParamsM1);
               break;
             }
 
-            case MC_REG_STOPLL_KP_DIV:
+            case MC_REG_POSITION_KI_DIV:
             {
-              *regdataU16 = PID_GetKPDivisorPOW2(&(&STO_PLL_M1)->PIRegulator);
+              *regdataU16 = PID_GetKIDivisorPOW2(&PID_PosParamsM1);
               break;
             }
 
-            case MC_REG_FOC_VQREF:
+            case MC_REG_POSITION_KD_DIV:
             {
-            *regdata16 = ((OL_GetVoltage(&OpenLoop_ParamsM1)*100)/32767);
+              *regdataU16 = PID_GetKDDivisorPOW2(&PID_PosParamsM1);
               break;
             }
 
@@ -1161,15 +1114,11 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
               break;
             }
 
-            case MC_REG_STOPLL_EST_BEMF:
+            case MC_REG_CURRENT_POSITION:
             {
-              *regdata32 = STO_PLL_GetEstimatedBemfLevel(&STO_PLL_M1);
-              break;
-            }
-
-            case MC_REG_STOPLL_OBS_BEMF:
-            {
-              *regdata32 = STO_PLL_GetObservedBemfLevel(&STO_PLL_M1);
+              FloatToU32 ReadVal;
+              ReadVal.Float_Val = MCI_GetCurrentPosition(pMCIN);
+              *regdataU32 = ReadVal.U32_Val;
               break;
             }
 
@@ -1312,35 +1261,6 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
             break;
           }
 
-          case MC_REG_REVUP_DATA:
-          {
-            int32_t *rpm;
-            uint16_t *finalTorque;
-            uint16_t *durationms;
-            RevUpCtrl_PhaseParams_t revUpPhase;
-            uint8_t i;
-
-            *rawSize = (uint16_t)RUC_MAX_PHASE_NUMBER*8U;
-            if (((*rawSize) + 2U) > (uint16_t)freeSpace)
-            {
-              retVal = MCP_ERROR_NO_TXSYNC_SPACE;
-            }
-            else
-            {
-              for (i = 0; i <RUC_MAX_PHASE_NUMBER; i++)
-              {
-                (void)RUC_GetPhase( &RevUpControlM1 ,i, &revUpPhase);
-                rpm = (int32_t *)&data[2U + (i * 8U)];  //cstat !MISRAC2012-Rule-11.3
-                *rpm = (((int32_t)revUpPhase.hFinalMecSpeedUnit) * U_RPM) / SPEED_UNIT; //cstat !MISRAC2012-Rule-11.3
-                finalTorque = (uint16_t *)&data[6U + (i * 8U)]; //cstat !MISRAC2012-Rule-11.3
-                *finalTorque = (uint16_t)revUpPhase.hFinalTorque; //cstat !MISRAC2012-Rule-11.3
-                durationms  = (uint16_t *)&data[8U + (i * 8U)]; //cstat !MISRAC2012-Rule-11.3
-                *durationms  = revUpPhase.hDurationms;
-              }
-            }
-            break;
-          }
-
           case MC_REG_CURRENT_REF:
           {
             uint16_t *iqref = (uint16_t *)rawData; //cstat !MISRAC2012-Rule-11.3
@@ -1349,6 +1269,19 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
             *rawSize = 4;
             *iqref = (uint16_t)MCI_GetIqdref(pMCIN).q;
             *idref = (uint16_t)MCI_GetIqdref(pMCIN).d;
+            break;
+          }
+
+          case MC_REG_POSITION_RAMP:
+          {
+            float Position;
+            float Duration;
+
+            *rawSize = 8;
+            Position = TC_GetMoveDuration(&PosCtrlM1);   /* Does this duration make sense ? */
+            Duration = TC_GetTargetPosition(&PosCtrlM1);
+            (void)memcpy(rawData, &Position, 4);
+            (void)memcpy(&rawData[4], &Duration, 4);
             break;
           }
 
@@ -1534,33 +1467,15 @@ __weak uint8_t RI_GetPtrReg(uint16_t dataID, void **dataPtr)
             break;
           }
 
-          case MC_REG_STOPLL_ROT_SPEED:
+          case MC_REG_ENCODER_SPEED:
           {
-            *dataPtr = &((&STO_PLL_M1)->_Super.hAvrMecSpeedUnit);
+            *dataPtr = &((&ENCODER_M1)->_Super.hAvrMecSpeedUnit);
             break;
           }
 
-          case MC_REG_STOPLL_EL_ANGLE:
+          case MC_REG_ENCODER_EL_ANGLE:
           {
-            *dataPtr = &((&STO_PLL_M1)->_Super.hElAngle);
-            break;
-          }
-
-#ifdef NOT_IMPLEMENTED /* Not yet implemented */
-          case MC_REG_STOPLL_I_ALPHA:
-          case MC_REG_STOPLL_I_BETA:
-            break;
-#endif
-
-          case MC_REG_STOPLL_BEMF_ALPHA:
-          {
-            *dataPtr = &((&STO_PLL_M1)->hBemf_alfa_est);
-            break;
-          }
-
-          case MC_REG_STOPLL_BEMF_BETA:
-          {
-            *dataPtr = &((&STO_PLL_M1)->hBemf_beta_est);
+            *dataPtr = &((&ENCODER_M1)->_Super.hElAngle);
             break;
           }
 

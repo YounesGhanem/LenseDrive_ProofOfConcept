@@ -102,6 +102,30 @@ PID_Handle_t PIDIdHandle_M1 =
   .hKdDivisorPOW2      = 0x0000U,
 };
 
+PID_Handle_t PID_PosParamsM1 =
+{
+  .hDefKpGain          = (int16_t)PID_POSITION_KP_GAIN,
+  .hDefKiGain          = (int16_t)PID_POSITION_KI_GAIN,
+  .hDefKdGain          = (int16_t)PID_POSITION_KD_GAIN,
+  .wUpperIntegralLimit = (int32_t)(NOMINAL_CURRENT * PID_POSITION_KIDIV),
+  .wLowerIntegralLimit = (int32_t)(-NOMINAL_CURRENT * PID_POSITION_KIDIV),
+  .hUpperOutputLimit   = (int16_t)NOMINAL_CURRENT,
+  .hLowerOutputLimit   = -(int16_t)NOMINAL_CURRENT,
+  .hKpDivisor          = (uint16_t)PID_POSITION_KPDIV,
+  .hKiDivisor          = (uint16_t)PID_POSITION_KIDIV,
+  .hKdDivisor          = (uint16_t)PID_POSITION_KDDIV,
+  .hKpDivisorPOW2      = (uint16_t)PID_POSITION_KPDIV_LOG,
+  .hKiDivisorPOW2      = (uint16_t)PID_POSITION_KIDIV_LOG,
+  .hKdDivisorPOW2      = (uint16_t)PID_POSITION_KDDIV_LOG,
+};
+
+PosCtrl_Handle_t PosCtrlM1 =
+{
+  .SamplingTime  = 1.0f/MEDIUM_FREQUENCY_TASK_RATE,
+  .SysTickPeriod = 1.0f/SYS_TICK_FREQUENCY,
+  .AlignmentCfg  = TC_ABSOLUTE_ALIGNMENT_NOT_SUPPORTED,
+};
+
 /**
   * @brief  SpeednTorque Controller parameters Motor 1.
   */
@@ -118,31 +142,6 @@ SpeednTorqCtrl_Handle_t SpeednTorqCtrlM1 =
   .MecSpeedRefUnitDefault     = (int16_t)(DEFAULT_TARGET_SPEED_UNIT),
   .TorqueRefDefault           = (int16_t)DEFAULT_TORQUE_COMPONENT,
   .IdrefDefault               = (int16_t)DEFAULT_FLUX_COMPONENT,
-};
-
-RevUpCtrl_Handle_t RevUpControlM1 =
-{
-  .hRUCFrequencyHz         = MEDIUM_FREQUENCY_TASK_RATE,
-  .hStartingMecAngle       = (int16_t)((int32_t)(STARTING_ANGLE_DEG)* 65536/360),
-  .bFirstAccelerationStage = (ENABLE_SL_ALGO_FROM_PHASE-1u),
-  .hMinStartUpValidSpeed   = OBS_MINIMUM_SPEED_UNIT,
-  .hMinStartUpFlySpeed     = (int16_t)(OBS_MINIMUM_SPEED_UNIT/2),
-  .OTFStartupEnabled       = false,
-  .OTFPhaseParams =
-  {
-    (uint16_t)500,
-    0,
-    (int16_t)PHASE5_FINAL_CURRENT,
-    (void*)MC_NULL
-  },
-  .ParamsData =
-  {
-    {(uint16_t)PHASE1_DURATION,(int16_t)(PHASE1_FINAL_SPEED_UNIT),(uint16_t)PHASE1_FINAL_CURRENT,&RevUpControlM1.ParamsData[1]},
-    {(uint16_t)PHASE2_DURATION,(int16_t)(PHASE2_FINAL_SPEED_UNIT),(uint16_t)PHASE2_FINAL_CURRENT,&RevUpControlM1.ParamsData[2]},
-    {(uint16_t)PHASE3_DURATION,(int16_t)(PHASE3_FINAL_SPEED_UNIT),(uint16_t)PHASE3_FINAL_CURRENT,&RevUpControlM1.ParamsData[3]},
-    {(uint16_t)PHASE4_DURATION,(int16_t)(PHASE4_FINAL_SPEED_UNIT),(uint16_t)PHASE4_FINAL_CURRENT,&RevUpControlM1.ParamsData[4]},
-    {(uint16_t)PHASE5_DURATION,(int16_t)(PHASE5_FINAL_SPEED_UNIT),(uint16_t)PHASE5_FINAL_CURRENT,(void*)MC_NULL},
-  },
 };
 
 /**
@@ -229,14 +228,13 @@ VirtualSpeedSensor_Handle_t VirtualSpeedSensorM1 =
 };
 
 /**
-  * @brief  SpeedNPosition sensor parameters Motor 1 - State Observer + PLL.
+  * @brief  SpeedNPosition sensor parameters Motor 1 - Encoder.
   */
-STO_PLL_Handle_t STO_PLL_M1 =
+ENCODER_Handle_t ENCODER_M1 =
 {
   ._Super =
   {
     .bElToMecRatio             = POLE_PAIR_NUM,
-    .SpeedUnit                 = SPEED_UNIT,
     .hMaxReliableMecSpeedUnit  = (uint16_t)(1.15 * MAX_APPLICATION_SPEED_UNIT),
     .hMinReliableMecSpeedUnit  = (uint16_t)(MIN_APPLICATION_SPEED_UNIT),
     .bMaximumSpeedErrorsNumber = M1_SS_MEAS_ERRORS_BEFORE_FAULTS,
@@ -245,63 +243,23 @@ STO_PLL_Handle_t STO_PLL_M1 =
     .DPPConvFactor             = DPP_CONV_FACTOR,
   },
 
-  .hC1                         = C1,
-  .hC2                         = C2,
-  .hC3                         = C3,
-  .hC4                         = C4,
-  .hC5                         = C5,
-  .hF1                         = F1,
-  .hF2                         = F2,
-
-  .PIRegulator =
-  {
-    .hDefKpGain                = PLL_KP_GAIN,
-    .hDefKiGain                = PLL_KI_GAIN,
-    .hDefKdGain                = 0x0000U,
-    .hKpDivisor                = PLL_KPDIV,
-    .hKiDivisor                = PLL_KIDIV,
-    .hKdDivisor                = 0x0000U,
-    .wUpperIntegralLimit       = INT32_MAX,
-    .wLowerIntegralLimit       = -INT32_MAX,
-    .hUpperOutputLimit         = INT16_MAX,
-    .hLowerOutputLimit         = -INT16_MAX,
-    .hKpDivisorPOW2            = PLL_KPDIV_LOG,
-    .hKiDivisorPOW2            = PLL_KIDIV_LOG,
-    .hKdDivisorPOW2            = 0x0000U,
-  },
-
-  .SpeedBufferSizeUnit         = STO_FIFO_DEPTH_UNIT,
-  .SpeedBufferSizeDpp          = STO_FIFO_DEPTH_DPP,
-  .VariancePercentage          = PERCENTAGE_FACTOR,
-  .SpeedValidationBand_H       = SPEED_BAND_UPPER_LIMIT,
-  .SpeedValidationBand_L       = SPEED_BAND_LOWER_LIMIT,
-  .MinStartUpValidSpeed        = OBS_MINIMUM_SPEED_UNIT,
-  .StartUpConsistThreshold     = NB_CONSECUTIVE_TESTS,
-  .Reliability_hysteresys      = M1_SS_MEAS_ERRORS_BEFORE_FAULTS,
-  .BemfConsistencyCheck        = M1_BEMF_CONSISTENCY_TOL,
-  .BemfConsistencyGain         = M1_BEMF_CONSISTENCY_GAIN,
-  .MaxAppPositiveMecSpeedUnit  = (uint16_t)(MAX_APPLICATION_SPEED_UNIT * 1.15),
-  .F1LOG                       = F1_LOG,
-  .F2LOG                       = F2_LOG,
-  .SpeedBufferSizeDppLOG       = STO_FIFO_DEPTH_DPP_LOG,
-  .hForcedDirection            = 0x0000U
+  .PulseNumber                 = M1_ENCODER_PPR * 4,
+  .SpeedSamplingFreqHz         = MEDIUM_FREQUENCY_TASK_RATE,
+  .SpeedBufferSize             = ENC_AVERAGING_FIFO_DEPTH,
+  .TIMx                        = TIM3,
+  .ICx_Filter                  = M1_ENC_IC_FILTER_LL,
 };
 
-STO_Handle_t STO_M1 =
+/**
+  * @brief  Encoder Alignment Controller parameters Motor 1.
+  */
+EncAlign_Handle_t EncAlignCtrlM1 =
 {
-  ._Super                        = (SpeednPosFdbk_Handle_t *)&STO_PLL_M1, //cstat !MISRAC2012-Rule-11.3
-  .pFctForceConvergency1         = &STO_PLL_ForceConvergency1,
-  .pFctForceConvergency2         = &STO_PLL_ForceConvergency2,
-  .pFctStoOtfResetPLL            = &STO_OTF_ResetPLL,
-  .pFctSTO_SpeedReliabilityCheck = &STO_PLL_IsVarianceTight
-};
-
-OpenLoop_Handle_t OpenLoop_ParamsM1 =
-{
-  .hDefaultVoltage = OPEN_LOOP_VOLTAGE_d,
-  .VFMode          = OPEN_LOOP_VF,
-  .hVFOffset       = OPEN_LOOP_OFF,
-  .hVFSlope        = OPEN_LOOP_K
+  .hEACFrequencyHz = MEDIUM_FREQUENCY_TASK_RATE,
+  .hFinalTorque    = FINAL_I_ALIGNMENT,
+  .hElAngle        = ALIGNMENT_ANGLE_S16,
+  .hDurationms     = M1_ALIGNMENT_DURATION,
+  .bElToMecRatio   = POLE_PAIR_NUM,
 };
 
 /**
@@ -378,6 +336,7 @@ NTC_Handle_t *pTemperatureSensor[NBR_OF_MOTORS] = {&TempSensor_M1};
 PID_Handle_t *pPIDIq[NBR_OF_MOTORS]             = {&PIDIqHandle_M1};
 PID_Handle_t *pPIDId[NBR_OF_MOTORS]             = {&PIDIdHandle_M1};
 PQD_MotorPowMeas_Handle_t *pMPM[NBR_OF_MOTORS]  = {&PQD_MotorPowMeasM1};
+PosCtrl_Handle_t *pPosCtrl[NBR_OF_MOTORS]       = {&PosCtrlM1};
 /* USER CODE BEGIN Additional configuration */
 /* USER CODE END Additional configuration */
 

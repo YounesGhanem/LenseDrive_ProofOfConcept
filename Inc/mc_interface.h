@@ -32,8 +32,9 @@ extern "C" {
 #include "mc_type.h"
 #include "pwm_curr_fdbk.h"
 #include "speed_torq_ctrl.h"
+#include "mc_perf.h"
 
-#include "virtual_speed_sensor.h"
+#include "trajectory_ctrl.h"
 /** @addtogroup MCSDK
   * @{
   */
@@ -135,7 +136,8 @@ typedef struct
   SpeednTorqCtrl_Handle_t *pSTC;         /*!< Speed and torque controller object used by MCI.*/
   pFOCVars_t pFOCVars;                   /*!< Pointer to FOC vars used by MCI.*/
   PWMC_Handle_t *pPWM;                   /*!< Pointer to PWM handle structure.*/
-  VirtualSpeedSensor_Handle_t *pVSS;
+  MC_Perf_Handle_t  * pPerfMeasure;
+  PosCtrl_Handle_t *pPosCtrl; /*!< Position Control used by MCI.*/
   MCI_UserCommands_t lastCommand;        /*!< Last command coming from the user.*/
   int16_t hFinalSpeed;                   /*!< Final speed of last ExecSpeedRamp command.*/
   int16_t hFinalTorque;                  /*!< Final torque of last ExecTorqueRamp command.*/
@@ -151,7 +153,14 @@ typedef struct
 } MCI_Handle_t;
 
 /* Exported functions ------------------------------------------------------- */
-void MCI_Init(MCI_Handle_t *pHandle, SpeednTorqCtrl_Handle_t *pSTC, pFOCVars_t pFOCVars, PWMC_Handle_t *pPWMHandle);
+void MCI_Init(MCI_Handle_t *pHandle, SpeednTorqCtrl_Handle_t *pSTC, pFOCVars_t pFOCVars, PosCtrl_Handle_t *pPosCtrl,
+              PWMC_Handle_t *pPWMHandle);
+void MCI_ExecPositionCommand(MCI_Handle_t *pHandle, float_t FinalPosition, float_t Duration);
+PosCtrlStatus_t MCI_GetCtrlPositionState(MCI_Handle_t *pHandle);
+AlignStatus_t  MCI_GetAlignmentStatus(MCI_Handle_t *pHandle);
+float_t MCI_GetCurrentPosition(MCI_Handle_t *pHandle);
+float_t MCI_GetTargetPosition(MCI_Handle_t *pHandle);
+float_t MCI_GetMoveDuration(MCI_Handle_t *pHandle);
 void MCI_ExecBufferedCommands(MCI_Handle_t *pHandle );
 void MCI_ExecSpeedRamp(MCI_Handle_t *pHandle,  int16_t hFinalSpeed, uint16_t hDurationms);
 void MCI_ExecSpeedRamp_F(MCI_Handle_t *pHandle, const float_t FinalSpeed, uint16_t hDurationms);
@@ -207,10 +216,8 @@ float_t MCI_GetTeref_F(MCI_Handle_t *pHandle );
 int16_t MCI_GetPhaseCurrentAmplitude(MCI_Handle_t *pHandle);
 int16_t MCI_GetPhaseVoltageAmplitude(MCI_Handle_t *pHandle);
 void MCI_Clear_Iqdref(MCI_Handle_t *pHandle);
+void MCI_Clear_PerfMeasure(MCI_Handle_t *pHandle, uint8_t bMotor);
 
-void MCI_SetSpeedMode(MCI_Handle_t *pHandle);
-void MCI_SetOpenLoopCurrent(MCI_Handle_t *pHandle);
-void MCI_SetOpenLoopVoltage(MCI_Handle_t *pHandle);
 /**
   * @}
   */

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
   26:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   ==============================================================================
   27:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
   28:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     (#) Declare a UART_HandleTypeDef handle structure.
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 2
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 2
 
 
   29:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
   83:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** /**
   84:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   * @}
   85:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   */
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 3
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 3
 
 
   86:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  140:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     |---------|---------|-----------|---------------------------------------|
  141:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     |    0    |    1    |    1      |    | SB | 8 bit data | PB | STB |     |
  142:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     |---------|---------|-----------|---------------------------------------|
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 4
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 4
 
 
  143:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     |    1    |    0    |    0      |    | SB |    7 bit data   | STB |     |
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  186:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   /* Check the Driver Enable assertion time */
  187:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   assert_param(IS_UART_ASSERTIONTIME(AssertionTime));
   42              		.loc 1 187 3 view .LVU6
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 5
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 5
 
 
  188:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  216:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   __HAL_UART_DISABLE(huart);
   68              		.loc 1 216 3 is_stmt 0 view .LVU14
   69 0014 2268     		ldr	r2, [r4]
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 6
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 6
 
 
  217:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
   98              		.loc 1 232 3 view .LVU26
   99 0038 B368     		ldr	r3, [r6, #8]
  100 003a 43F48043 		orr	r3, r3, #16384
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 7
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 7
 
 
  101 003e B360     		str	r3, [r6, #8]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  142              	.LCFI2:
  143              		.cfi_restore_state
  144              		.loc 1 247 1 view .LVU38
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 8
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 8
 
 
  145 006a 0120     		movs	r0, #1
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  251:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   */
  252:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
  253:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** /** @defgroup UARTEx_Exported_Functions_Group2 IO operation functions
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 9
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 9
 
 
  254:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   *  @brief Extended functions
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  288:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** #if defined(USART_CR1_FIFOEN)
  289:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** /**
  290:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   * @brief  UART RX Fifo full callback.
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 10
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 10
 
 
  291:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   * @param  huart UART handle.
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  345:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     [..] This subsection also provides a set of additional functions providing enhanced reception
  346:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     services to user. (For example, these functions allow application to handle use cases
  347:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     where number of data to be received is unknown).
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 11
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 11
 
 
  348:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  397:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   __HAL_LOCK(huart);
  220              		.loc 1 397 3 view .LVU50
  221              		.loc 1 397 3 view .LVU51
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 12
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 12
 
 
  222 0000 90F87830 		ldrb	r3, [r0, #120]	@ zero_extendqisi2
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
   34:Drivers/CMSIS/Include/cmsis_gcc.h **** /* Fallback for __has_builtin */
   35:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __has_builtin
   36:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __has_builtin(x) (0)
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 13
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 13
 
 
   37:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
   91:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
   92:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT16_READ(addr)          (((const struct T_UINT16_READ *)(const void *)(add
   93:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 14
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 14
 
 
   94:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32_WRITE
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  148:Drivers/CMSIS/Include/cmsis_gcc.h ****   extern const __zero_table_t __zero_table_start__;
  149:Drivers/CMSIS/Include/cmsis_gcc.h ****   extern const __zero_table_t __zero_table_end__;
  150:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 15
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 15
 
 
  151:Drivers/CMSIS/Include/cmsis_gcc.h ****   for (__copy_table_t const* pTable = &__copy_table_start__; pTable < &__copy_table_end__; ++pTable
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  205:Drivers/CMSIS/Include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
  206:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  207:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __disable_irq(void)
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 16
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 16
 
 
  208:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  262:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR control_ns, %0" : : "r" (control) : "memory");
  263:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  264:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 17
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 17
 
 
  265:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  319:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  320:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  321:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 18
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 18
 
 
  322:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  376:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  377:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
  378:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 19
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 19
 
 
  379:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Main Stack Pointer (non-secure)
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  433:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Stack Pointer (non-secure)
  434:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Stack Pointer (SP) when in secure state.
  435:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    topOfStack  Stack Pointer value to set
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 20
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 20
 
 
  436:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  490:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  491:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_PRIMASK_NS(uint32_t priMask)
  492:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 21
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 21
 
 
  493:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR primask_ns, %0" : : "r" (priMask) : "memory");
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  547:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, basepri_ns" : "=r" (result) );
  548:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  549:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 22
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 22
 
 
  550:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  604:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  605:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Fault Mask (non-secure)
  606:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the non-secure Fault Mask register when in secure state.
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 23
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 23
 
 
  607:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Fault Mask register value
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  661:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (!(defined (__ARM_ARCH_8M_MAIN__ ) && (__ARM_ARCH_8M_MAIN__ == 1)) && \
  662:Drivers/CMSIS/Include/cmsis_gcc.h ****     (!defined (__ARM_FEATURE_CMSE) || (__ARM_FEATURE_CMSE < 3)))
  663:Drivers/CMSIS/Include/cmsis_gcc.h ****     // without main extensions, the non-secure PSPLIM is RAZ/WI
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 24
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 24
 
 
  664:Drivers/CMSIS/Include/cmsis_gcc.h ****   return 0U;
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  718:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Process Stack Pointer (non-secure)
  719:Drivers/CMSIS/Include/cmsis_gcc.h ****   Devices without ARMv8-M Main Extensions (i.e. Cortex-M23) lack the non-secure
  720:Drivers/CMSIS/Include/cmsis_gcc.h ****   Stack Pointer Limit register hence the write is silently ignored.
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 25
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 25
 
 
  721:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  775:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  776:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, msplim_ns" : "=r" (result) );
  777:Drivers/CMSIS/Include/cmsis_gcc.h ****   return result;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 26
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 26
 
 
  778:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  832:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  833:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
  834:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 27
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 27
 
 
  835:Drivers/CMSIS/Include/cmsis_gcc.h **** #if ((defined (__FPU_PRESENT) && (__FPU_PRESENT == 1U)) && \
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  889:Drivers/CMSIS/Include/cmsis_gcc.h **** #if defined (__thumb__) && !defined (__thumb2__)
  890:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_OUT_REG(r) "=l" (r)
  891:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_RW_REG(r) "+l" (r)
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 28
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 28
 
 
  892:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_USE_REG(r) "l" (r)
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  946:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("dsb 0xF":::"memory");
  947:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  948:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 29
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 29
 
 
  949:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
 1003:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (__GNUC__ > 4) || (__GNUC__ == 4 && __GNUC_MINOR__ >= 8)
 1004:Drivers/CMSIS/Include/cmsis_gcc.h ****   return (int16_t)__builtin_bswap16(value);
 1005:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 30
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 30
 
 
 1006:Drivers/CMSIS/Include/cmsis_gcc.h ****   int16_t result;
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
 1060:Drivers/CMSIS/Include/cmsis_gcc.h ****   for (value >>= 1U; value != 0U; value >>= 1U)
 1061:Drivers/CMSIS/Include/cmsis_gcc.h ****   {
 1062:Drivers/CMSIS/Include/cmsis_gcc.h ****     result <<= 1U;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 31
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 31
 
 
 1063:Drivers/CMSIS/Include/cmsis_gcc.h ****     result |= value & 1U;
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
 1117:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("ldrexb %0, [%1]" : "=r" (result) : "r" (addr) : "memory" );
 1118:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
 1119:Drivers/CMSIS/Include/cmsis_gcc.h ****    return ((uint8_t) result);    /* Add explicit type cast here */
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 32
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 32
 
 
 1120:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  257              	.LBE35:
  258              		.loc 1 400 3 discriminator 1 view .LVU64
  259 0018 43F40003 		orr	r3, r3, #8388608
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 33
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 33
 
 
  260              	.LVL20:
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  266              		.loc 2 1204 4 discriminator 1 view .LVU67
 1205:Drivers/CMSIS/Include/cmsis_gcc.h **** 
 1206:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("strex %0, %2, %1" : "=&r" (result), "=Q" (*addr) : "r" (value) );
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 34
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 34
 
 
  267              		.loc 2 1206 4 discriminator 1 view .LVU68
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  315              	HAL_UARTEx_DisableClockStopMode:
  316              	.LVL26:
  317              	.LFB320:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 35
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 35
 
 
  407:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  354              		.loc 2 1156 4 is_stmt 1 discriminator 1 view .LVU95
 1156:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  355              		.loc 2 1156 4 is_stmt 0 discriminator 1 view .LVU96
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 36
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 36
 
 
  356              		.thumb
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  416:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
  401              		.loc 1 416 3 view .LVU113
  402 0030 0220     		movs	r0, #2
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 37
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 37
 
 
  403              	.LVL35:
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  430              		.loc 1 442 1 is_stmt 0 view .LVU120
  431 0002 10B4     		push	{r4}
  432              	.LCFI4:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 38
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 38
 
 
  433              		.cfi_def_cfa_offset 4
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  467 002c 0120     		movs	r0, #1
  468              	.LVL39:
  469              		.loc 1 465 1 view .LVU132
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 39
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 39
 
 
  470 002e 7047     		bx	lr
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  501              		.loc 1 490 3 view .LVU136
  502 000a 90F87830 		ldrb	r3, [r0, #120]	@ zero_extendqisi2
  503              	.LVL41:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 40
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 40
 
 
  481:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   HAL_StatusTypeDef status = HAL_OK;
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  538 0032 71B9     		cbnz	r1, .L38
  501:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   {
  502:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     UARTEx_Wakeup_AddressConfig(huart, WakeUpSelection);
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 41
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 41
 
 
  539              		.loc 1 502 5 is_stmt 1 view .LVU155
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  553:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** HAL_StatusTypeDef HAL_UARTEx_DisableStopMode(UART_HandleTypeDef *huart)
  554:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** {
  555:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   /* Process Locked */
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 42
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 42
 
 
  556:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   __HAL_LOCK(huart);
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  610:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   * @brief  Disable the FIFO mode.
  611:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   * @param huart      UART handle.
  612:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   * @retval HAL status
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 43
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 43
 
 
  613:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   */
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  667:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
  668:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   /* Process Locked */
  669:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   __HAL_LOCK(huart);
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 44
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 44
 
 
  670:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  724:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
  725:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   /* Disable UART */
  726:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   __HAL_UART_DISABLE(huart);
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 45
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 45
 
 
  727:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  781:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     }
  782:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
  783:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     huart->ErrorCode = HAL_UART_ERROR_NONE;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 46
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 46
 
 
  784:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     huart->RxState = HAL_UART_STATE_BUSY_RX;
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  838:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****           *pdata16bits = (uint16_t)(huart->Instance->RDR & uhMask);
  839:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****           pdata16bits++;
  840:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****         }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 47
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 47
 
 
  841:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****         else
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  895:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   if (huart->RxState == HAL_UART_STATE_READY)
  896:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   {
  897:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     if ((pData == NULL) || (Size == 0U))
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 48
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 48
 
 
  898:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     {
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  952:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   if (huart->RxState == HAL_UART_STATE_READY)
  953:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   {
  954:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     if ((pData == NULL) || (Size == 0U))
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 49
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 49
 
 
  955:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     {
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
 1009:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   *        In DMA mode, RxEvent callback could be called several times;
 1010:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   *        When DMA is configured in Normal Mode, HT event does not stop Reception process;
 1011:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   *        When DMA is configured in Circular Mode, HT, TC or IDLE events don't stop Reception proc
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 50
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 50
 
 
 1012:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   * @param  huart UART handle.
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
 1041:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
  560              		.loc 1 1041 3 view .LVU161
 1044:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 51
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 51
 
 
  561              		.loc 1 1044 3 view .LVU162
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  523:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
  603              		.loc 1 523 3 view .LVU177
  604 0078 0023     		movs	r3, #0
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 52
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 52
 
 
  605 007a 84F87830 		strb	r3, [r4, #120]
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  653              		@ link register save eliminated.
  537:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
  654              		.loc 1 537 3 view .LVU186
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 53
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 53
 
 
  537:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  694              		.loc 2 1202 31 discriminator 1 view .LVU201
  695              	.LBB51:
 1204:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 54
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 54
 
 
  696              		.loc 2 1204 4 discriminator 1 view .LVU202
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  740              		.thumb_func
  742              	HAL_UARTEx_DisableStopMode:
  743              	.LVL64:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 55
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 55
 
 
  744              	.LFB324:
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  559:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
  784              		.loc 1 559 3 discriminator 1 view .LVU230
  785 0014 23F00203 		bic	r3, r3, #2
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 56
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 56
 
 
  786              	.LVL67:
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  826 002a 7047     		bx	lr
  827              		.cfi_endproc
  828              	.LFE324:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 57
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 57
 
 
  830              		.section	.text.HAL_UARTEx_ReceiveToIdle,"ax",%progbits
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  778:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     {
  874              		.loc 1 778 5 is_stmt 1 view .LVU258
  875 0012 0E46     		mov	r6, r1
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 58
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 58
 
 
  778:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     {
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  913 003c A368     		ldr	r3, [r4, #8]
  791:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     huart->RxXferCount = Size;
  914              		.loc 1 791 24 view .LVU276
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 59
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 59
 
 
  915 003e A4F85870 		strh	r7, [r4, #88]	@ movhi
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  952              		.loc 1 814 5 is_stmt 1 view .LVU293
  814:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     {
  953              		.loc 1 814 11 view .LVU294
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 60
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 60
 
 
  814:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     {
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  993              		.loc 1 854 15 is_stmt 0 view .LVU309
  994 00a0 FFF7FEFF 		bl	HAL_GetTick
  995              	.LVL82:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 61
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 61
 
 
  814:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     {
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  843:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****           pdata8bits++;
  1033              		.loc 1 843 11 is_stmt 1 view .LVU327
  836:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****         {
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 62
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 62
 
 
  1034              		.loc 1 836 12 is_stmt 0 view .LVU328
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  1073 00f4 B7E7     		b	.L83
  1074              	.LVL89:
  1075              	.L113:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 63
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 63
 
 
  820:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  1113 011a DA69     		ldr	r2, [r3, #28]
  817:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****       {
  1114              		.loc 1 817 10 view .LVU361
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 64
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 64
 
 
  1115 011c D206     		lsls	r2, r2, #27
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  1152 0140 B4F85830 		ldrh	r3, [r4, #88]
  866:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c **** 
  1153              		.loc 1 866 20 view .LVU379
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 65
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 65
 
 
  1154 0144 2022     		movs	r2, #32
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  1190              		.loc 1 843 11 is_stmt 1 view .LVU397
  843:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****           pdata8bits++;
  1191              		.loc 1 843 23 is_stmt 0 view .LVU398
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 66
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 66
 
 
  1192 0168 3770     		strb	r7, [r6]
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  1231              	.LVL97:
  1232              	.L66:
  826:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****           huart->RxState = HAL_UART_STATE_READY;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 67
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 67
 
 
  1233              		.loc 1 826 11 view .LVU414
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  1271 01ba CFE7     		b	.L78
  1272              	.LVL102:
  1273              	.L122:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 68
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 68
 
 
  795:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     uhMask = huart->Mask;
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  1319 0002 D0F88060 		ldr	r6, [r0, #128]
  895:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   {
  1320              		.loc 1 895 6 view .LVU442
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 69
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 69
 
 
  1321 0006 202E     		cmp	r6, #32
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  908:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****     {
  1360              		.loc 1 908 8 view .LVU458
  1361 0026 012B     		cmp	r3, #1
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 70
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 70
 
 
  1362 0028 F1D1     		bne	.L126
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  1401              		.syntax unified
  1402              	@ 1206 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  1403 0038 42E80031 		strex r1, r3, [r2]
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 71
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 71
 
 
  1404              	@ 0 "" 2
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  1451 0002 D0F88060 		ldr	r6, [r0, #128]
  952:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****   {
  1452              		.loc 1 952 6 view .LVU485
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 72
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 72
 
 
  1453 0006 202E     		cmp	r6, #32
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  1492 0026 F3D1     		bne	.L140
  968:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****       {
  1493              		.loc 1 968 7 is_stmt 1 view .LVU501
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 73
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 73
 
 
  968:Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c ****       {
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  1533              		.loc 2 1202 31 view .LVU516
  1534              	.LBB66:
 1204:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 74
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 74
 
 
  1535              		.loc 2 1204 4 view .LVU517
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  1582              		.cfi_endproc
  1583              	.LFE328:
  1585              		.text
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 75
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 75
 
 
  1586              	.Letext0:
@@ -4451,35 +4451,35 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 1
  1593              		.file 9 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h"
  1594              		.file 10 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h"
  1595              		.file 11 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h"
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s 			page 76
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s 			page 76
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32l4xx_hal_uart_ex.c
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:20     .text.HAL_RS485Ex_Init:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:27     .text.HAL_RS485Ex_Init:00000000 HAL_RS485Ex_Init
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:183    .text.HAL_UARTEx_WakeupCallback:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:190    .text.HAL_UARTEx_WakeupCallback:00000000 HAL_UARTEx_WakeupCallback
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:205    .text.HAL_UARTEx_EnableClockStopMode:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:212    .text.HAL_UARTEx_EnableClockStopMode:00000000 HAL_UARTEx_EnableClockStopMode
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:308    .text.HAL_UARTEx_DisableClockStopMode:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:315    .text.HAL_UARTEx_DisableClockStopMode:00000000 HAL_UARTEx_DisableClockStopMode
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:410    .text.HAL_MultiProcessorEx_AddressLength_Set:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:417    .text.HAL_MultiProcessorEx_AddressLength_Set:00000000 HAL_MultiProcessorEx_AddressLength_Set
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:475    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:482    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:00000000 HAL_UARTEx_StopModeWakeUpSourceConfig
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:639    .text.HAL_UARTEx_EnableStopMode:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:646    .text.HAL_UARTEx_EnableStopMode:00000000 HAL_UARTEx_EnableStopMode
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:735    .text.HAL_UARTEx_DisableStopMode:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:742    .text.HAL_UARTEx_DisableStopMode:00000000 HAL_UARTEx_DisableStopMode
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:831    .text.HAL_UARTEx_ReceiveToIdle:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:838    .text.HAL_UARTEx_ReceiveToIdle:00000000 HAL_UARTEx_ReceiveToIdle
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:1294   .text.HAL_UARTEx_ReceiveToIdle_IT:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:1301   .text.HAL_UARTEx_ReceiveToIdle_IT:00000000 HAL_UARTEx_ReceiveToIdle_IT
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:1426   .text.HAL_UARTEx_ReceiveToIdle_DMA:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:1433   .text.HAL_UARTEx_ReceiveToIdle_DMA:00000000 HAL_UARTEx_ReceiveToIdle_DMA
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:1561   .text.HAL_UARTEx_GetRxEventType:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccbfLiy4.s:1568   .text.HAL_UARTEx_GetRxEventType:00000000 HAL_UARTEx_GetRxEventType
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:20     .text.HAL_RS485Ex_Init:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:27     .text.HAL_RS485Ex_Init:00000000 HAL_RS485Ex_Init
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:183    .text.HAL_UARTEx_WakeupCallback:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:190    .text.HAL_UARTEx_WakeupCallback:00000000 HAL_UARTEx_WakeupCallback
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:205    .text.HAL_UARTEx_EnableClockStopMode:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:212    .text.HAL_UARTEx_EnableClockStopMode:00000000 HAL_UARTEx_EnableClockStopMode
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:308    .text.HAL_UARTEx_DisableClockStopMode:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:315    .text.HAL_UARTEx_DisableClockStopMode:00000000 HAL_UARTEx_DisableClockStopMode
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:410    .text.HAL_MultiProcessorEx_AddressLength_Set:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:417    .text.HAL_MultiProcessorEx_AddressLength_Set:00000000 HAL_MultiProcessorEx_AddressLength_Set
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:475    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:482    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:00000000 HAL_UARTEx_StopModeWakeUpSourceConfig
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:639    .text.HAL_UARTEx_EnableStopMode:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:646    .text.HAL_UARTEx_EnableStopMode:00000000 HAL_UARTEx_EnableStopMode
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:735    .text.HAL_UARTEx_DisableStopMode:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:742    .text.HAL_UARTEx_DisableStopMode:00000000 HAL_UARTEx_DisableStopMode
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:831    .text.HAL_UARTEx_ReceiveToIdle:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:838    .text.HAL_UARTEx_ReceiveToIdle:00000000 HAL_UARTEx_ReceiveToIdle
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:1294   .text.HAL_UARTEx_ReceiveToIdle_IT:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:1301   .text.HAL_UARTEx_ReceiveToIdle_IT:00000000 HAL_UARTEx_ReceiveToIdle_IT
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:1426   .text.HAL_UARTEx_ReceiveToIdle_DMA:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:1433   .text.HAL_UARTEx_ReceiveToIdle_DMA:00000000 HAL_UARTEx_ReceiveToIdle_DMA
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:1561   .text.HAL_UARTEx_GetRxEventType:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccoIgkYA.s:1568   .text.HAL_UARTEx_GetRxEventType:00000000 HAL_UARTEx_GetRxEventType
 
 UNDEFINED SYMBOLS
 UART_SetConfig

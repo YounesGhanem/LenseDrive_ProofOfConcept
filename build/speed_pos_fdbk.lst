@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
   26:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****   * @{
   27:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****   */
   28:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 2
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 2
 
 
   29:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c **** /** @defgroup SpeednPosFdbk Speed & Position Feedback
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
   42              		.cfi_endproc
   43              	.LFE1088:
   45 0006 00BF     		.section	.text.SPD_GetMecAngle,"ax",%progbits
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 3
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 3
 
 
   46              		.align	1
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
   94:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c **** /**
   95:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****   * @brief  Returns the last computed average mechanical speed, expressed in
   96:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****   *         the unit defined by [SPEED_UNIT](measurement_units.md).
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 4
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 4
 
 
   97:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****   * @param  pHandle: handler of the current instance of the SpeednPosFdbk component.
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
  111              		.loc 1 122 3 view .LVU13
  123:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c **** #endif
  124:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c **** }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 5
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 5
 
 
  112              		.loc 1 124 1 is_stmt 0 view .LVU14
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
  143              	.LFE1092:
  145 0006 00BF     		.section	.text.SPD_Check,"ax",%progbits
  146              		.align	1
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 6
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 6
 
 
  147              		.p2align 2,,3
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
  168              	.LVL11:
  183:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c **** }
  169              		.loc 1 183 1 view .LVU26
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 7
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 7
 
 
  170 0004 101A     		subs	r0, r2, r0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
  215:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c **** #ifdef NULL_PTR_CHECK_SPD_POS_FBK
  216:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****   if ((MC_NULL == pHandle) || (MC_NULL == pMecSpeedUnit))
  217:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****   {
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 8
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 8
 
 
  218:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****     SpeedSensorReliability = false;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
  249:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****       /* Nothing to do */
  250:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****     }
  251:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 9
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 9
 
 
  252:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****     if (hAbsMecSpeedUnit < pHandle->hMinReliableMecSpeedUnit)
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
  262:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****     if (pHandle->hMecAccelUnitP < 0)
  247              		.loc 1 262 5 view .LVU56
  248              		.loc 1 262 16 is_stmt 0 view .LVU57
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 10
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 10
 
 
  249 0026 B0F91210 		ldrsh	r1, [r0, #18]
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
  285:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****         bSpeedErrorNumber++;
  276              		.loc 1 285 9 is_stmt 1 view .LVU71
  277              		.loc 1 285 26 is_stmt 0 view .LVU72
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 11
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 11
 
 
  278 0040 0132     		adds	r2, r2, #1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
  299              	.LVL26:
  300              	.L17:
  254:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****     }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 12
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 12
 
 
  301              		.loc 1 254 18 view .LVU82
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
  324:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****   *
  325:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****   * - The value equals:\n
  326:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****   * -- zero      when the average mechanical speed is equal zero,\n
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 13
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 13
 
 
  327:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****   * -- INT16_MAX when the average mechanical speed is equal to
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
  372              		.align	1
  373              		.p2align 2,,3
  374              		.weak	SPD_GetElToMecRatio
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 14
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 14
 
 
  375              		.syntax unified
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
  376:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****   *
  377:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****   * - Called only for monitoring through motorPilote.
  378:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c ****   */
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 15
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 15
 
 
  379:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c **** __weak void SPD_SetElToMecRatio(SpeednPosFdbk_Handle_t *pHandle, uint8_t bPP)
@@ -875,30 +875,30 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 1
  424              		.file 4 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_tim.h"
  425              		.file 5 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_dma.h"
  426              		.file 6 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h"
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s 			page 16
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 speed_pos_fdbk.c
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:20     .text.SPD_GetElAngle:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:27     .text.SPD_GetElAngle:00000000 SPD_GetElAngle
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:46     .text.SPD_GetMecAngle:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:53     .text.SPD_GetMecAngle:00000000 SPD_GetMecAngle
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:71     .text.SPD_GetAvrgMecSpeedUnit:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:78     .text.SPD_GetAvrgMecSpeedUnit:00000000 SPD_GetAvrgMecSpeedUnit
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:96     .text.SPD_GetElSpeedDpp:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:103    .text.SPD_GetElSpeedDpp:00000000 SPD_GetElSpeedDpp
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:121    .text.SPD_GetInstElSpeedDpp:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:128    .text.SPD_GetInstElSpeedDpp:00000000 SPD_GetInstElSpeedDpp
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:146    .text.SPD_Check:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:153    .text.SPD_Check:00000000 SPD_Check
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:180    .text.SPD_IsMecSpeedReliable:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:187    .text.SPD_IsMecSpeedReliable:00000000 SPD_IsMecSpeedReliable
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:333    .text.SPD_GetS16Speed:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:340    .text.SPD_GetS16Speed:00000000 SPD_GetS16Speed
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:372    .text.SPD_GetElToMecRatio:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:379    .text.SPD_GetElToMecRatio:00000000 SPD_GetElToMecRatio
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:397    .text.SPD_SetElToMecRatio:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cceQeH5x.s:404    .text.SPD_SetElToMecRatio:00000000 SPD_SetElToMecRatio
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:20     .text.SPD_GetElAngle:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:27     .text.SPD_GetElAngle:00000000 SPD_GetElAngle
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:46     .text.SPD_GetMecAngle:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:53     .text.SPD_GetMecAngle:00000000 SPD_GetMecAngle
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:71     .text.SPD_GetAvrgMecSpeedUnit:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:78     .text.SPD_GetAvrgMecSpeedUnit:00000000 SPD_GetAvrgMecSpeedUnit
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:96     .text.SPD_GetElSpeedDpp:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:103    .text.SPD_GetElSpeedDpp:00000000 SPD_GetElSpeedDpp
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:121    .text.SPD_GetInstElSpeedDpp:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:128    .text.SPD_GetInstElSpeedDpp:00000000 SPD_GetInstElSpeedDpp
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:146    .text.SPD_Check:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:153    .text.SPD_Check:00000000 SPD_Check
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:180    .text.SPD_IsMecSpeedReliable:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:187    .text.SPD_IsMecSpeedReliable:00000000 SPD_IsMecSpeedReliable
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:333    .text.SPD_GetS16Speed:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:340    .text.SPD_GetS16Speed:00000000 SPD_GetS16Speed
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:372    .text.SPD_GetElToMecRatio:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:379    .text.SPD_GetElToMecRatio:00000000 SPD_GetElToMecRatio
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:397    .text.SPD_SetElToMecRatio:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccqJjdkL.s:404    .text.SPD_SetElToMecRatio:00000000 SPD_SetElToMecRatio
 
 NO UNDEFINED SYMBOLS

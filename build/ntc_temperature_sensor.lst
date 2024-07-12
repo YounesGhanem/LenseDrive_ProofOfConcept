@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 1
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 1
   26:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c ****   * @{
   27:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c ****   */
   28:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 2
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s 			page 2
 
 
   29:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c **** /** @defgroup TemperatureSensor NTC Temperature Sensor
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 1
   77:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c ****   else
   78:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c ****   {
   79:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c **** #endif
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 3
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s 			page 3
 
 
   80:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c ****     if (pHandle->hAvTemp_d > pHandle->hOverTempThreshold)
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 1
   69 0018 7047     		bx	lr
   70              		.cfi_endproc
   71              	.LFE1088:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 4
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s 			page 4
 
 
   73 001a 00BF     		.section	.text.NTC_Clear,"ax",%progbits
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 1
   88              		@ link register save eliminated.
  137:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c **** #ifdef NULL_PTR_CHECK_NTC_TEMP_SENS
  138:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c ****   if (MC_NULL == pHandle)
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 5
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s 			page 5
 
 
  139:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c ****   {
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 1
  127 0008 4280     		strh	r2, [r0, #2]	@ movhi
  122:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c ****       pHandle->hAvTemp_d = pHandle->hExpectedTemp_d;
  128              		.loc 1 122 28 view .LVU26
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 6
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s 			page 6
 
 
  129 000a 0021     		movs	r1, #0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 1
  160              		.loc 1 159 1 is_stmt 0 view .LVU34
  161 0000 10B5     		push	{r4, lr}
  162              	.LCFI1:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 7
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s 			page 7
 
 
  163              		.cfi_def_cfa_offset 8
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 1
  184:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c ****         wtemp /= ((uint32_t)pHandle->hLowPassFilterBW);
  198              		.loc 1 184 15 is_stmt 0 view .LVU52
  199 001a B1FBF3F1 		udiv	r1, r1, r3
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 8
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s 			page 8
 
 
  200              	.LVL13:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 1
  235              	.LFE1091:
  237              		.section	.text.NTC_GetAvTemp_d,"ax",%progbits
  238              		.align	1
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 9
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s 			page 9
 
 
  239              		.p2align 2,,3
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 1
  224:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c ****   */
  225:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c **** __weak int16_t NTC_GetAvTemp_C(NTC_Handle_t *pHandle) //cstat !MISRAC2012-Rule-8.13
  226:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c **** {
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 10
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s 			page 10
 
 
  273              		.loc 1 226 1 is_stmt 1 view -0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 1
  305              	.LVL26:
  246:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c **** #else
  247:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c ****       wTemp = (wTemp / 65536) + (int32_t)pHandle->hT0;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 11
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s 			page 11
 
 
  248:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c **** #endif
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 1
  266:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c ****   *
  267:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c ****   * @param pHandle: Pointer on Handle structure of TemperatureSensor component.
  268:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c ****   *
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 12
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s 			page 12
 
 
  269:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c ****   * @retval Fault status : read internal fault state
@@ -693,24 +693,24 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 1
  359              		.file 5 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_dma.h"
  360              		.file 6 "Inc/mc_type.h"
  361              		.file 7 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/ntc_temperature_sensor.h"
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s 			page 13
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ntc_temperature_sensor.c
-C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s:20     .text.NTC_SetFaultState:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s:27     .text.NTC_SetFaultState:00000000 NTC_SetFaultState
-C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s:74     .text.NTC_Clear:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s:81     .text.NTC_Clear:00000000 NTC_Clear
-C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s:99     .text.NTC_Init:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s:106    .text.NTC_Init:00000000 NTC_Init
-C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s:144    .text.NTC_CalcAvTemp:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s:151    .text.NTC_CalcAvTemp:00000000 NTC_CalcAvTemp
-C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s:238    .text.NTC_GetAvTemp_d:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s:245    .text.NTC_GetAvTemp_d:00000000 NTC_GetAvTemp_d
-C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s:263    .text.NTC_GetAvTemp_C:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s:270    .text.NTC_GetAvTemp_C:00000000 NTC_GetAvTemp_C
-C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s:330    .text.NTC_CheckTemp:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cc3Vl6H8.s:337    .text.NTC_CheckTemp:00000000 NTC_CheckTemp
+C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s:20     .text.NTC_SetFaultState:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s:27     .text.NTC_SetFaultState:00000000 NTC_SetFaultState
+C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s:74     .text.NTC_Clear:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s:81     .text.NTC_Clear:00000000 NTC_Clear
+C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s:99     .text.NTC_Init:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s:106    .text.NTC_Init:00000000 NTC_Init
+C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s:144    .text.NTC_CalcAvTemp:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s:151    .text.NTC_CalcAvTemp:00000000 NTC_CalcAvTemp
+C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s:238    .text.NTC_GetAvTemp_d:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s:245    .text.NTC_GetAvTemp_d:00000000 NTC_GetAvTemp_d
+C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s:263    .text.NTC_GetAvTemp_C:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s:270    .text.NTC_GetAvTemp_C:00000000 NTC_GetAvTemp_C
+C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s:330    .text.NTC_CheckTemp:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccKa9ZZg.s:337    .text.NTC_CheckTemp:00000000 NTC_CheckTemp
 
 NO UNDEFINED SYMBOLS

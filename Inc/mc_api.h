@@ -60,6 +60,9 @@ void MC_ProgramTorqueRampMotor1(int16_t hFinalTorque, uint16_t hDurationms);
 /* Programs a Torque ramp for Motor 1 */
 void MC_ProgramTorqueRampMotor1_F(float_t FinalTorque, uint16_t hDurationms);
 
+/* Programs a target position for Motor 1 */
+void MC_ProgramPositionCommandMotor1(float_t fTargetPosition, float_t fDuration);
+
 /* Programs a current reference for Motor 1 */
 void MC_SetCurrentReferenceMotor1(qd_t Iqdref);
 
@@ -174,6 +177,21 @@ MCI_State_t  MC_GetSTMStateMotor1(void);
 
 /* returns the current power of Motor 1 in float_t format */
 float_t MC_GetAveragePowerMotor1_F(void);
+
+/* returns the current control position state of Motor 1 */
+PosCtrlStatus_t  MC_GetControlPositionStatusMotor1(void);
+
+/* returns the alignment state of Motor 1 */
+AlignStatus_t  MC_GetAlignmentStatusMotor1(void);
+
+/* returns the current position of Motor 1. */
+float_t MC_GetCurrentPosition1(void);
+
+/* returns the target position of Motor 1. */
+float_t MC_GetTargetPosition1(void);
+
+/* returns the total movement duration to reach the target position of Motor 1. */
+float_t MC_GetMoveDuration1(void);
 
 /* Call the Profiler command */
 uint8_t MC_ProfilerCommand (uint16_t rxLength, uint8_t *rxBuffer, int16_t txSyncFreeSpace, uint16_t *txLength, uint8_t *txBuffer);

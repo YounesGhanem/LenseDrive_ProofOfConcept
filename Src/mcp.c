@@ -339,6 +339,13 @@ void MCP_ReceivedPacket(MCP_Handle_t *pHandle)
         break;
       }
 
+      case CPULOAD_CLEAR:
+      {
+        MCI_Clear_PerfMeasure(pMCI,M1);
+        MCPResponse = MCP_CMD_OK;
+        break;
+      }
+
       case IQDREF_CLEAR:
       {
         MCI_Clear_Iqdref(pMCI);

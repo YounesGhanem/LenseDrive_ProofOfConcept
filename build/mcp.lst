@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
   26:Src/mcp.c     **** #include "mc_config.h"
   27:Src/mcp.c     **** #include "mcp_config.h"
   28:Src/mcp.c     **** #include "mc_api.h"
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 2
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 2
 
 
   29:Src/mcp.c     **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
   66:Src/mcp.c     ****     uint8_t * rxData = pHandle->rxBuffer;
   67:Src/mcp.c     ****     uint8_t * txData = pHandle->txBuffer;
   68:Src/mcp.c     ****     int16_t rxLength = pHandle->rxLength;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 3
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 3
 
 
   48              		.loc 1 68 13 view .LVU2
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
   73:Src/mcp.c     ****     uint8_t motorID;
   78              		.loc 1 73 5 view .LVU19
   74:Src/mcp.c     ****     uint8_t (*SetRegFcts[NBR_OF_MOTORS+1])(uint16_t, uint8_t, uint8_t*, uint16_t*, int16_t) = {&RI_
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 4
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 4
 
 
   79              		.loc 1 74 5 view .LVU20
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
  100              		.loc 1 83 7 view .LVU33
   84:Src/mcp.c     **** 
  101              		.loc 1 84 7 view .LVU34
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 5
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 5
 
 
   86:Src/mcp.c     ****       typeID = (uint8_t)*dataElementID & TYPE_MASK;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
   98:Src/mcp.c     ****         /* Prepare next data*/
  139              		.loc 1 98 24 view .LVU52
  140 0068 CDF800E0 		str	lr, [sp]
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 6
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 6
 
 
  141 006c 5BF808BC 		ldr	fp, [fp, #-8]
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
  116:Src/mcp.c     ****             if ((accessResult == MCP_ERROR_BAD_DATA_TYPE) || (accessResult == MCP_ERROR_BAD_RAW_FOR
  172              		.loc 1 116 13 is_stmt 1 view .LVU66
  111:Src/mcp.c     ****             txData = txData+1;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 7
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 7
 
 
  173              		.loc 1 111 21 is_stmt 0 view .LVU67
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
  200              		.loc 1 135 25 is_stmt 0 view .LVU79
  201 00a0 0020     		movs	r0, #0
  202 00a2 F881     		strh	r0, [r7, #14]	@ movhi
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 8
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 8
 
 
  136:Src/mcp.c     ****     }
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
  241              		.loc 1 140 5 is_stmt 1 view .LVU89
  144:Src/mcp.c     **** }
  242              		.loc 1 144 3 view .LVU90
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 9
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 9
 
 
  243              		.loc 1 145 1 is_stmt 0 view .LVU91
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
  149:Src/mcp.c     ****   *
  150:Src/mcp.c     ****   * The function called depends on the targeted motor and/or targeted register : RI_GetRegisterGlob
  151:Src/mcp.c     ****   *
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 10
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 10
 
 
  152:Src/mcp.c     ****   * @param  pHandle Handler of the current instance of the MCP component
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
  316              		.loc 1 179 23 view .LVU103
  317 000c C381     		strh	r3, [r0, #14]	@ movhi
  172:Src/mcp.c     ****     uint16_t rxLength = pHandle->rxLength;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 11
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 11
 
 
  318              		.loc 1 172 14 view .LVU104
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
  354              		.loc 1 184 7 view .LVU124
  185:Src/mcp.c     **** 
  186:Src/mcp.c     ****       regID = *dataElementID & REG_MASK;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 12
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 12
 
 
  355              		.loc 1 186 7 view .LVU125
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
  389              	.LVL33:
  199:Src/mcp.c     ****         if (retVal == MCP_CMD_OK )
  200:Src/mcp.c     ****         {
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 13
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 13
 
 
  201:Src/mcp.c     ****           /* Prepare next data */
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
  423              	.LVL37:
  424              	.L43:
  425              	.LCFI13:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 14
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 14
 
 
  426              		.cfi_restore_state
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
  220:Src/mcp.c     ****   *
  221:Src/mcp.c     ****   * @param  pHandle Handler of the current instance of the MCP component
  222:Src/mcp.c     ****   */
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 15
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 15
 
 
  223:Src/mcp.c     **** void MCP_ReceivedPacket(MCP_Handle_t *pHandle)
@@ -872,48 +872,47 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
  479              		.loc 1 240 5 view .LVU167
  224:Src/mcp.c     ****   const uint16_t *packetHeader;
  480              		.loc 1 224 1 is_stmt 0 view .LVU168
- 481 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+ 481 0000 70B5     		push	{r4, r5, r6, lr}
  482              	.LCFI14:
- 483              		.cfi_def_cfa_offset 20
- 484              		.cfi_offset 4, -20
- 485              		.cfi_offset 5, -16
- 486              		.cfi_offset 6, -12
- 487              		.cfi_offset 7, -8
- 488              		.cfi_offset 14, -4
- 489              		.loc 1 240 18 view .LVU169
- 490 0002 4568     		ldr	r5, [r0, #4]
- 491              	.LVL42:
+ 483              		.cfi_def_cfa_offset 16
+ 484              		.cfi_offset 4, -16
+ 485              		.cfi_offset 5, -12
+ 486              		.cfi_offset 6, -8
+ 487              		.cfi_offset 14, -4
+ 488              		.loc 1 240 18 view .LVU169
+ 489 0002 4568     		ldr	r5, [r0, #4]
+ 490              	.LVL42:
  241:Src/mcp.c     ****     command = (uint16_t)(*packetHeader & CMD_MASK);
- 492              		.loc 1 241 5 is_stmt 1 view .LVU170
- 493              		.loc 1 241 26 is_stmt 0 view .LVU171
- 494 0004 2B88     		ldrh	r3, [r5]
+ 491              		.loc 1 241 5 is_stmt 1 view .LVU170
+ 492              		.loc 1 241 26 is_stmt 0 view .LVU171
+ 493 0004 2B88     		ldrh	r3, [r5]
  242:Src/mcp.c     **** 
  243:Src/mcp.c     ****     if ((command & MCP_USER_CMD_MASK) == MCP_USER_CMD)
- 495              		.loc 1 243 8 view .LVU172
- 496 0006 03F47F42 		and	r2, r3, #65280
+ 494              		.loc 1 243 8 view .LVU172
+ 495 0006 03F47F42 		and	r2, r3, #65280
  241:Src/mcp.c     ****     command = (uint16_t)(*packetHeader & CMD_MASK);
- 497              		.loc 1 241 13 view .LVU173
- 498 000a 23F0070C 		bic	ip, r3, #7
- 499              		.loc 1 243 8 view .LVU174
- 500 000e B2F5807F 		cmp	r2, #256
+ 496              		.loc 1 241 13 view .LVU173
+ 497 000a 23F0070C 		bic	ip, r3, #7
+ 498              		.loc 1 243 8 view .LVU174
+ 499 000e B2F5807F 		cmp	r2, #256
  224:Src/mcp.c     ****   const uint16_t *packetHeader;
- 501              		.loc 1 224 1 view .LVU175
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 16
+ 500              		.loc 1 224 1 view .LVU175
+ 501 0012 82B0     		sub	sp, sp, #8
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 16
 
 
- 502 0012 83B0     		sub	sp, sp, #12
- 503              	.LCFI15:
- 504              		.cfi_def_cfa_offset 32
+ 502              	.LCFI15:
+ 503              		.cfi_def_cfa_offset 24
  224:Src/mcp.c     ****   const uint16_t *packetHeader;
- 505              		.loc 1 224 1 view .LVU176
- 506 0014 0446     		mov	r4, r0
+ 504              		.loc 1 224 1 view .LVU176
+ 505 0014 0446     		mov	r4, r0
  241:Src/mcp.c     ****     command = (uint16_t)(*packetHeader & CMD_MASK);
- 507              		.loc 1 241 13 view .LVU177
- 508 0016 1FFA8CFC 		uxth	ip, ip
- 509              	.LVL43:
- 510              		.loc 1 243 5 is_stmt 1 view .LVU178
- 511              		.loc 1 243 8 is_stmt 0 view .LVU179
- 512 001a 53D0     		beq	.L73
+ 506              		.loc 1 241 13 view .LVU177
+ 507 0016 1FFA8CFC 		uxth	ip, ip
+ 508              	.LVL43:
+ 509              		.loc 1 243 5 is_stmt 1 view .LVU178
+ 510              		.loc 1 243 8 is_stmt 0 view .LVU179
+ 511 001a 60D0     		beq	.L75
  244:Src/mcp.c     ****     {
  245:Src/mcp.c     ****       userCommand = ((uint8_t)(command & 0xF8U) >> 3U);
  246:Src/mcp.c     ****       command = MCP_USER_CMD;
@@ -922,169 +921,187 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
  249:Src/mcp.c     ****     {
  250:Src/mcp.c     ****       /* Nothing to do */
  251:Src/mcp.c     ****     }
- 513              		.loc 1 251 5 is_stmt 1 view .LVU180
+ 512              		.loc 1 251 5 is_stmt 1 view .LVU180
  252:Src/mcp.c     **** 
  253:Src/mcp.c     ****     motorID = (uint8_t)((*packetHeader - 1U) & MOTOR_MASK);
- 514              		.loc 1 253 5 view .LVU181
- 515              	.LVL44:
+ 513              		.loc 1 253 5 view .LVU181
+ 514              	.LVL44:
  254:Src/mcp.c     ****     MCI_Handle_t *pMCI = &Mci[motorID];
- 516              		.loc 1 254 5 view .LVU182
+ 515              		.loc 1 254 5 view .LVU182
  253:Src/mcp.c     ****     MCI_Handle_t *pMCI = &Mci[motorID];
- 517              		.loc 1 253 40 is_stmt 0 view .LVU183
- 518 001c 013B     		subs	r3, r3, #1
- 519              	.LVL45:
- 520              		.loc 1 254 19 view .LVU184
- 521 001e 03F00703 		and	r3, r3, #7
+ 516              		.loc 1 253 40 is_stmt 0 view .LVU183
+ 517 001c 013B     		subs	r3, r3, #1
+ 518              	.LVL45:
+ 519              		.loc 1 254 19 view .LVU184
+ 520 001e 6A4E     		ldr	r6, .L78
+ 521 0020 03F00703 		and	r3, r3, #7
  522              	.LVL46:
  523              		.loc 1 254 19 view .LVU185
- 524 0022 03EB8302 		add	r2, r3, r3, lsl #2
- 525 0026 5B4F     		ldr	r7, .L75
- 526 0028 03EB4203 		add	r3, r3, r2, lsl #1
+ 524 0024 03EB4303 		add	r3, r3, r3, lsl #1
  255:Src/mcp.c     **** 
  256:Src/mcp.c     ****     /* Removing MCP Header from RxBuffer */
  257:Src/mcp.c     ****     pHandle->rxLength = pHandle->rxLength - MCP_HEADER_SIZE;
  258:Src/mcp.c     ****     pHandle->rxBuffer = pHandle->rxBuffer + MCP_HEADER_SIZE;
- 527              		.loc 1 258 43 view .LVU186
- 528 002c 0235     		adds	r5, r5, #2
- 529              	.LVL47:
+ 525              		.loc 1 258 43 view .LVU186
+ 526 0028 0235     		adds	r5, r5, #2
+ 527              	.LVL47:
  254:Src/mcp.c     **** 
- 530              		.loc 1 254 19 view .LVU187
- 531 002e 07EB8307 		add	r7, r7, r3, lsl #2
- 532              	.LVL48:
+ 528              		.loc 1 254 19 view .LVU187
+ 529 002a 06EB0316 		add	r6, r6, r3, lsl #4
+ 530              	.LVL48:
  257:Src/mcp.c     ****     pHandle->rxBuffer = pHandle->rxBuffer + MCP_HEADER_SIZE;
- 533              		.loc 1 257 5 is_stmt 1 view .LVU188
+ 531              		.loc 1 257 5 is_stmt 1 view .LVU188
  259:Src/mcp.c     **** 
  260:Src/mcp.c     ****     /* Commands requiering payload response must be aware of space available for the payload */
  261:Src/mcp.c     ****     /* Last byte is reserved for MCP response*/
  262:Src/mcp.c     ****     txSyncFreeSpace = (int16_t)pHandle->pTransportLayer->txSyncMaxPayload - 1;
- 534              		.loc 1 262 56 is_stmt 0 view .LVU189
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 17
-
-
- 535 0032 2368     		ldr	r3, [r4]
+ 532              		.loc 1 262 56 is_stmt 0 view .LVU189
+ 533 002e 2368     		ldr	r3, [r4]
  258:Src/mcp.c     **** 
- 536              		.loc 1 258 23 view .LVU190
- 537 0034 4560     		str	r5, [r0, #4]
- 538              	.LVL49:
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 17
+
+
+ 534              		.loc 1 258 23 view .LVU190
+ 535 0030 4560     		str	r5, [r0, #4]
+ 536              	.LVL49:
  257:Src/mcp.c     ****     pHandle->rxBuffer = pHandle->rxBuffer + MCP_HEADER_SIZE;
- 539              		.loc 1 257 43 view .LVU191
- 540 0036 8089     		ldrh	r0, [r0, #12]
- 541              	.LVL50:
- 542              		.loc 1 262 75 view .LVU192
- 543 0038 9A89     		ldrh	r2, [r3, #12]
+ 537              		.loc 1 257 43 view .LVU191
+ 538 0032 8089     		ldrh	r0, [r0, #12]
+ 539              	.LVL50:
+ 540              		.loc 1 262 75 view .LVU192
+ 541 0034 9A89     		ldrh	r2, [r3, #12]
  257:Src/mcp.c     ****     pHandle->rxBuffer = pHandle->rxBuffer + MCP_HEADER_SIZE;
- 544              		.loc 1 257 43 view .LVU193
- 545 003a 0238     		subs	r0, r0, #2
- 546              		.loc 1 262 75 view .LVU194
- 547 003c 013A     		subs	r2, r2, #1
+ 542              		.loc 1 257 43 view .LVU193
+ 543 0036 0238     		subs	r0, r0, #2
+ 544              		.loc 1 262 75 view .LVU194
+ 545 0038 013A     		subs	r2, r2, #1
  257:Src/mcp.c     ****     pHandle->rxBuffer = pHandle->rxBuffer + MCP_HEADER_SIZE;
- 548              		.loc 1 257 43 view .LVU195
- 549 003e 80B2     		uxth	r0, r0
+ 546              		.loc 1 257 43 view .LVU195
+ 547 003a 80B2     		uxth	r0, r0
  263:Src/mcp.c     **** 
  264:Src/mcp.c     ****     /* Initialization of the tx length, command which send back data has to increment the txLength
  265:Src/mcp.c     ****      * (case of Read register) */
  266:Src/mcp.c     ****     pHandle->txLength = 0U;
- 550              		.loc 1 266 23 view .LVU196
- 551 0040 0026     		movs	r6, #0
+ 548              		.loc 1 266 23 view .LVU196
+ 549 003c 4FF0000E 		mov	lr, #0
  267:Src/mcp.c     **** 
  268:Src/mcp.c     ****     switch (command)
- 552              		.loc 1 268 5 view .LVU197
- 553 0042 BCF1380F 		cmp	ip, #56
+ 550              		.loc 1 268 5 view .LVU197
+ 551 0040 BCF1480F 		cmp	ip, #72
  262:Src/mcp.c     **** 
- 554              		.loc 1 262 75 view .LVU198
- 555 0046 91B2     		uxth	r1, r2
+ 552              		.loc 1 262 75 view .LVU198
+ 553 0044 91B2     		uxth	r1, r2
  257:Src/mcp.c     ****     pHandle->rxBuffer = pHandle->rxBuffer + MCP_HEADER_SIZE;
- 556              		.loc 1 257 23 view .LVU199
- 557 0048 A081     		strh	r0, [r4, #12]	@ movhi
- 558              	.LVL51:
+ 554              		.loc 1 257 23 view .LVU199
+ 555 0046 A081     		strh	r0, [r4, #12]	@ movhi
+ 556              	.LVL51:
  258:Src/mcp.c     **** 
- 559              		.loc 1 258 5 is_stmt 1 view .LVU200
+ 557              		.loc 1 258 5 is_stmt 1 view .LVU200
  262:Src/mcp.c     **** 
- 560              		.loc 1 262 5 view .LVU201
+ 558              		.loc 1 262 5 view .LVU201
  266:Src/mcp.c     **** 
- 561              		.loc 1 266 23 is_stmt 0 view .LVU202
- 562 004a E681     		strh	r6, [r4, #14]	@ movhi
+ 559              		.loc 1 266 23 is_stmt 0 view .LVU202
+ 560 0048 A4F80EE0 		strh	lr, [r4, #14]	@ movhi
  262:Src/mcp.c     **** 
- 563              		.loc 1 262 21 view .LVU203
- 564 004c 12B2     		sxth	r2, r2
- 565              	.LVL52:
+ 561              		.loc 1 262 21 view .LVU203
+ 562 004c 12B2     		sxth	r2, r2
+ 563              	.LVL52:
  266:Src/mcp.c     **** 
- 566              		.loc 1 266 5 is_stmt 1 view .LVU204
- 567              		.loc 1 268 5 view .LVU205
- 568 004e 2AD8     		bhi	.L50
- 569 0050 BCF1380F 		cmp	ip, #56
- 570 0054 1ED8     		bhi	.L66
- 571 0056 DFE80CF0 		tbb	[pc, ip]
- 572              	.L52:
- 573 005a 63       		.byte	(.L59-.L52)/2
- 574 005b 1D       		.byte	(.L66-.L52)/2
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 18
+ 564              		.loc 1 266 5 is_stmt 1 view .LVU204
+ 565              		.loc 1 268 5 view .LVU205
+ 566 004e 34D8     		bhi	.L50
+ 567 0050 BCF1480F 		cmp	ip, #72
+ 568 0054 26D8     		bhi	.L67
+ 569 0056 DFE80CF0 		tbb	[pc, ip]
+ 570              	.L52:
+ 571 005a 83       		.byte	(.L61-.L52)/2
+ 572 005b 25       		.byte	(.L67-.L52)/2
+ 573 005c 25       		.byte	(.L67-.L52)/2
+ 574 005d 25       		.byte	(.L67-.L52)/2
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 18
 
 
- 575 005c 1D       		.byte	(.L66-.L52)/2
- 576 005d 1D       		.byte	(.L66-.L52)/2
- 577 005e 1D       		.byte	(.L66-.L52)/2
- 578 005f 1D       		.byte	(.L66-.L52)/2
- 579 0060 1D       		.byte	(.L66-.L52)/2
- 580 0061 1D       		.byte	(.L66-.L52)/2
- 581 0062 6B       		.byte	(.L58-.L52)/2
- 582 0063 1D       		.byte	(.L66-.L52)/2
- 583 0064 1D       		.byte	(.L66-.L52)/2
- 584 0065 1D       		.byte	(.L66-.L52)/2
- 585 0066 1D       		.byte	(.L66-.L52)/2
- 586 0067 1D       		.byte	(.L66-.L52)/2
- 587 0068 1D       		.byte	(.L66-.L52)/2
- 588 0069 1D       		.byte	(.L66-.L52)/2
- 589 006a 70       		.byte	(.L57-.L52)/2
- 590 006b 1D       		.byte	(.L66-.L52)/2
- 591 006c 1D       		.byte	(.L66-.L52)/2
- 592 006d 1D       		.byte	(.L66-.L52)/2
- 593 006e 1D       		.byte	(.L66-.L52)/2
- 594 006f 1D       		.byte	(.L66-.L52)/2
- 595 0070 1D       		.byte	(.L66-.L52)/2
- 596 0071 1D       		.byte	(.L66-.L52)/2
- 597 0072 75       		.byte	(.L56-.L52)/2
- 598 0073 1D       		.byte	(.L66-.L52)/2
- 599 0074 1D       		.byte	(.L66-.L52)/2
- 600 0075 1D       		.byte	(.L66-.L52)/2
- 601 0076 1D       		.byte	(.L66-.L52)/2
- 602 0077 1D       		.byte	(.L66-.L52)/2
- 603 0078 1D       		.byte	(.L66-.L52)/2
- 604 0079 1D       		.byte	(.L66-.L52)/2
- 605 007a 4C       		.byte	(.L64-.L52)/2
- 606 007b 1D       		.byte	(.L66-.L52)/2
- 607 007c 1D       		.byte	(.L66-.L52)/2
- 608 007d 1D       		.byte	(.L66-.L52)/2
- 609 007e 1D       		.byte	(.L66-.L52)/2
- 610 007f 1D       		.byte	(.L66-.L52)/2
- 611 0080 1D       		.byte	(.L66-.L52)/2
- 612 0081 1D       		.byte	(.L66-.L52)/2
- 613 0082 52       		.byte	(.L54-.L52)/2
- 614 0083 1D       		.byte	(.L66-.L52)/2
- 615 0084 1D       		.byte	(.L66-.L52)/2
- 616 0085 1D       		.byte	(.L66-.L52)/2
- 617 0086 1D       		.byte	(.L66-.L52)/2
- 618 0087 1D       		.byte	(.L66-.L52)/2
- 619 0088 1D       		.byte	(.L66-.L52)/2
- 620 0089 1D       		.byte	(.L66-.L52)/2
- 621 008a 47       		.byte	(.L53-.L52)/2
- 622 008b 1D       		.byte	(.L66-.L52)/2
- 623 008c 1D       		.byte	(.L66-.L52)/2
- 624 008d 1D       		.byte	(.L66-.L52)/2
- 625 008e 1D       		.byte	(.L66-.L52)/2
- 626 008f 1D       		.byte	(.L66-.L52)/2
- 627 0090 1D       		.byte	(.L66-.L52)/2
- 628 0091 1D       		.byte	(.L66-.L52)/2
- 629 0092 5D       		.byte	(.L51-.L52)/2
- 630 0093 00       		.p2align 1
- 631              	.L66:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 19
+ 575 005e 25       		.byte	(.L67-.L52)/2
+ 576 005f 25       		.byte	(.L67-.L52)/2
+ 577 0060 25       		.byte	(.L67-.L52)/2
+ 578 0061 25       		.byte	(.L67-.L52)/2
+ 579 0062 8C       		.byte	(.L60-.L52)/2
+ 580 0063 25       		.byte	(.L67-.L52)/2
+ 581 0064 25       		.byte	(.L67-.L52)/2
+ 582 0065 25       		.byte	(.L67-.L52)/2
+ 583 0066 25       		.byte	(.L67-.L52)/2
+ 584 0067 25       		.byte	(.L67-.L52)/2
+ 585 0068 25       		.byte	(.L67-.L52)/2
+ 586 0069 25       		.byte	(.L67-.L52)/2
+ 587 006a 92       		.byte	(.L59-.L52)/2
+ 588 006b 25       		.byte	(.L67-.L52)/2
+ 589 006c 25       		.byte	(.L67-.L52)/2
+ 590 006d 25       		.byte	(.L67-.L52)/2
+ 591 006e 25       		.byte	(.L67-.L52)/2
+ 592 006f 25       		.byte	(.L67-.L52)/2
+ 593 0070 25       		.byte	(.L67-.L52)/2
+ 594 0071 25       		.byte	(.L67-.L52)/2
+ 595 0072 98       		.byte	(.L58-.L52)/2
+ 596 0073 25       		.byte	(.L67-.L52)/2
+ 597 0074 25       		.byte	(.L67-.L52)/2
+ 598 0075 25       		.byte	(.L67-.L52)/2
+ 599 0076 25       		.byte	(.L67-.L52)/2
+ 600 0077 25       		.byte	(.L67-.L52)/2
+ 601 0078 25       		.byte	(.L67-.L52)/2
+ 602 0079 25       		.byte	(.L67-.L52)/2
+ 603 007a 5A       		.byte	(.L65-.L52)/2
+ 604 007b 25       		.byte	(.L67-.L52)/2
+ 605 007c 25       		.byte	(.L67-.L52)/2
+ 606 007d 25       		.byte	(.L67-.L52)/2
+ 607 007e 25       		.byte	(.L67-.L52)/2
+ 608 007f 25       		.byte	(.L67-.L52)/2
+ 609 0080 25       		.byte	(.L67-.L52)/2
+ 610 0081 25       		.byte	(.L67-.L52)/2
+ 611 0082 61       		.byte	(.L56-.L52)/2
+ 612 0083 25       		.byte	(.L67-.L52)/2
+ 613 0084 25       		.byte	(.L67-.L52)/2
+ 614 0085 25       		.byte	(.L67-.L52)/2
+ 615 0086 25       		.byte	(.L67-.L52)/2
+ 616 0087 25       		.byte	(.L67-.L52)/2
+ 617 0088 25       		.byte	(.L67-.L52)/2
+ 618 0089 25       		.byte	(.L67-.L52)/2
+ 619 008a 55       		.byte	(.L55-.L52)/2
+ 620 008b 25       		.byte	(.L67-.L52)/2
+ 621 008c 25       		.byte	(.L67-.L52)/2
+ 622 008d 25       		.byte	(.L67-.L52)/2
+ 623 008e 25       		.byte	(.L67-.L52)/2
+ 624 008f 25       		.byte	(.L67-.L52)/2
+ 625 0090 25       		.byte	(.L67-.L52)/2
+ 626 0091 25       		.byte	(.L67-.L52)/2
+ 627 0092 6D       		.byte	(.L54-.L52)/2
+ 628 0093 25       		.byte	(.L67-.L52)/2
+ 629 0094 25       		.byte	(.L67-.L52)/2
+ 630 0095 25       		.byte	(.L67-.L52)/2
+ 631 0096 25       		.byte	(.L67-.L52)/2
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 19
 
 
- 632 0094 0023     		movs	r3, #0
- 633 0096 0220     		movs	r0, #2
- 634              	.LVL53:
- 635              	.L49:
+ 632 0097 25       		.byte	(.L67-.L52)/2
+ 633 0098 25       		.byte	(.L67-.L52)/2
+ 634 0099 25       		.byte	(.L67-.L52)/2
+ 635 009a 74       		.byte	(.L53-.L52)/2
+ 636 009b 25       		.byte	(.L67-.L52)/2
+ 637 009c 25       		.byte	(.L67-.L52)/2
+ 638 009d 25       		.byte	(.L67-.L52)/2
+ 639 009e 25       		.byte	(.L67-.L52)/2
+ 640 009f 25       		.byte	(.L67-.L52)/2
+ 641 00a0 25       		.byte	(.L67-.L52)/2
+ 642 00a1 25       		.byte	(.L67-.L52)/2
+ 643 00a2 7C       		.byte	(.L51-.L52)/2
+ 644 00a3 00       		.p2align 1
+ 645              	.L67:
+ 646 00a4 4FF0000C 		mov	ip, #0
+ 647              	.LVL53:
+ 648              	.L73:
+ 649              		.loc 1 268 5 is_stmt 0 view .LVU206
+ 650 00a8 0220     		movs	r0, #2
+ 651              	.LVL54:
+ 652              	.L49:
  269:Src/mcp.c     ****     {
  270:Src/mcp.c     ****       case GET_MCP_VERSION:
  271:Src/mcp.c     ****       {
@@ -1121,6 +1138,9 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
  302:Src/mcp.c     ****       }
  303:Src/mcp.c     **** 
  304:Src/mcp.c     ****       case STOP_RAMP:
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 20
+
+
  305:Src/mcp.c     ****       {
  306:Src/mcp.c     ****         if (RUN == MCI_GetSTMState(pMCI))
  307:Src/mcp.c     ****         {
@@ -1138,9 +1158,6 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
  319:Src/mcp.c     ****       {
  320:Src/mcp.c     ****         /* Queries the STM and a command start or stop depending on the state */
  321:Src/mcp.c     ****         if (IDLE == MCI_GetSTMState(pMCI))
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 20
-
-
  322:Src/mcp.c     ****         {
  323:Src/mcp.c     **** 
  324:Src/mcp.c     ****           MCPResponse = (MCI_StartWithPolarizationMotor(pMCI) == true) ? MCP_CMD_OK : MCP_CMD_NOK;
@@ -1161,578 +1178,611 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 1
  339:Src/mcp.c     ****         break;
  340:Src/mcp.c     ****       }
  341:Src/mcp.c     **** 
- 342:Src/mcp.c     ****       case IQDREF_CLEAR:
+ 342:Src/mcp.c     ****       case CPULOAD_CLEAR:
  343:Src/mcp.c     ****       {
- 344:Src/mcp.c     ****         MCI_Clear_Iqdref(pMCI);
+ 344:Src/mcp.c     ****         MCI_Clear_PerfMeasure(pMCI,M1);
  345:Src/mcp.c     ****         MCPResponse = MCP_CMD_OK;
  346:Src/mcp.c     ****         break;
  347:Src/mcp.c     ****       }
  348:Src/mcp.c     **** 
- 349:Src/mcp.c     ****       case PFC_ENABLE:
- 350:Src/mcp.c     ****       case PFC_DISABLE:
- 351:Src/mcp.c     ****       case PFC_FAULT_ACK:
- 352:Src/mcp.c     ****       {
- 353:Src/mcp.c     ****         MCPResponse = MCP_CMD_UNKNOWN;
- 354:Src/mcp.c     ****         break;
- 355:Src/mcp.c     ****       }
- 356:Src/mcp.c     **** 
- 357:Src/mcp.c     ****       case PROFILER_CMD:
- 358:Src/mcp.c     ****       {
- 359:Src/mcp.c     ****         MCPResponse = MC_ProfilerCommand(pHandle->rxLength, pHandle->rxBuffer, txSyncFreeSpace, &pH
- 360:Src/mcp.c     ****                                          pHandle->txBuffer);
+ 349:Src/mcp.c     ****       case IQDREF_CLEAR:
+ 350:Src/mcp.c     ****       {
+ 351:Src/mcp.c     ****         MCI_Clear_Iqdref(pMCI);
+ 352:Src/mcp.c     ****         MCPResponse = MCP_CMD_OK;
+ 353:Src/mcp.c     ****         break;
+ 354:Src/mcp.c     ****       }
+ 355:Src/mcp.c     **** 
+ 356:Src/mcp.c     ****       case PFC_ENABLE:
+ 357:Src/mcp.c     ****       case PFC_DISABLE:
+ 358:Src/mcp.c     ****       case PFC_FAULT_ACK:
+ 359:Src/mcp.c     ****       {
+ 360:Src/mcp.c     ****         MCPResponse = MCP_CMD_UNKNOWN;
  361:Src/mcp.c     ****         break;
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 21
+
+
  362:Src/mcp.c     ****       }
  363:Src/mcp.c     **** 
- 364:Src/mcp.c     ****       case MCP_USER_CMD:
+ 364:Src/mcp.c     ****       case PROFILER_CMD:
  365:Src/mcp.c     ****       {
- 366:Src/mcp.c     ****         if ((userCommand < MCP_USER_CALLBACK_MAX) && (MCP_UserCallBack[userCommand] != NULL))
- 367:Src/mcp.c     ****         {
- 368:Src/mcp.c     ****           MCPResponse = MCP_UserCallBack[userCommand](pHandle->rxLength, pHandle->rxBuffer, txSyncF
- 369:Src/mcp.c     ****                                                       &pHandle->txLength, pHandle->txBuffer);
- 370:Src/mcp.c     ****         }
- 371:Src/mcp.c     ****         else
- 372:Src/mcp.c     ****         {
- 373:Src/mcp.c     ****           MCPResponse = MCP_ERROR_CALLBACK_NOT_REGISTRED;
- 374:Src/mcp.c     ****         }
- 375:Src/mcp.c     ****         break;
- 376:Src/mcp.c     ****       }
- 377:Src/mcp.c     **** 
- 378:Src/mcp.c     ****       default :
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 21
-
-
- 379:Src/mcp.c     ****       {
- 380:Src/mcp.c     ****         MCPResponse = MCP_CMD_UNKNOWN;
- 381:Src/mcp.c     ****         break;
- 382:Src/mcp.c     ****       }
- 383:Src/mcp.c     ****     }
- 384:Src/mcp.c     ****     pHandle->txBuffer[pHandle->txLength] = MCPResponse;
- 636              		.loc 1 384 5 view .LVU206
- 637              		.loc 1 384 42 is_stmt 0 view .LVU207
- 638 0098 A268     		ldr	r2, [r4, #8]
- 639 009a D054     		strb	r0, [r2, r3]
- 385:Src/mcp.c     ****     pHandle->txLength++;
- 640              		.loc 1 385 5 is_stmt 1 view .LVU208
- 641              		.loc 1 385 22 is_stmt 0 view .LVU209
- 642 009c E389     		ldrh	r3, [r4, #14]
- 643 009e 0133     		adds	r3, r3, #1
- 644 00a0 E381     		strh	r3, [r4, #14]	@ movhi
- 386:Src/mcp.c     **** #ifdef NULL_PTR_CHECK_MCP
- 387:Src/mcp.c     ****   }
- 388:Src/mcp.c     **** #endif
- 389:Src/mcp.c     **** }
- 645              		.loc 1 389 1 view .LVU210
- 646 00a2 03B0     		add	sp, sp, #12
- 647              	.LCFI16:
- 648              		.cfi_remember_state
- 649              		.cfi_def_cfa_offset 20
- 650              		@ sp needed
- 651 00a4 F0BD     		pop	{r4, r5, r6, r7, pc}
- 652              	.LVL54:
- 653              	.L50:
- 654              	.LCFI17:
- 655              		.cfi_restore_state
+ 366:Src/mcp.c     ****         MCPResponse = MC_ProfilerCommand(pHandle->rxLength, pHandle->rxBuffer, txSyncFreeSpace, &pH
+ 367:Src/mcp.c     ****                                          pHandle->txBuffer);
+ 368:Src/mcp.c     ****         break;
+ 369:Src/mcp.c     ****       }
+ 370:Src/mcp.c     **** 
+ 371:Src/mcp.c     ****       case MCP_USER_CMD:
+ 372:Src/mcp.c     ****       {
+ 373:Src/mcp.c     ****         if ((userCommand < MCP_USER_CALLBACK_MAX) && (MCP_UserCallBack[userCommand] != NULL))
+ 374:Src/mcp.c     ****         {
+ 375:Src/mcp.c     ****           MCPResponse = MCP_UserCallBack[userCommand](pHandle->rxLength, pHandle->rxBuffer, txSyncF
+ 376:Src/mcp.c     ****                                                       &pHandle->txLength, pHandle->txBuffer);
+ 377:Src/mcp.c     ****         }
+ 378:Src/mcp.c     ****         else
+ 379:Src/mcp.c     ****         {
+ 380:Src/mcp.c     ****           MCPResponse = MCP_ERROR_CALLBACK_NOT_REGISTRED;
+ 381:Src/mcp.c     ****         }
+ 382:Src/mcp.c     ****         break;
+ 383:Src/mcp.c     ****       }
+ 384:Src/mcp.c     **** 
+ 385:Src/mcp.c     ****       default :
+ 386:Src/mcp.c     ****       {
+ 387:Src/mcp.c     ****         MCPResponse = MCP_CMD_UNKNOWN;
+ 388:Src/mcp.c     ****         break;
+ 389:Src/mcp.c     ****       }
+ 390:Src/mcp.c     ****     }
+ 391:Src/mcp.c     ****     pHandle->txBuffer[pHandle->txLength] = MCPResponse;
+ 653              		.loc 1 391 5 is_stmt 1 view .LVU207
+ 654              		.loc 1 391 42 is_stmt 0 view .LVU208
+ 655 00aa A368     		ldr	r3, [r4, #8]
+ 656 00ac 03F80C00 		strb	r0, [r3, ip]
+ 392:Src/mcp.c     ****     pHandle->txLength++;
+ 657              		.loc 1 392 5 is_stmt 1 view .LVU209
+ 658              		.loc 1 392 22 is_stmt 0 view .LVU210
+ 659 00b0 E389     		ldrh	r3, [r4, #14]
+ 660 00b2 0133     		adds	r3, r3, #1
+ 661 00b4 E381     		strh	r3, [r4, #14]	@ movhi
+ 393:Src/mcp.c     **** #ifdef NULL_PTR_CHECK_MCP
+ 394:Src/mcp.c     ****   }
+ 395:Src/mcp.c     **** #endif
+ 396:Src/mcp.c     **** }
+ 662              		.loc 1 396 1 view .LVU211
+ 663 00b6 02B0     		add	sp, sp, #8
+ 664              	.LCFI16:
+ 665              		.cfi_remember_state
+ 666              		.cfi_def_cfa_offset 16
+ 667              		@ sp needed
+ 668 00b8 70BD     		pop	{r4, r5, r6, pc}
+ 669              	.LVL55:
+ 670              	.L50:
+ 671              	.LCFI17:
+ 672              		.cfi_restore_state
  268:Src/mcp.c     ****     {
- 656              		.loc 1 268 5 view .LVU211
- 657 00a6 BCF1680F 		cmp	ip, #104
- 658 00aa 5FD0     		beq	.L60
- 659 00ac BCF5807F 		cmp	ip, #256
- 660 00b0 6DD0     		beq	.L67
- 661 00b2 BCF1480F 		cmp	ip, #72
- 662 00b6 EDD1     		bne	.L66
- 344:Src/mcp.c     ****         MCPResponse = MCP_CMD_OK;
- 663              		.loc 1 344 9 is_stmt 1 view .LVU212
- 664 00b8 3846     		mov	r0, r7
- 665 00ba FFF7FEFF 		bl	MCI_Clear_Iqdref
- 666              	.LVL55:
- 345:Src/mcp.c     ****         break;
- 667              		.loc 1 345 9 view .LVU213
- 346:Src/mcp.c     ****       }
- 668              		.loc 1 346 9 view .LVU214
- 384:Src/mcp.c     ****     pHandle->txLength++;
- 669              		.loc 1 384 30 is_stmt 0 view .LVU215
- 670 00be E389     		ldrh	r3, [r4, #14]
- 345:Src/mcp.c     ****         break;
- 671              		.loc 1 345 21 view .LVU216
- 672 00c0 3046     		mov	r0, r6
- 346:Src/mcp.c     ****       }
- 673              		.loc 1 346 9 view .LVU217
- 674 00c2 E9E7     		b	.L49
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 22
+ 673              		.loc 1 268 5 view .LVU212
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 22
 
 
- 675              	.LVL56:
- 676              	.L73:
+ 674 00ba BCF1680F 		cmp	ip, #104
+ 675 00be 09D1     		bne	.L76
+ 366:Src/mcp.c     ****                                          pHandle->txBuffer);
+ 676              		.loc 1 366 9 is_stmt 1 view .LVU213
+ 366:Src/mcp.c     ****                                          pHandle->txBuffer);
+ 677              		.loc 1 366 23 is_stmt 0 view .LVU214
+ 678 00c0 A368     		ldr	r3, [r4, #8]
+ 679 00c2 0093     		str	r3, [sp]
+ 680 00c4 2946     		mov	r1, r5
+ 681 00c6 04F10E03 		add	r3, r4, #14
+ 682 00ca FFF7FEFF 		bl	MC_ProfilerCommand
+ 683              	.LVL56:
+ 391:Src/mcp.c     ****     pHandle->txLength++;
+ 684              		.loc 1 391 30 view .LVU215
+ 685 00ce B4F80EC0 		ldrh	ip, [r4, #14]
+ 686              	.LVL57:
+ 368:Src/mcp.c     ****       }
+ 687              		.loc 1 368 9 is_stmt 1 view .LVU216
+ 688 00d2 EAE7     		b	.L49
+ 689              	.LVL58:
+ 690              	.L76:
+ 268:Src/mcp.c     ****     {
+ 691              		.loc 1 268 5 is_stmt 0 view .LVU217
+ 692 00d4 BCF5807F 		cmp	ip, #256
+ 693 00d8 F446     		mov	ip, lr
+ 694              	.LVL59:
+ 268:Src/mcp.c     ****     {
+ 695              		.loc 1 268 5 view .LVU218
+ 696 00da E5D1     		bne	.L73
+ 697 00dc 5DE0     		b	.L63
+ 698              	.LVL60:
+ 699              	.L75:
  245:Src/mcp.c     ****       command = MCP_USER_CMD;
- 677              		.loc 1 245 7 is_stmt 1 view .LVU218
+ 700              		.loc 1 245 7 is_stmt 1 view .LVU219
  257:Src/mcp.c     ****     pHandle->rxBuffer = pHandle->rxBuffer + MCP_HEADER_SIZE;
- 678              		.loc 1 257 43 is_stmt 0 view .LVU219
- 679 00c4 8089     		ldrh	r0, [r0, #12]
- 680              	.LVL57:
+ 701              		.loc 1 257 43 is_stmt 0 view .LVU220
+ 702 00de 8089     		ldrh	r0, [r0, #12]
+ 703              	.LVL61:
  262:Src/mcp.c     **** 
- 681              		.loc 1 262 56 view .LVU220
- 682 00c6 2368     		ldr	r3, [r4]
+ 704              		.loc 1 262 56 view .LVU221
+ 705 00e0 2368     		ldr	r3, [r4]
  257:Src/mcp.c     ****     pHandle->rxBuffer = pHandle->rxBuffer + MCP_HEADER_SIZE;
- 683              		.loc 1 257 43 view .LVU221
- 684 00c8 0238     		subs	r0, r0, #2
+ 706              		.loc 1 257 43 view .LVU222
+ 707 00e2 0238     		subs	r0, r0, #2
  245:Src/mcp.c     ****       command = MCP_USER_CMD;
- 685              		.loc 1 245 19 view .LVU222
- 686 00ca CCF3C40C 		ubfx	ip, ip, #3, #5
- 687              	.LVL58:
+ 708              		.loc 1 245 19 view .LVU223
+ 709 00e4 CCF3C40C 		ubfx	ip, ip, #3, #5
+ 710              	.LVL62:
  246:Src/mcp.c     ****     }
- 688              		.loc 1 246 7 is_stmt 1 view .LVU223
+ 711              		.loc 1 246 7 is_stmt 1 view .LVU224
  251:Src/mcp.c     **** 
- 689              		.loc 1 251 5 view .LVU224
+ 712              		.loc 1 251 5 view .LVU225
  253:Src/mcp.c     ****     MCI_Handle_t *pMCI = &Mci[motorID];
- 690              		.loc 1 253 5 view .LVU225
+ 713              		.loc 1 253 5 view .LVU226
  254:Src/mcp.c     **** 
- 691              		.loc 1 254 5 view .LVU226
+ 714              		.loc 1 254 5 view .LVU227
  257:Src/mcp.c     ****     pHandle->rxBuffer = pHandle->rxBuffer + MCP_HEADER_SIZE;
- 692              		.loc 1 257 5 view .LVU227
- 262:Src/mcp.c     **** 
- 693              		.loc 1 262 56 is_stmt 0 view .LVU228
- 694 00ce 9A89     		ldrh	r2, [r3, #12]
- 257:Src/mcp.c     ****     pHandle->rxBuffer = pHandle->rxBuffer + MCP_HEADER_SIZE;
- 695              		.loc 1 257 43 view .LVU229
- 696 00d0 80B2     		uxth	r0, r0
- 258:Src/mcp.c     **** 
- 697              		.loc 1 258 43 view .LVU230
- 698 00d2 0235     		adds	r5, r5, #2
- 699              	.LVL59:
- 266:Src/mcp.c     **** 
- 700              		.loc 1 266 23 view .LVU231
- 701 00d4 0023     		movs	r3, #0
- 366:Src/mcp.c     ****         {
- 702              		.loc 1 366 12 view .LVU232
- 703 00d6 BCF1010F 		cmp	ip, #1
- 257:Src/mcp.c     ****     pHandle->rxBuffer = pHandle->rxBuffer + MCP_HEADER_SIZE;
- 704              		.loc 1 257 23 view .LVU233
- 705 00da A081     		strh	r0, [r4, #12]	@ movhi
- 706              	.LVL60:
- 258:Src/mcp.c     **** 
- 707              		.loc 1 258 5 is_stmt 1 view .LVU234
- 258:Src/mcp.c     **** 
- 708              		.loc 1 258 23 is_stmt 0 view .LVU235
- 709 00dc 6560     		str	r5, [r4, #4]
- 710              	.LVL61:
- 262:Src/mcp.c     **** 
- 711              		.loc 1 262 5 is_stmt 1 view .LVU236
- 266:Src/mcp.c     **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 23
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 23
 
 
- 712              		.loc 1 266 5 view .LVU237
+ 715              		.loc 1 257 5 view .LVU228
+ 262:Src/mcp.c     **** 
+ 716              		.loc 1 262 56 is_stmt 0 view .LVU229
+ 717 00e8 9A89     		ldrh	r2, [r3, #12]
+ 257:Src/mcp.c     ****     pHandle->rxBuffer = pHandle->rxBuffer + MCP_HEADER_SIZE;
+ 718              		.loc 1 257 43 view .LVU230
+ 719 00ea 80B2     		uxth	r0, r0
+ 258:Src/mcp.c     **** 
+ 720              		.loc 1 258 43 view .LVU231
+ 721 00ec 0235     		adds	r5, r5, #2
+ 722              	.LVL63:
  266:Src/mcp.c     **** 
- 713              		.loc 1 266 23 is_stmt 0 view .LVU238
- 714 00de E381     		strh	r3, [r4, #14]	@ movhi
- 268:Src/mcp.c     ****     {
- 715              		.loc 1 268 5 is_stmt 1 view .LVU239
- 716              	.LVL62:
- 366:Src/mcp.c     ****         {
- 717              		.loc 1 366 9 view .LVU240
- 366:Src/mcp.c     ****         {
- 718              		.loc 1 366 12 is_stmt 0 view .LVU241
- 719 00e0 35D9     		bls	.L48
- 720              	.LVL63:
- 721              	.L65:
- 314:Src/mcp.c     ****         break;
- 722              		.loc 1 314 21 view .LVU242
- 723 00e2 0023     		movs	r3, #0
- 373:Src/mcp.c     ****         }
- 724              		.loc 1 373 23 view .LVU243
- 725 00e4 0D20     		movs	r0, #13
- 726 00e6 D7E7     		b	.L49
- 727              	.LVL64:
- 728              	.L53:
- 321:Src/mcp.c     ****         {
- 729              		.loc 1 321 9 is_stmt 1 view .LVU244
- 321:Src/mcp.c     ****         {
- 730              		.loc 1 321 21 is_stmt 0 view .LVU245
- 731 00e8 3846     		mov	r0, r7
- 732 00ea FFF7FEFF 		bl	MCI_GetSTMState
+ 723              		.loc 1 266 23 view .LVU232
+ 724 00ee 0023     		movs	r3, #0
+ 373:Src/mcp.c     ****         {
+ 725              		.loc 1 373 12 view .LVU233
+ 726 00f0 BCF1010F 		cmp	ip, #1
+ 257:Src/mcp.c     ****     pHandle->rxBuffer = pHandle->rxBuffer + MCP_HEADER_SIZE;
+ 727              		.loc 1 257 23 view .LVU234
+ 728 00f4 A081     		strh	r0, [r4, #12]	@ movhi
+ 729              	.LVL64:
+ 258:Src/mcp.c     **** 
+ 730              		.loc 1 258 5 is_stmt 1 view .LVU235
+ 258:Src/mcp.c     **** 
+ 731              		.loc 1 258 23 is_stmt 0 view .LVU236
+ 732 00f6 6560     		str	r5, [r4, #4]
  733              	.LVL65:
- 321:Src/mcp.c     ****         {
- 734              		.loc 1 321 12 view .LVU246
- 735 00ee 0028     		cmp	r0, #0
- 736 00f0 45D0     		beq	.L74
- 737              	.L64:
- 329:Src/mcp.c     ****           MCPResponse = MCP_CMD_OK;
- 738              		.loc 1 329 11 is_stmt 1 view .LVU247
- 329:Src/mcp.c     ****           MCPResponse = MCP_CMD_OK;
- 739              		.loc 1 329 17 is_stmt 0 view .LVU248
- 740 00f2 3846     		mov	r0, r7
- 741 00f4 FFF7FEFF 		bl	MCI_StopMotor
- 742              	.LVL66:
- 743              	.L72:
- 330:Src/mcp.c     ****         }
- 744              		.loc 1 330 11 is_stmt 1 view .LVU249
- 384:Src/mcp.c     ****     pHandle->txLength++;
- 745              		.loc 1 384 30 is_stmt 0 view .LVU250
- 746 00f8 E389     		ldrh	r3, [r4, #14]
- 330:Src/mcp.c     ****         }
- 747              		.loc 1 330 23 view .LVU251
- 748 00fa 0020     		movs	r0, #0
- 749 00fc CCE7     		b	.L49
- 750              	.LVL67:
- 751              	.L54:
- 306:Src/mcp.c     ****         {
- 752              		.loc 1 306 9 is_stmt 1 view .LVU252
- 306:Src/mcp.c     ****         {
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 24
-
-
- 753              		.loc 1 306 20 is_stmt 0 view .LVU253
- 754 00fe 3846     		mov	r0, r7
- 755 0100 FFF7FEFF 		bl	MCI_GetSTMState
- 756              	.LVL68:
- 306:Src/mcp.c     ****         {
- 757              		.loc 1 306 12 view .LVU254
- 758 0104 0628     		cmp	r0, #6
- 759 0106 F7D1     		bne	.L72
- 308:Src/mcp.c     ****         }
- 760              		.loc 1 308 11 is_stmt 1 view .LVU255
- 761 0108 3846     		mov	r0, r7
- 762 010a FFF7FEFF 		bl	MCI_StopRamp
- 763              	.LVL69:
- 384:Src/mcp.c     ****     pHandle->txLength++;
- 764              		.loc 1 384 30 is_stmt 0 view .LVU256
- 765 010e E389     		ldrh	r3, [r4, #14]
+ 262:Src/mcp.c     **** 
+ 734              		.loc 1 262 5 is_stmt 1 view .LVU237
+ 266:Src/mcp.c     **** 
+ 735              		.loc 1 266 5 view .LVU238
+ 266:Src/mcp.c     **** 
+ 736              		.loc 1 266 23 is_stmt 0 view .LVU239
+ 737 00f8 E381     		strh	r3, [r4, #14]	@ movhi
+ 268:Src/mcp.c     ****     {
+ 738              		.loc 1 268 5 is_stmt 1 view .LVU240
+ 739              	.LVL66:
+ 373:Src/mcp.c     ****         {
+ 740              		.loc 1 373 9 view .LVU241
+ 373:Src/mcp.c     ****         {
+ 741              		.loc 1 373 12 is_stmt 0 view .LVU242
+ 742 00fa 4CD9     		bls	.L48
+ 743              	.LVL67:
+ 744              	.L66:
  314:Src/mcp.c     ****         break;
- 766              		.loc 1 314 21 view .LVU257
- 767 0110 0020     		movs	r0, #0
- 768 0112 C1E7     		b	.L49
- 769              	.LVL70:
- 770              	.L51:
- 337:Src/mcp.c     ****         MCPResponse = MCP_CMD_OK;
- 771              		.loc 1 337 9 is_stmt 1 view .LVU258
- 337:Src/mcp.c     ****         MCPResponse = MCP_CMD_OK;
- 772              		.loc 1 337 15 is_stmt 0 view .LVU259
- 773 0114 3846     		mov	r0, r7
- 774 0116 FFF7FEFF 		bl	MCI_FaultAcknowledged
- 775              	.LVL71:
- 338:Src/mcp.c     ****         break;
- 776              		.loc 1 338 9 is_stmt 1 view .LVU260
- 339:Src/mcp.c     ****       }
- 777              		.loc 1 339 9 view .LVU261
- 384:Src/mcp.c     ****     pHandle->txLength++;
- 778              		.loc 1 384 30 is_stmt 0 view .LVU262
- 779 011a E389     		ldrh	r3, [r4, #14]
- 338:Src/mcp.c     ****         break;
- 780              		.loc 1 338 21 view .LVU263
- 781 011c 0020     		movs	r0, #0
- 339:Src/mcp.c     ****       }
- 782              		.loc 1 339 9 view .LVU264
- 783 011e BBE7     		b	.L49
- 784              	.LVL72:
- 785              	.L59:
- 272:Src/mcp.c     ****         *pHandle->txBuffer = MCP_VERSION;
- 786              		.loc 1 272 9 is_stmt 1 view .LVU265
- 273:Src/mcp.c     ****         MCPResponse = MCP_CMD_OK;
- 787              		.loc 1 273 17 is_stmt 0 view .LVU266
- 788 0120 A368     		ldr	r3, [r4, #8]
- 272:Src/mcp.c     ****         *pHandle->txBuffer = MCP_VERSION;
- 789              		.loc 1 272 27 view .LVU267
- 790 0122 0421     		movs	r1, #4
- 273:Src/mcp.c     ****         MCPResponse = MCP_CMD_OK;
- 791              		.loc 1 273 28 view .LVU268
- 792 0124 0122     		movs	r2, #1
- 793              	.LVL73:
- 272:Src/mcp.c     ****         *pHandle->txBuffer = MCP_VERSION;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 25
+ 745              		.loc 1 314 21 view .LVU243
+ 746 00fc 4FF0000C 		mov	ip, #0
+ 380:Src/mcp.c     ****         }
+ 747              		.loc 1 380 23 view .LVU244
+ 748 0100 0D20     		movs	r0, #13
+ 749 0102 D2E7     		b	.L49
+ 750              	.LVL68:
+ 751              	.L55:
+ 321:Src/mcp.c     ****         {
+ 752              		.loc 1 321 9 is_stmt 1 view .LVU245
+ 321:Src/mcp.c     ****         {
+ 753              		.loc 1 321 21 is_stmt 0 view .LVU246
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 24
 
 
- 794              		.loc 1 272 27 view .LVU269
- 795 0126 E181     		strh	r1, [r4, #14]	@ movhi
+ 754 0104 3046     		mov	r0, r6
+ 755 0106 FFF7FEFF 		bl	MCI_GetSTMState
+ 756              	.LVL69:
+ 321:Src/mcp.c     ****         {
+ 757              		.loc 1 321 12 view .LVU247
+ 758 010a 0028     		cmp	r0, #0
+ 759 010c 53D0     		beq	.L77
+ 760              	.L65:
+ 329:Src/mcp.c     ****           MCPResponse = MCP_CMD_OK;
+ 761              		.loc 1 329 11 is_stmt 1 view .LVU248
+ 329:Src/mcp.c     ****           MCPResponse = MCP_CMD_OK;
+ 762              		.loc 1 329 17 is_stmt 0 view .LVU249
+ 763 010e 3046     		mov	r0, r6
+ 764 0110 FFF7FEFF 		bl	MCI_StopMotor
+ 765              	.LVL70:
+ 766              	.L74:
+ 330:Src/mcp.c     ****         }
+ 767              		.loc 1 330 11 is_stmt 1 view .LVU250
+ 391:Src/mcp.c     ****     pHandle->txLength++;
+ 768              		.loc 1 391 30 is_stmt 0 view .LVU251
+ 769 0114 B4F80EC0 		ldrh	ip, [r4, #14]
+ 330:Src/mcp.c     ****         }
+ 770              		.loc 1 330 23 view .LVU252
+ 771 0118 0020     		movs	r0, #0
+ 772 011a C6E7     		b	.L49
+ 773              	.LVL71:
+ 774              	.L56:
+ 306:Src/mcp.c     ****         {
+ 775              		.loc 1 306 9 is_stmt 1 view .LVU253
+ 306:Src/mcp.c     ****         {
+ 776              		.loc 1 306 20 is_stmt 0 view .LVU254
+ 777 011c 3046     		mov	r0, r6
+ 778 011e FFF7FEFF 		bl	MCI_GetSTMState
+ 779              	.LVL72:
+ 306:Src/mcp.c     ****         {
+ 780              		.loc 1 306 12 view .LVU255
+ 781 0122 0628     		cmp	r0, #6
+ 782 0124 F6D1     		bne	.L74
+ 308:Src/mcp.c     ****         }
+ 783              		.loc 1 308 11 is_stmt 1 view .LVU256
+ 784 0126 3046     		mov	r0, r6
+ 785 0128 FFF7FEFF 		bl	MCI_StopRamp
+ 786              	.LVL73:
+ 391:Src/mcp.c     ****     pHandle->txLength++;
+ 787              		.loc 1 391 30 is_stmt 0 view .LVU257
+ 788 012c B4F80EC0 		ldrh	ip, [r4, #14]
+ 314:Src/mcp.c     ****         break;
+ 789              		.loc 1 314 21 view .LVU258
+ 790 0130 0020     		movs	r0, #0
+ 791 0132 BAE7     		b	.L49
+ 792              	.LVL74:
+ 793              	.L54:
+ 337:Src/mcp.c     ****         MCPResponse = MCP_CMD_OK;
+ 794              		.loc 1 337 9 is_stmt 1 view .LVU259
+ 337:Src/mcp.c     ****         MCPResponse = MCP_CMD_OK;
+ 795              		.loc 1 337 15 is_stmt 0 view .LVU260
+ 796 0134 3046     		mov	r0, r6
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 25
+
+
+ 797 0136 FFF7FEFF 		bl	MCI_FaultAcknowledged
+ 798              	.LVL75:
+ 338:Src/mcp.c     ****         break;
+ 799              		.loc 1 338 9 is_stmt 1 view .LVU261
+ 339:Src/mcp.c     ****       }
+ 800              		.loc 1 339 9 view .LVU262
+ 391:Src/mcp.c     ****     pHandle->txLength++;
+ 801              		.loc 1 391 30 is_stmt 0 view .LVU263
+ 802 013a B4F80EC0 		ldrh	ip, [r4, #14]
+ 338:Src/mcp.c     ****         break;
+ 803              		.loc 1 338 21 view .LVU264
+ 804 013e 0020     		movs	r0, #0
+ 339:Src/mcp.c     ****       }
+ 805              		.loc 1 339 9 view .LVU265
+ 806 0140 B3E7     		b	.L49
+ 807              	.LVL76:
+ 808              	.L53:
+ 344:Src/mcp.c     ****         MCPResponse = MCP_CMD_OK;
+ 809              		.loc 1 344 9 is_stmt 1 view .LVU266
+ 810 0142 3046     		mov	r0, r6
+ 811 0144 0021     		movs	r1, #0
+ 812 0146 FFF7FEFF 		bl	MCI_Clear_PerfMeasure
+ 813              	.LVL77:
+ 345:Src/mcp.c     ****         break;
+ 814              		.loc 1 345 9 view .LVU267
+ 346:Src/mcp.c     ****       }
+ 815              		.loc 1 346 9 view .LVU268
+ 391:Src/mcp.c     ****     pHandle->txLength++;
+ 816              		.loc 1 391 30 is_stmt 0 view .LVU269
+ 817 014a B4F80EC0 		ldrh	ip, [r4, #14]
+ 345:Src/mcp.c     ****         break;
+ 818              		.loc 1 345 21 view .LVU270
+ 819 014e 0020     		movs	r0, #0
+ 346:Src/mcp.c     ****       }
+ 820              		.loc 1 346 9 view .LVU271
+ 821 0150 ABE7     		b	.L49
+ 822              	.LVL78:
+ 823              	.L51:
+ 351:Src/mcp.c     ****         MCPResponse = MCP_CMD_OK;
+ 824              		.loc 1 351 9 is_stmt 1 view .LVU272
+ 825 0152 3046     		mov	r0, r6
+ 826 0154 FFF7FEFF 		bl	MCI_Clear_Iqdref
+ 827              	.LVL79:
+ 352:Src/mcp.c     ****         break;
+ 828              		.loc 1 352 9 view .LVU273
+ 353:Src/mcp.c     ****       }
+ 829              		.loc 1 353 9 view .LVU274
+ 391:Src/mcp.c     ****     pHandle->txLength++;
+ 830              		.loc 1 391 30 is_stmt 0 view .LVU275
+ 831 0158 B4F80EC0 		ldrh	ip, [r4, #14]
+ 352:Src/mcp.c     ****         break;
+ 832              		.loc 1 352 21 view .LVU276
+ 833 015c 0020     		movs	r0, #0
+ 353:Src/mcp.c     ****       }
+ 834              		.loc 1 353 9 view .LVU277
+ 835 015e A4E7     		b	.L49
+ 836              	.LVL80:
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 26
+
+
+ 837              	.L61:
+ 272:Src/mcp.c     ****         *pHandle->txBuffer = MCP_VERSION;
+ 838              		.loc 1 272 9 is_stmt 1 view .LVU278
  273:Src/mcp.c     ****         MCPResponse = MCP_CMD_OK;
- 796              		.loc 1 273 9 is_stmt 1 view .LVU270
+ 839              		.loc 1 273 17 is_stmt 0 view .LVU279
+ 840 0160 A368     		ldr	r3, [r4, #8]
+ 272:Src/mcp.c     ****         *pHandle->txBuffer = MCP_VERSION;
+ 841              		.loc 1 272 27 view .LVU280
+ 842 0162 0421     		movs	r1, #4
  273:Src/mcp.c     ****         MCPResponse = MCP_CMD_OK;
- 797              		.loc 1 273 28 is_stmt 0 view .LVU271
- 798 0128 1A70     		strb	r2, [r3]
- 799              	.LVL74:
+ 843              		.loc 1 273 28 view .LVU281
+ 844 0164 0122     		movs	r2, #1
+ 845              	.LVL81:
+ 272:Src/mcp.c     ****         *pHandle->txBuffer = MCP_VERSION;
+ 846              		.loc 1 272 27 view .LVU282
+ 847 0166 E181     		strh	r1, [r4, #14]	@ movhi
+ 273:Src/mcp.c     ****         MCPResponse = MCP_CMD_OK;
+ 848              		.loc 1 273 9 is_stmt 1 view .LVU283
+ 273:Src/mcp.c     ****         MCPResponse = MCP_CMD_OK;
+ 849              		.loc 1 273 28 is_stmt 0 view .LVU284
+ 850 0168 1A70     		strb	r2, [r3]
+ 851              	.LVL82:
  274:Src/mcp.c     ****         break;
- 800              		.loc 1 274 9 is_stmt 1 view .LVU272
+ 852              		.loc 1 274 9 is_stmt 1 view .LVU285
  275:Src/mcp.c     ****       }
- 801              		.loc 1 275 9 view .LVU273
- 384:Src/mcp.c     ****     pHandle->txLength++;
- 802              		.loc 1 384 30 is_stmt 0 view .LVU274
- 803 012a E389     		ldrh	r3, [r4, #14]
+ 853              		.loc 1 275 9 view .LVU286
+ 391:Src/mcp.c     ****     pHandle->txLength++;
+ 854              		.loc 1 391 30 is_stmt 0 view .LVU287
+ 855 016a B4F80EC0 		ldrh	ip, [r4, #14]
+ 856              	.LVL83:
  274:Src/mcp.c     ****         break;
- 804              		.loc 1 274 21 view .LVU275
- 805 012c 0020     		movs	r0, #0
+ 857              		.loc 1 274 21 view .LVU288
+ 858 016e 0020     		movs	r0, #0
  275:Src/mcp.c     ****       }
- 806              		.loc 1 275 9 view .LVU276
- 807 012e B3E7     		b	.L49
- 808              	.LVL75:
- 809              	.L58:
+ 859              		.loc 1 275 9 view .LVU289
+ 860 0170 9BE7     		b	.L49
+ 861              	.LVL84:
+ 862              	.L60:
  280:Src/mcp.c     ****         break;
- 810              		.loc 1 280 9 is_stmt 1 view .LVU277
+ 863              		.loc 1 280 9 is_stmt 1 view .LVU290
  280:Src/mcp.c     ****         break;
- 811              		.loc 1 280 23 is_stmt 0 view .LVU278
- 812 0130 2046     		mov	r0, r4
- 813 0132 FFF7FEFF 		bl	RI_SetRegCommandParser
- 814              	.LVL76:
- 384:Src/mcp.c     ****     pHandle->txLength++;
- 815              		.loc 1 384 30 view .LVU279
- 816 0136 E389     		ldrh	r3, [r4, #14]
- 817              	.LVL77:
+ 864              		.loc 1 280 23 is_stmt 0 view .LVU291
+ 865 0172 2046     		mov	r0, r4
+ 866 0174 FFF7FEFF 		bl	RI_SetRegCommandParser
+ 867              	.LVL85:
+ 391:Src/mcp.c     ****     pHandle->txLength++;
+ 868              		.loc 1 391 30 view .LVU292
+ 869 0178 B4F80EC0 		ldrh	ip, [r4, #14]
+ 870              	.LVL86:
  281:Src/mcp.c     ****       }
- 818              		.loc 1 281 9 is_stmt 1 view .LVU280
- 819 0138 AEE7     		b	.L49
- 820              	.LVL78:
- 821              	.L57:
+ 871              		.loc 1 281 9 is_stmt 1 view .LVU293
+ 872 017c 95E7     		b	.L49
+ 873              	.LVL87:
+ 874              	.L59:
  286:Src/mcp.c     ****         break;
- 822              		.loc 1 286 9 view .LVU281
+ 875              		.loc 1 286 9 view .LVU294
  286:Src/mcp.c     ****         break;
- 823              		.loc 1 286 23 is_stmt 0 view .LVU282
- 824 013a 2046     		mov	r0, r4
- 825 013c FFF7FEFF 		bl	RI_GetRegCommandParser
- 826              	.LVL79:
- 384:Src/mcp.c     ****     pHandle->txLength++;
- 827              		.loc 1 384 30 view .LVU283
- 828 0140 E389     		ldrh	r3, [r4, #14]
- 829              	.LVL80:
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 27
+
+
+ 876              		.loc 1 286 23 is_stmt 0 view .LVU295
+ 877 017e 2046     		mov	r0, r4
+ 878 0180 FFF7FEFF 		bl	RI_GetRegCommandParser
+ 879              	.LVL88:
+ 391:Src/mcp.c     ****     pHandle->txLength++;
+ 880              		.loc 1 391 30 view .LVU296
+ 881 0184 B4F80EC0 		ldrh	ip, [r4, #14]
+ 882              	.LVL89:
  287:Src/mcp.c     ****       }
- 830              		.loc 1 287 9 is_stmt 1 view .LVU284
- 831 0142 A9E7     		b	.L49
- 832              	.LVL81:
- 833              	.L56:
+ 883              		.loc 1 287 9 is_stmt 1 view .LVU297
+ 884 0188 8FE7     		b	.L49
+ 885              	.LVL90:
+ 886              	.L58:
  292:Src/mcp.c     **** 
- 834              		.loc 1 292 9 view .LVU285
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 26
-
-
+ 887              		.loc 1 292 9 view .LVU298
  292:Src/mcp.c     **** 
- 835              		.loc 1 292 24 is_stmt 0 view .LVU286
- 836 0144 3846     		mov	r0, r7
- 837 0146 FFF7FEFF 		bl	MCI_StartWithPolarizationMotor
- 838              	.LVL82:
- 384:Src/mcp.c     ****     pHandle->txLength++;
- 839              		.loc 1 384 30 view .LVU287
- 840 014a E389     		ldrh	r3, [r4, #14]
- 841 014c A4E7     		b	.L49
- 842              	.LVL83:
- 843              	.L48:
+ 888              		.loc 1 292 24 is_stmt 0 view .LVU299
+ 889 018a 3046     		mov	r0, r6
+ 890 018c FFF7FEFF 		bl	MCI_StartWithPolarizationMotor
+ 891              	.LVL91:
+ 391:Src/mcp.c     ****     pHandle->txLength++;
+ 892              		.loc 1 391 30 view .LVU300
+ 893 0190 B4F80EC0 		ldrh	ip, [r4, #14]
+ 894 0194 89E7     		b	.L49
+ 895              	.LVL92:
+ 896              	.L48:
  262:Src/mcp.c     **** 
- 844              		.loc 1 262 75 view .LVU288
- 845 014e 013A     		subs	r2, r2, #1
- 846              	.LVL84:
+ 897              		.loc 1 262 75 view .LVU301
+ 898 0196 013A     		subs	r2, r2, #1
+ 899              	.LVL93:
  262:Src/mcp.c     **** 
- 847              		.loc 1 262 21 view .LVU289
- 848 0150 12B2     		sxth	r2, r2
- 849              	.LVL85:
- 850              	.L61:
- 366:Src/mcp.c     ****         {
- 851              		.loc 1 366 71 discriminator 1 view .LVU290
- 852 0152 114B     		ldr	r3, .L75+4
- 853 0154 53F82C60 		ldr	r6, [r3, ip, lsl #2]
- 366:Src/mcp.c     ****         {
- 854              		.loc 1 366 51 discriminator 1 view .LVU291
- 855 0158 002E     		cmp	r6, #0
- 856 015a C2D0     		beq	.L65
- 368:Src/mcp.c     ****                                                       &pHandle->txLength, pHandle->txBuffer);
- 857              		.loc 1 368 11 is_stmt 1 view .LVU292
- 368:Src/mcp.c     ****                                                       &pHandle->txLength, pHandle->txBuffer);
- 858              		.loc 1 368 25 is_stmt 0 view .LVU293
- 859 015c A368     		ldr	r3, [r4, #8]
- 860 015e 0093     		str	r3, [sp]
- 861 0160 2946     		mov	r1, r5
- 862 0162 04F10E03 		add	r3, r4, #14
- 863 0166 B047     		blx	r6
- 864              	.LVL86:
- 384:Src/mcp.c     ****     pHandle->txLength++;
- 865              		.loc 1 384 30 view .LVU294
- 866 0168 E389     		ldrh	r3, [r4, #14]
- 867              	.LVL87:
- 368:Src/mcp.c     ****                                                       &pHandle->txLength, pHandle->txBuffer);
- 868              		.loc 1 368 23 view .LVU295
- 869 016a 95E7     		b	.L49
- 870              	.LVL88:
- 871              	.L60:
- 359:Src/mcp.c     ****                                          pHandle->txBuffer);
- 872              		.loc 1 359 9 is_stmt 1 view .LVU296
- 359:Src/mcp.c     ****                                          pHandle->txBuffer);
- 873              		.loc 1 359 23 is_stmt 0 view .LVU297
- 874 016c A368     		ldr	r3, [r4, #8]
- 875 016e 0093     		str	r3, [sp]
- 876 0170 2946     		mov	r1, r5
- 877 0172 04F10E03 		add	r3, r4, #14
- 878 0176 FFF7FEFF 		bl	MC_ProfilerCommand
- 879              	.LVL89:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 27
+ 900              		.loc 1 262 21 view .LVU302
+ 901 0198 12B2     		sxth	r2, r2
+ 902              	.LVL94:
+ 903              	.L63:
+ 373:Src/mcp.c     ****         {
+ 904              		.loc 1 373 71 discriminator 1 view .LVU303
+ 905 019a 0C4B     		ldr	r3, .L78+4
+ 906 019c 53F82C60 		ldr	r6, [r3, ip, lsl #2]
+ 373:Src/mcp.c     ****         {
+ 907              		.loc 1 373 51 discriminator 1 view .LVU304
+ 908 01a0 002E     		cmp	r6, #0
+ 909 01a2 ABD0     		beq	.L66
+ 375:Src/mcp.c     ****                                                       &pHandle->txLength, pHandle->txBuffer);
+ 910              		.loc 1 375 11 is_stmt 1 view .LVU305
+ 375:Src/mcp.c     ****                                                       &pHandle->txLength, pHandle->txBuffer);
+ 911              		.loc 1 375 25 is_stmt 0 view .LVU306
+ 912 01a4 A368     		ldr	r3, [r4, #8]
+ 913 01a6 0093     		str	r3, [sp]
+ 914 01a8 2946     		mov	r1, r5
+ 915 01aa 04F10E03 		add	r3, r4, #14
+ 916 01ae B047     		blx	r6
+ 917              	.LVL95:
+ 391:Src/mcp.c     ****     pHandle->txLength++;
+ 918              		.loc 1 391 30 view .LVU307
+ 919 01b0 B4F80EC0 		ldrh	ip, [r4, #14]
+ 920              	.LVL96:
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 28
 
 
- 384:Src/mcp.c     ****     pHandle->txLength++;
- 880              		.loc 1 384 30 view .LVU298
- 881 017a E389     		ldrh	r3, [r4, #14]
- 882              	.LVL90:
- 361:Src/mcp.c     ****       }
- 883              		.loc 1 361 9 is_stmt 1 view .LVU299
- 884 017c 8CE7     		b	.L49
- 885              	.LVL91:
- 886              	.L74:
+ 375:Src/mcp.c     ****                                                       &pHandle->txLength, pHandle->txBuffer);
+ 921              		.loc 1 375 23 view .LVU308
+ 922 01b4 79E7     		b	.L49
+ 923              	.LVL97:
+ 924              	.L77:
  324:Src/mcp.c     **** 
- 887              		.loc 1 324 11 view .LVU300
+ 925              		.loc 1 324 11 is_stmt 1 view .LVU309
  324:Src/mcp.c     **** 
- 888              		.loc 1 324 26 is_stmt 0 view .LVU301
- 889 017e 3846     		mov	r0, r7
- 890 0180 FFF7FEFF 		bl	MCI_StartWithPolarizationMotor
- 891              	.LVL92:
+ 926              		.loc 1 324 26 is_stmt 0 view .LVU310
+ 927 01b6 3046     		mov	r0, r6
+ 928 01b8 FFF7FEFF 		bl	MCI_StartWithPolarizationMotor
+ 929              	.LVL98:
  324:Src/mcp.c     **** 
- 892              		.loc 1 324 85 view .LVU302
- 893 0184 80F00100 		eor	r0, r0, #1
- 384:Src/mcp.c     ****     pHandle->txLength++;
- 894              		.loc 1 384 30 view .LVU303
- 895 0188 E389     		ldrh	r3, [r4, #14]
+ 930              		.loc 1 324 85 view .LVU311
+ 931 01bc 80F00100 		eor	r0, r0, #1
+ 391:Src/mcp.c     ****     pHandle->txLength++;
+ 932              		.loc 1 391 30 view .LVU312
+ 933 01c0 B4F80EC0 		ldrh	ip, [r4, #14]
  324:Src/mcp.c     **** 
- 896              		.loc 1 324 23 view .LVU304
- 897 018a C0B2     		uxtb	r0, r0
- 898              	.LVL93:
+ 934              		.loc 1 324 23 view .LVU313
+ 935 01c4 C0B2     		uxtb	r0, r0
+ 936              	.LVL99:
  324:Src/mcp.c     **** 
- 899              		.loc 1 324 23 view .LVU305
- 900 018c 84E7     		b	.L49
- 901              	.LVL94:
- 902              	.L67:
- 268:Src/mcp.c     ****     {
- 903              		.loc 1 268 5 view .LVU306
- 904 018e B446     		mov	ip, r6
- 905              	.LVL95:
- 268:Src/mcp.c     ****     {
- 906              		.loc 1 268 5 view .LVU307
- 907 0190 DFE7     		b	.L61
- 908              	.L76:
- 909 0192 00BF     		.align	2
- 910              	.L75:
- 911 0194 00000000 		.word	Mci
- 912 0198 00000000 		.word	MCP_UserCallBack
- 913              		.cfi_endproc
- 914              	.LFE1092:
- 916              		.section	.text.MCP_RegisterCallBack,"ax",%progbits
- 917              		.align	1
- 918              		.p2align 2,,3
- 919              		.global	MCP_RegisterCallBack
- 920              		.syntax unified
- 921              		.thumb
- 922              		.thumb_func
- 924              	MCP_RegisterCallBack:
- 925              	.LVL96:
- 926              	.LFB1093:
- 390:Src/mcp.c     **** 
- 391:Src/mcp.c     **** /**
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 28
+ 937              		.loc 1 324 23 view .LVU314
+ 938 01c6 70E7     		b	.L49
+ 939              	.L79:
+ 940              		.align	2
+ 941              	.L78:
+ 942 01c8 00000000 		.word	Mci
+ 943 01cc 00000000 		.word	MCP_UserCallBack
+ 944              		.cfi_endproc
+ 945              	.LFE1092:
+ 947              		.section	.text.MCP_RegisterCallBack,"ax",%progbits
+ 948              		.align	1
+ 949              		.p2align 2,,3
+ 950              		.global	MCP_RegisterCallBack
+ 951              		.syntax unified
+ 952              		.thumb
+ 953              		.thumb_func
+ 955              	MCP_RegisterCallBack:
+ 956              	.LVL100:
+ 957              	.LFB1093:
+ 397:Src/mcp.c     **** 
+ 398:Src/mcp.c     **** /**
+ 399:Src/mcp.c     ****   * @brief  Stores user's MCP function to be later called as MCP function.
+ 400:Src/mcp.c     ****   *
+ 401:Src/mcp.c     ****   * @param  callBackID: ID used to get to the stored @p fctCB function
+ 402:Src/mcp.c     ****   * @param  fctCB: User call back function structure
+ 403:Src/mcp.c     ****   *
+ 404:Src/mcp.c     ****   * @retval Returns #MCP_CMD_OK if the command is acknowledged and #MCP_CMD_NOK if not
+ 405:Src/mcp.c     ****   */
+ 406:Src/mcp.c     **** uint8_t MCP_RegisterCallBack (uint8_t callBackID, MCP_user_cb_t fctCB)
+ 407:Src/mcp.c     **** {
+ 958              		.loc 1 407 1 is_stmt 1 view -0
+ 959              		.cfi_startproc
+ 960              		@ args = 0, pretend = 0, frame = 0
+ 961              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 29
 
 
- 392:Src/mcp.c     ****   * @brief  Stores user's MCP function to be later called as MCP function.
- 393:Src/mcp.c     ****   *
- 394:Src/mcp.c     ****   * @param  callBackID: ID used to get to the stored @p fctCB function
- 395:Src/mcp.c     ****   * @param  fctCB: User call back function structure
- 396:Src/mcp.c     ****   *
- 397:Src/mcp.c     ****   * @retval Returns #MCP_CMD_OK if the command is acknowledged and #MCP_CMD_NOK if not
- 398:Src/mcp.c     ****   */
- 399:Src/mcp.c     **** uint8_t MCP_RegisterCallBack (uint8_t callBackID, MCP_user_cb_t fctCB)
- 400:Src/mcp.c     **** {
- 927              		.loc 1 400 1 is_stmt 1 view -0
- 928              		.cfi_startproc
- 929              		@ args = 0, pretend = 0, frame = 0
- 930              		@ frame_needed = 0, uses_anonymous_args = 0
- 931              		@ link register save eliminated.
- 401:Src/mcp.c     ****   uint8_t result;
- 932              		.loc 1 401 3 view .LVU309
- 402:Src/mcp.c     **** 
- 403:Src/mcp.c     ****   if (callBackID < MCP_USER_CALLBACK_MAX)
- 933              		.loc 1 403 3 view .LVU310
- 934              		.loc 1 403 6 is_stmt 0 view .LVU311
- 935 0000 0128     		cmp	r0, #1
- 404:Src/mcp.c     ****   {
- 405:Src/mcp.c     ****     MCP_UserCallBack[callBackID] = fctCB;
- 936              		.loc 1 405 5 is_stmt 1 view .LVU312
- 400:Src/mcp.c     ****   uint8_t result;
- 937              		.loc 1 400 1 is_stmt 0 view .LVU313
- 938 0002 0346     		mov	r3, r0
- 939              		.loc 1 405 34 view .LVU314
- 940 0004 9DBF     		ittte	ls
- 941 0006 034A     		ldrls	r2, .L80
- 406:Src/mcp.c     ****     result = MCP_CMD_OK;
- 942              		.loc 1 406 12 view .LVU315
- 943 0008 0020     		movls	r0, #0
- 944              	.LVL97:
- 405:Src/mcp.c     ****     result = MCP_CMD_OK;
- 945              		.loc 1 405 34 view .LVU316
- 946 000a 42F82310 		strls	r1, [r2, r3, lsl #2]
- 947              		.loc 1 406 5 is_stmt 1 view .LVU317
- 948              	.LVL98:
- 407:Src/mcp.c     ****   }
- 408:Src/mcp.c     ****   else
- 409:Src/mcp.c     ****   {
- 410:Src/mcp.c     ****     result = MCP_CMD_NOK;
- 949              		.loc 1 410 12 is_stmt 0 view .LVU318
- 950 000e 0120     		movhi	r0, #1
- 951              	.LVL99:
- 411:Src/mcp.c     ****   }
- 412:Src/mcp.c     ****   return (result);
- 952              		.loc 1 412 3 is_stmt 1 view .LVU319
- 413:Src/mcp.c     **** }
- 953              		.loc 1 413 1 is_stmt 0 view .LVU320
- 954 0010 7047     		bx	lr
- 955              	.L81:
- 956 0012 00BF     		.align	2
- 957              	.L80:
- 958 0014 00000000 		.word	MCP_UserCallBack
- 959              		.cfi_endproc
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 29
+ 962              		@ link register save eliminated.
+ 408:Src/mcp.c     ****   uint8_t result;
+ 963              		.loc 1 408 3 view .LVU316
+ 409:Src/mcp.c     **** 
+ 410:Src/mcp.c     ****   if (callBackID < MCP_USER_CALLBACK_MAX)
+ 964              		.loc 1 410 3 view .LVU317
+ 965              		.loc 1 410 6 is_stmt 0 view .LVU318
+ 966 0000 0128     		cmp	r0, #1
+ 411:Src/mcp.c     ****   {
+ 412:Src/mcp.c     ****     MCP_UserCallBack[callBackID] = fctCB;
+ 967              		.loc 1 412 5 is_stmt 1 view .LVU319
+ 407:Src/mcp.c     ****   uint8_t result;
+ 968              		.loc 1 407 1 is_stmt 0 view .LVU320
+ 969 0002 0346     		mov	r3, r0
+ 970              		.loc 1 412 34 view .LVU321
+ 971 0004 9DBF     		ittte	ls
+ 972 0006 034A     		ldrls	r2, .L83
+ 413:Src/mcp.c     ****     result = MCP_CMD_OK;
+ 973              		.loc 1 413 12 view .LVU322
+ 974 0008 0020     		movls	r0, #0
+ 975              	.LVL101:
+ 412:Src/mcp.c     ****     result = MCP_CMD_OK;
+ 976              		.loc 1 412 34 view .LVU323
+ 977 000a 42F82310 		strls	r1, [r2, r3, lsl #2]
+ 978              		.loc 1 413 5 is_stmt 1 view .LVU324
+ 979              	.LVL102:
+ 414:Src/mcp.c     ****   }
+ 415:Src/mcp.c     ****   else
+ 416:Src/mcp.c     ****   {
+ 417:Src/mcp.c     ****     result = MCP_CMD_NOK;
+ 980              		.loc 1 417 12 is_stmt 0 view .LVU325
+ 981 000e 0120     		movhi	r0, #1
+ 982              	.LVL103:
+ 418:Src/mcp.c     ****   }
+ 419:Src/mcp.c     ****   return (result);
+ 983              		.loc 1 419 3 is_stmt 1 view .LVU326
+ 420:Src/mcp.c     **** }
+ 984              		.loc 1 420 1 is_stmt 0 view .LVU327
+ 985 0010 7047     		bx	lr
+ 986              	.L84:
+ 987 0012 00BF     		.align	2
+ 988              	.L83:
+ 989 0014 00000000 		.word	MCP_UserCallBack
+ 990              		.cfi_endproc
+ 991              	.LFE1093:
+ 993              		.text
+ 994              	.Letext0:
+ 995              		.file 2 "c:\\programdata\\chocolatey\\lib\\gcc-arm-embedded\\tools\\gcc-arm-none-eabi-10.3-2021.10
+ 996              		.file 3 "c:\\programdata\\chocolatey\\lib\\gcc-arm-embedded\\tools\\gcc-arm-none-eabi-10.3-2021.10
+ 997              		.file 4 "Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h"
+ 998              		.file 5 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_tim.h"
+ 999              		.file 6 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_dma.h"
+ 1000              		.file 7 "Inc/mc_type.h"
+ 1001              		.file 8 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h"
+ 1002              		.file 9 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h"
+ 1003              		.file 10 "Inc/pwm_curr_fdbk.h"
+ 1004              		.file 11 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h"
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 30
 
 
- 960              	.LFE1093:
- 962              		.text
- 963              	.Letext0:
- 964              		.file 2 "c:\\programdata\\chocolatey\\lib\\gcc-arm-embedded\\tools\\gcc-arm-none-eabi-10.3-2021.10
- 965              		.file 3 "c:\\programdata\\chocolatey\\lib\\gcc-arm-embedded\\tools\\gcc-arm-none-eabi-10.3-2021.10
- 966              		.file 4 "Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h"
- 967              		.file 5 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_tim.h"
- 968              		.file 6 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_dma.h"
- 969              		.file 7 "Inc/mc_type.h"
- 970              		.file 8 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h"
- 971              		.file 9 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h"
- 972              		.file 10 "Inc/pwm_curr_fdbk.h"
- 973              		.file 11 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h"
- 974              		.file 12 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h"
- 975              		.file 13 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_torq_ctrl.h"
- 976              		.file 14 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h"
- 977              		.file 15 "Inc/mc_interface.h"
- 978              		.file 16 "Inc/mcp_config.h"
- 979              		.file 17 "Inc/mc_api.h"
- 980              		.file 18 "Inc/mc_config.h"
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s 			page 30
+ 1005              		.file 12 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h"
+ 1006              		.file 13 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_torq_ctrl.h"
+ 1007              		.file 14 "Inc/mc_perf.h"
+ 1008              		.file 15 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h"
+ 1009              		.file 16 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/trajectory_ctrl.h"
+ 1010              		.file 17 "Inc/mc_interface.h"
+ 1011              		.file 18 "Inc/mcp_config.h"
+ 1012              		.file 19 "Inc/mc_api.h"
+ 1013              		.file 20 "Inc/mc_config.h"
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s 			page 31
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 mcp.c
-C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s:20     .text.RI_SetRegCommandParser:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s:27     .text.RI_SetRegCommandParser:00000000 RI_SetRegCommandParser
-C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s:275    .text.RI_SetRegCommandParser:000000d4 $d
-C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s:281    .text.RI_GetRegCommandParser:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s:288    .text.RI_GetRegCommandParser:00000000 RI_GetRegCommandParser
-C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s:453    .text.RI_GetRegCommandParser:00000090 $d
-C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s:459    .text.MCP_ReceivedPacket:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s:466    .text.MCP_ReceivedPacket:00000000 MCP_ReceivedPacket
-C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s:573    .text.MCP_ReceivedPacket:0000005a $d
-C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s:911    .text.MCP_ReceivedPacket:00000194 $d
-C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s:917    .text.MCP_RegisterCallBack:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s:924    .text.MCP_RegisterCallBack:00000000 MCP_RegisterCallBack
-C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s:958    .text.MCP_RegisterCallBack:00000014 $d
-C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s:630    .text.MCP_ReceivedPacket:00000093 $d
-C:\Users\ep_ygh\AppData\Local\Temp\cclQKINX.s:630    .text.MCP_ReceivedPacket:00000094 $t
+C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s:20     .text.RI_SetRegCommandParser:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s:27     .text.RI_SetRegCommandParser:00000000 RI_SetRegCommandParser
+C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s:275    .text.RI_SetRegCommandParser:000000d4 $d
+C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s:281    .text.RI_GetRegCommandParser:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s:288    .text.RI_GetRegCommandParser:00000000 RI_GetRegCommandParser
+C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s:453    .text.RI_GetRegCommandParser:00000090 $d
+C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s:459    .text.MCP_ReceivedPacket:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s:466    .text.MCP_ReceivedPacket:00000000 MCP_ReceivedPacket
+C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s:571    .text.MCP_ReceivedPacket:0000005a $d
+C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s:942    .text.MCP_ReceivedPacket:000001c8 $d
+C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s:948    .text.MCP_RegisterCallBack:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s:955    .text.MCP_RegisterCallBack:00000000 MCP_RegisterCallBack
+C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s:989    .text.MCP_RegisterCallBack:00000014 $d
+C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s:644    .text.MCP_ReceivedPacket:000000a3 $d
+C:\Users\ep_ygh\AppData\Local\Temp\cchxycjg.s:644    .text.MCP_ReceivedPacket:000000a4 $t
 
 UNDEFINED SYMBOLS
 RI_SetRegisterGlobal
 RI_SetRegisterMotor1
 RI_GetRegisterGlobal
 RI_GetRegisterMotor1
-MCI_Clear_Iqdref
+MC_ProfilerCommand
 MCI_GetSTMState
 MCI_StopMotor
 MCI_StopRamp
 MCI_FaultAcknowledged
+MCI_Clear_PerfMeasure
+MCI_Clear_Iqdref
 MCI_StartWithPolarizationMotor
-MC_ProfilerCommand
 Mci
 MCP_UserCallBack

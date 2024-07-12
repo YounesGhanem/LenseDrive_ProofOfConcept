@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc9MWupq.s 			page 1
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccFO6s4o.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc9MWupq.s 			page 1
   27:Src/stm32l4xx_it.c **** /* Private typedef -----------------------------------------------------------*/
   28:Src/stm32l4xx_it.c **** /* USER CODE BEGIN TD */
   29:Src/stm32l4xx_it.c **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc9MWupq.s 			page 2
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccFO6s4o.s 			page 2
 
 
   30:Src/stm32l4xx_it.c **** /* USER CODE END TD */
@@ -89,69 +89,98 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc9MWupq.s 			page 1
   55:Src/stm32l4xx_it.c **** /* USER CODE END 0 */
   56:Src/stm32l4xx_it.c **** 
   57:Src/stm32l4xx_it.c **** /* External variables --------------------------------------------------------*/
-  58:Src/stm32l4xx_it.c **** extern TIM_HandleTypeDef htim6;
-  59:Src/stm32l4xx_it.c **** 
-  60:Src/stm32l4xx_it.c **** /* USER CODE BEGIN EV */
-  61:Src/stm32l4xx_it.c **** 
-  62:Src/stm32l4xx_it.c **** /* USER CODE END EV */
-  63:Src/stm32l4xx_it.c **** 
-  64:Src/stm32l4xx_it.c **** /******************************************************************************/
-  65:Src/stm32l4xx_it.c **** /*           Cortex-M4 Processor Interruption and Exception Handlers          */
-  66:Src/stm32l4xx_it.c **** /******************************************************************************/
-  67:Src/stm32l4xx_it.c **** 
-  68:Src/stm32l4xx_it.c **** /******************************************************************************/
-  69:Src/stm32l4xx_it.c **** /* STM32L4xx Peripheral Interrupt Handlers                                    */
-  70:Src/stm32l4xx_it.c **** /* Add here the Interrupt Handlers for the used peripherals.                  */
-  71:Src/stm32l4xx_it.c **** /* For the available peripheral interrupt handler names,                      */
-  72:Src/stm32l4xx_it.c **** /* please refer to the startup file (startup_stm32l4xx.s).                    */
-  73:Src/stm32l4xx_it.c **** /******************************************************************************/
-  74:Src/stm32l4xx_it.c **** 
-  75:Src/stm32l4xx_it.c **** /**
-  76:Src/stm32l4xx_it.c ****   * @brief This function handles TIM6 global interrupt, DAC channel1 and channel2 underrun error in
-  77:Src/stm32l4xx_it.c ****   */
-  78:Src/stm32l4xx_it.c **** void TIM6_DAC_IRQHandler(void)
-  79:Src/stm32l4xx_it.c **** {
-  30              		.loc 1 79 1 view -0
+  58:Src/stm32l4xx_it.c **** extern DAC_HandleTypeDef hdac1;
+  59:Src/stm32l4xx_it.c **** extern TIM_HandleTypeDef htim6;
+  60:Src/stm32l4xx_it.c **** 
+  61:Src/stm32l4xx_it.c **** /* USER CODE BEGIN EV */
+  62:Src/stm32l4xx_it.c **** 
+  63:Src/stm32l4xx_it.c **** /* USER CODE END EV */
+  64:Src/stm32l4xx_it.c **** 
+  65:Src/stm32l4xx_it.c **** /******************************************************************************/
+  66:Src/stm32l4xx_it.c **** /*           Cortex-M4 Processor Interruption and Exception Handlers          */
+  67:Src/stm32l4xx_it.c **** /******************************************************************************/
+  68:Src/stm32l4xx_it.c **** 
+  69:Src/stm32l4xx_it.c **** /******************************************************************************/
+  70:Src/stm32l4xx_it.c **** /* STM32L4xx Peripheral Interrupt Handlers                                    */
+  71:Src/stm32l4xx_it.c **** /* Add here the Interrupt Handlers for the used peripherals.                  */
+  72:Src/stm32l4xx_it.c **** /* For the available peripheral interrupt handler names,                      */
+  73:Src/stm32l4xx_it.c **** /* please refer to the startup file (startup_stm32l4xx.s).                    */
+  74:Src/stm32l4xx_it.c **** /******************************************************************************/
+  75:Src/stm32l4xx_it.c **** 
+  76:Src/stm32l4xx_it.c **** /**
+  77:Src/stm32l4xx_it.c ****   * @brief This function handles TIM6 global interrupt, DAC channel1 and channel2 underrun error in
+  78:Src/stm32l4xx_it.c ****   */
+  79:Src/stm32l4xx_it.c **** void TIM6_DAC_IRQHandler(void)
+  80:Src/stm32l4xx_it.c **** {
+  30              		.loc 1 80 1 view -0
   31              		.cfi_startproc
   32              		@ args = 0, pretend = 0, frame = 0
   33              		@ frame_needed = 0, uses_anonymous_args = 0
-  34              		@ link register save eliminated.
+  81:Src/stm32l4xx_it.c ****   /* USER CODE BEGIN TIM6_DAC_IRQn 0 */
+  82:Src/stm32l4xx_it.c **** 
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccFO6s4o.s 			page 3
+
+
+  83:Src/stm32l4xx_it.c ****   /* USER CODE END TIM6_DAC_IRQn 0 */
+  84:Src/stm32l4xx_it.c ****   HAL_TIM_IRQHandler(&htim6);
+  34              		.loc 1 84 3 view .LVU1
   80:Src/stm32l4xx_it.c ****   /* USER CODE BEGIN TIM6_DAC_IRQn 0 */
-  81:Src/stm32l4xx_it.c **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc9MWupq.s 			page 3
-
-
-  82:Src/stm32l4xx_it.c ****   /* USER CODE END TIM6_DAC_IRQn 0 */
-  83:Src/stm32l4xx_it.c ****   HAL_TIM_IRQHandler(&htim6);
-  35              		.loc 1 83 3 view .LVU1
-  36 0000 0148     		ldr	r0, .L3
-  37 0002 FFF7FEBF 		b	HAL_TIM_IRQHandler
-  38              	.LVL0:
-  39              	.L4:
-  40 0006 00BF     		.align	2
-  41              	.L3:
-  42 0008 00000000 		.word	htim6
-  43              		.cfi_endproc
-  44              	.LFE1090:
-  46              		.text
-  47              	.Letext0:
-  48              		.file 2 "c:\\programdata\\chocolatey\\lib\\gcc-arm-embedded\\tools\\gcc-arm-none-eabi-10.3-2021.10
-  49              		.file 3 "c:\\programdata\\chocolatey\\lib\\gcc-arm-embedded\\tools\\gcc-arm-none-eabi-10.3-2021.10
-  50              		.file 4 "Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h"
-  51              		.file 5 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h"
-  52              		.file 6 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h"
-  53              		.file 7 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h"
-  54              		.file 8 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_tim.h"
-  55              		.file 9 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_dma.h"
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\cc9MWupq.s 			page 4
+  35              		.loc 1 80 1 is_stmt 0 view .LVU2
+  36 0000 08B5     		push	{r3, lr}
+  37              	.LCFI0:
+  38              		.cfi_def_cfa_offset 8
+  39              		.cfi_offset 3, -8
+  40              		.cfi_offset 14, -4
+  41              		.loc 1 84 3 view .LVU3
+  42 0002 0448     		ldr	r0, .L4
+  43 0004 FFF7FEFF 		bl	HAL_TIM_IRQHandler
+  44              	.LVL0:
+  85:Src/stm32l4xx_it.c ****   HAL_DAC_IRQHandler(&hdac1);
+  45              		.loc 1 85 3 is_stmt 1 view .LVU4
+  86:Src/stm32l4xx_it.c ****   /* USER CODE BEGIN TIM6_DAC_IRQn 1 */
+  87:Src/stm32l4xx_it.c **** 
+  88:Src/stm32l4xx_it.c ****   /* USER CODE END TIM6_DAC_IRQn 1 */
+  89:Src/stm32l4xx_it.c **** }
+  46              		.loc 1 89 1 is_stmt 0 view .LVU5
+  47 0008 BDE80840 		pop	{r3, lr}
+  48              	.LCFI1:
+  49              		.cfi_restore 14
+  50              		.cfi_restore 3
+  51              		.cfi_def_cfa_offset 0
+  85:Src/stm32l4xx_it.c ****   HAL_DAC_IRQHandler(&hdac1);
+  52              		.loc 1 85 3 view .LVU6
+  53 000c 0248     		ldr	r0, .L4+4
+  54 000e FFF7FEBF 		b	HAL_DAC_IRQHandler
+  55              	.LVL1:
+  56              	.L5:
+  57 0012 00BF     		.align	2
+  58              	.L4:
+  59 0014 00000000 		.word	htim6
+  60 0018 00000000 		.word	hdac1
+  61              		.cfi_endproc
+  62              	.LFE1090:
+  64              		.text
+  65              	.Letext0:
+  66              		.file 2 "c:\\programdata\\chocolatey\\lib\\gcc-arm-embedded\\tools\\gcc-arm-none-eabi-10.3-2021.10
+  67              		.file 3 "c:\\programdata\\chocolatey\\lib\\gcc-arm-embedded\\tools\\gcc-arm-none-eabi-10.3-2021.10
+  68              		.file 4 "Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h"
+  69              		.file 5 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h"
+  70              		.file 6 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h"
+  71              		.file 7 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac.h"
+  72              		.file 8 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h"
+  73              		.file 9 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_tim.h"
+  74              		.file 10 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_dma.h"
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccFO6s4o.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32l4xx_it.c
-C:\Users\ep_ygh\AppData\Local\Temp\cc9MWupq.s:20     .text.TIM6_DAC_IRQHandler:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\cc9MWupq.s:27     .text.TIM6_DAC_IRQHandler:00000000 TIM6_DAC_IRQHandler
-C:\Users\ep_ygh\AppData\Local\Temp\cc9MWupq.s:42     .text.TIM6_DAC_IRQHandler:00000008 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccFO6s4o.s:20     .text.TIM6_DAC_IRQHandler:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccFO6s4o.s:27     .text.TIM6_DAC_IRQHandler:00000000 TIM6_DAC_IRQHandler
+C:\Users\ep_ygh\AppData\Local\Temp\ccFO6s4o.s:59     .text.TIM6_DAC_IRQHandler:00000014 $d
 
 UNDEFINED SYMBOLS
 HAL_TIM_IRQHandler
+HAL_DAC_IRQHandler
 htim6
+hdac1

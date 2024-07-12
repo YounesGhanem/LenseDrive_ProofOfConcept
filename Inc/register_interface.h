@@ -202,6 +202,9 @@
 #define  MC_REG_FF_2                     ((9 << ELT_IDENTIFIER_POS) | TYPE_DATA_32BIT) /* To check shifted by >> 16*/
 #define  MC_REG_PFC_FAULTS               ((40 << ELT_IDENTIFIER_POS) | TYPE_DATA_32BIT)
 #define  MC_REG_CURRENT_POSITION         ((41 << ELT_IDENTIFIER_POS) | TYPE_DATA_32BIT)
+#define  MC_REG_PERF_CPU_LOAD            ((88 << ELT_IDENTIFIER_POS) | TYPE_DATA_32BIT)
+#define  MC_REG_PERF_MIN_CPU_LOAD        ((89 << ELT_IDENTIFIER_POS) | TYPE_DATA_32BIT)
+#define  MC_REG_PERF_MAX_CPU_LOAD        ((90 << ELT_IDENTIFIER_POS) | TYPE_DATA_32BIT)
 #define  MC_REG_SC_RS                    ((91 << ELT_IDENTIFIER_POS) | TYPE_DATA_32BIT)
 #define  MC_REG_SC_LS                    ((92 << ELT_IDENTIFIER_POS) | TYPE_DATA_32BIT)
 #define  MC_REG_SC_KE                    ((93 << ELT_IDENTIFIER_POS) | TYPE_DATA_32BIT)

@@ -37,39 +37,11 @@
 #define M1_SS_MEAS_ERRORS_BEFORE_FAULTS 3 /*!< Number of speed
                                                              measurement errors before
                                                              main sensor goes in fault */
-/****** State Observer + PLL ****/
-#define VARIANCE_THRESHOLD             0.25 /*!<Maximum accepted
-                                                            variance on speed
-                                                            estimates (percentage) */
-/* State observer scaling factors F1 */
-#define F1                               8192
-#define F2                               2048
-#define F1_LOG                           LOG2((8192))
-#define F2_LOG                           LOG2((2048))
+/*** Encoder **********************/
 
-/* State observer constants */
-#define GAIN1                            -3226
-#define GAIN2                            22492
-/*Only in case PLL is used, PLL gains */
-#define PLL_KP_GAIN                      200
-#define PLL_KI_GAIN                      9
-#define PLL_KPDIV     16384
-#define PLL_KPDIV_LOG LOG2((PLL_KPDIV))
-#define PLL_KIDIV     65535
-#define PLL_KIDIV_LOG LOG2((PLL_KIDIV))
-
-#define STO_FIFO_DEPTH_DPP               64  /*!< Depth of the FIFO used
-                                                            to average mechanical speed
-                                                            in dpp format */
-#define STO_FIFO_DEPTH_DPP_LOG           LOG2((64))
-
-#define STO_FIFO_DEPTH_UNIT              64  /*!< Depth of the FIFO used
-                                                            to average mechanical speed
-                                                            in the unit defined by #SPEED_UNIT */
-#define M1_BEMF_CONSISTENCY_TOL             64   /* Parameter for B-emf
-                                                            amplitude-speed consistency */
-#define M1_BEMF_CONSISTENCY_GAIN            64   /* Parameter for B-emf
-                                                           amplitude-speed consistency */
+#define ENC_AVERAGING_FIFO_DEPTH        16 /*!< depth of the FIFO used to
+                                                              average mechanical speed in
+                                                              0.1Hz resolution */
 
 /* USER CODE BEGIN angle reconstruction M1 */
 #define PARK_ANGLE_COMPENSATION_FACTOR 0
@@ -107,9 +79,7 @@
 #define TF_KDDIV_LOG                  LOG2((8192))
 #define TFDIFFERENTIAL_TERM_ENABLING  DISABLE
 
-/* Speed control loop */
-#define SPEED_LOOP_FREQUENCY_HZ       ( uint16_t )2000 /*!<Execution rate of speed
-                                                      regulation loop (Hz) */
+#define POSITION_LOOP_FREQUENCY_HZ    ( uint16_t )1000 /*!<Execution rate of position control regulation loop (Hz) */
 
 #define PID_SPEED_KP_DEFAULT          2051/(SPEED_UNIT/10) /* Workbench compute the gain for 01Hz unit*/
 #define PID_SPEED_KI_DEFAULT          1688/(SPEED_UNIT/10) /* Workbench compute the gain for 01Hz unit*/
@@ -134,6 +104,18 @@
 #define DEFAULT_TARGET_SPEED_UNIT      (DEFAULT_TARGET_SPEED_RPM*SPEED_UNIT/U_RPM)
 #define DEFAULT_TORQUE_COMPONENT_A       0
 #define DEFAULT_FLUX_COMPONENT_A         0
+
+#define PID_POSITION_KP_GAIN			10000
+#define PID_POSITION_KI_GAIN			1000
+#define PID_POSITION_KD_GAIN			1000
+#define PID_POSITION_KPDIV				1024
+#define PID_POSITION_KIDIV				32768
+#define PID_POSITION_KDDIV				16
+#define PID_POSITION_KPDIV_LOG			LOG2((1024))
+#define PID_POSITION_KIDIV_LOG			LOG2((32768))
+#define PID_POSITION_KDDIV_LOG			LOG2((16))
+#define PID_POSITION_ANGLE_STEP			10.0
+#define PID_POSITION_MOV_DURATION		10.0
 
 /**************************    FIRMWARE PROTECTIONS SECTION   *****************/
 #define OV_VOLTAGE_THRESHOLD_V          34 /*!< Over-voltage
@@ -163,61 +145,13 @@
 #define OVP_SELECTION2                  COMP_Selection_COMP1
 
 /******************************   START-UP PARAMETERS   **********************/
-
-/* USER CODE BEGIN OPENLOOP M1 */
-
-#define OPEN_LOOP_VOLTAGE_d           0      /*!< Three Phase voltage amplitude
-                                                      in int16_t format */
-#define OPEN_LOOP_SPEED_RPM           100       /*!< Final forced speed in rpm */
-#define OPEN_LOOP_SPEED_RAMP_DURATION_MS  1000  /*!< 0-to-Final speed ramp duration  */
-#define OPEN_LOOP_VF                  false     /*!< true to enable V/F mode */
-#define OPEN_LOOP_K                   44        /*! Slope of V/F curve expressed in int16_t Voltage for
-                                                     each 0.1Hz of mecchanical frequency increment. */
-#define OPEN_LOOP_OFF                 4400      /*! Offset of V/F curve expressed in int16_t Voltage
-                                                     applied when frequency is zero. */
-/* USER CODE END OPENLOOP M1 */
-
-/* Phase 1 */
-#define PHASE1_DURATION                1000 /*milliseconds */
-#define PHASE1_FINAL_SPEED_UNIT         (0*SPEED_UNIT/U_RPM)
-#define PHASE1_FINAL_CURRENT_A           0.8
-/* Phase 2 */
-#define PHASE2_DURATION                1258 /*milliseconds */
-#define PHASE2_FINAL_SPEED_UNIT         (629*SPEED_UNIT/U_RPM)
-#define PHASE2_FINAL_CURRENT_A           0.8
-/* Phase 3 */
-#define PHASE3_DURATION                0 /*milliseconds */
-#define PHASE3_FINAL_SPEED_UNIT         (629*SPEED_UNIT/U_RPM)
-#define PHASE3_FINAL_CURRENT_A           0.8
-/* Phase 4 */
-#define PHASE4_DURATION                0 /*milliseconds */
-#define PHASE4_FINAL_SPEED_UNIT         (629*SPEED_UNIT/U_RPM)
-#define PHASE4_FINAL_CURRENT_A           0.8
-/* Phase 5 */
-#define PHASE5_DURATION                0 /* milliseconds */
-#define PHASE5_FINAL_SPEED_UNIT         (629*SPEED_UNIT/U_RPM)
-#define PHASE5_FINAL_CURRENT_A           0.8
-
-#define ENABLE_SL_ALGO_FROM_PHASE      2
-/* Sensor-less rev-up sequence */
-#define STARTING_ANGLE_DEG             0  /*!< degrees [0...359] */
-/* Observer start-up output conditions  */
-#define OBS_MINIMUM_SPEED_RPM          566
-
-#define NB_CONSECUTIVE_TESTS           2 /* corresponding to
-                                                         former NB_CONSECUTIVE_TESTS/
-                                                         (TF_REGULATION_RATE/
-                                                         MEDIUM_FREQUENCY_TASK_RATE) */
-#define SPEED_BAND_UPPER_LIMIT         17 /*!< It expresses how much
-                                                            estimated speed can exceed
-                                                            forced stator electrical
-                                                            without being considered wrong.
-                                                            In 1/16 of forced speed */
-#define SPEED_BAND_LOWER_LIMIT         15  /*!< It expresses how much
-                                                             estimated speed can be below
-                                                             forced stator electrical
-                                                             without being considered wrong.
-                                                             In 1/16 of forced speed */
+/* Encoder alignment */
+#define M1_ALIGNMENT_DURATION              700 /*!< milliseconds */
+#define M1_ALIGNMENT_ANGLE_DEG             90 /*!< degrees [0...359] */
+#define FINAL_I_ALIGNMENT_A               0.8 /*!< s16A */
+// With ALIGNMENT_ANGLE_DEG equal to 90 degrees final alignment
+// phase current = (FINAL_I_ALIGNMENT * 1.65/ Av)/(32767 * Rshunt)
+// being Av the voltage gain between Rshunt and A/D input
 
 #define TRANSITION_DURATION            25  /* Switch over duration, ms */
 

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
   26:Src/pwm_curr_fdbk.c **** 
   27:Src/pwm_curr_fdbk.c **** /* Includes ------------------------------------------------------------------*/
   28:Src/pwm_curr_fdbk.c **** #include "pwm_curr_fdbk.h"
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 2
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 2
 
 
   29:Src/pwm_curr_fdbk.c **** #include "mc_math.h"
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
   78:Src/pwm_curr_fdbk.c ****   if (MC_NULL == pHandle)
   79:Src/pwm_curr_fdbk.c ****   {
   80:Src/pwm_curr_fdbk.c ****     /* Nothing to do */
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 3
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 3
 
 
   81:Src/pwm_curr_fdbk.c ****   }
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
   66              		@ args = 0, pretend = 0, frame = 0
   67              		@ frame_needed = 0, uses_anonymous_args = 0
   68              		@ link register save eliminated.
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 4
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 4
 
 
  102:Src/pwm_curr_fdbk.c ****   if (MC_NULL == pHandle)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  101              		.loc 1 125 5 is_stmt 1 view .LVU18
  102 0002 036B     		ldr	r3, [r0, #48]
  103 0004 1847     		bx	r3	@ indirect register sibling call
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 5
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 5
 
 
  104              	.LVL4:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  159:Src/pwm_curr_fdbk.c ****   {
  160:Src/pwm_curr_fdbk.c **** #endif
  161:Src/pwm_curr_fdbk.c ****     pHandle->pFctGetPhaseCurrents(pHandle, Iab);
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 6
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 6
 
 
  127              		.loc 1 161 5 view .LVU21
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  149              		@ frame_needed = 0, uses_anonymous_args = 0
  196:Src/pwm_curr_fdbk.c ****   uint16_t returnValue;
  150              		.loc 1 196 3 view .LVU24
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 7
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 7
 
 
  197:Src/pwm_curr_fdbk.c **** #ifdef NULL_PTR_CHECK_PWR_CUR_FDB
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  181              		.loc 1 214 25 view .LVU41
  182 0014 09B2     		sxth	r1, r1
  183              		.loc 1 215 12 view .LVU42
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 8
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 8
 
 
  184 0016 C2EBC272 		rsb	r2, r2, r2, lsl #31
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  231:Src/pwm_curr_fdbk.c ****         if(true == pHandle->SingleShuntTopology)
  232:Src/pwm_curr_fdbk.c ****         {
  233:Src/pwm_curr_fdbk.c ****           pHandle->lowDuty = 1U;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 9
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 9
 
 
  234:Src/pwm_curr_fdbk.c ****           pHandle->midDuty = 0U;
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  288:Src/pwm_curr_fdbk.c ****       if (wZ >= 0)
  215              		.loc 1 288 7 is_stmt 1 view .LVU58
  216              		.loc 1 288 10 is_stmt 0 view .LVU59
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 10
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 10
 
 
  217 003e 4D1C     		adds	r5, r1, #1
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  257 007c 03F2FF33 		addwlt	r3, r3, #1023
  292:Src/pwm_curr_fdbk.c ****         wTimePhC = wTimePhA - (wY / 131072);
  258              		.loc 1 292 18 view .LVU75
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 11
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 11
 
 
  259 0080 02EBA141 		add	r1, r2, r1, asr #18
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  327:Src/pwm_curr_fdbk.c ****         }
  328:Src/pwm_curr_fdbk.c ****         }
  329:Src/pwm_curr_fdbk.c ****         else /* wX > 0 */
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 12
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 12
 
 
  330:Src/pwm_curr_fdbk.c ****         {
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  303 00ba A0F85430 		strh	r3, [r0, #84]	@ movhi
  304              		.loc 1 355 5 is_stmt 1 view .LVU96
  305              		.loc 1 355 8 is_stmt 0 view .LVU97
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 13
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 13
 
 
  306 00be 1BD1     		bne	.L39
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  336 00e6 002A     		cmp	r2, #0
  373:Src/pwm_curr_fdbk.c ****       }
  337              		.loc 1 373 25 view .LVU113
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 14
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 14
 
 
  338 00e8 89B2     		uxth	r1, r1
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  373              		.loc 1 309 12 is_stmt 0 view .LVU125
  374 0102 002C     		cmp	r4, #0
  375 0104 40F38C80 		ble	.L48
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 15
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 15
 
 
  331:Src/pwm_curr_fdbk.c ****           wTimePhA = (((int32_t)pHandle->PWMperiod) / 4)+ ((wX - wZ) / (int32_t)262144);
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  414              		.loc 1 334 37 is_stmt 0 view .LVU141
  415 0144 B8BF     		it	lt
  416 0146 03F2FF13 		addwlt	r3, r3, #511
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 16
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 16
 
 
  334:Src/pwm_curr_fdbk.c **** 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  455 017a 0EF2FF3E 		addwmi	lr, lr, #1023
  269:Src/pwm_curr_fdbk.c ****           wTimePhB = wTimePhC + (wX / 131072);
  456              		.loc 1 269 37 view .LVU158
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 17
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 17
 
 
  457 017e 002B     		cmp	r3, #0
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  494              	.LVL38:
  274:Src/pwm_curr_fdbk.c ****             pHandle->midDuty = 2U;
  495              		.loc 1 274 30 view .LVU176
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 18
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 18
 
 
  496 01b2 8465     		str	r4, [r0, #88]
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  248:Src/pwm_curr_fdbk.c ****           wTimePhB = wTimePhA + (wZ / 131072);
  536              		.loc 1 248 11 is_stmt 1 view .LVU191
  248:Src/pwm_curr_fdbk.c ****           wTimePhB = wTimePhA + (wZ / 131072);
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 19
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 19
 
 
  537              		.loc 1 248 53 is_stmt 0 view .LVU192
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  311:Src/pwm_curr_fdbk.c ****           wTimePhA = (((int32_t )pHandle->PWMperiod) / 4) + ((wY - wX) / (int32_t)262144);
  576              		.loc 1 311 11 is_stmt 1 view .LVU208
  312:Src/pwm_curr_fdbk.c ****           wTimePhC = wTimePhA - (wY / 131072);
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 20
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 20
 
 
  577              		.loc 1 312 72 is_stmt 0 view .LVU209
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  314:Src/pwm_curr_fdbk.c **** 
  617              		.loc 1 314 11 is_stmt 1 view .LVU224
  314:Src/pwm_curr_fdbk.c **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 21
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 21
 
 
  618              		.loc 1 314 37 is_stmt 0 view .LVU225
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  229:Src/pwm_curr_fdbk.c **** 
  658              		.loc 1 229 35 view .LVU240
  659 0296 002B     		cmp	r3, #0
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 22
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 22
 
 
  229:Src/pwm_curr_fdbk.c **** 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  696 02c2 0224     		movs	r4, #2
  697 02c4 A0F85C40 		strh	r4, [r0, #92]	@ movhi
  698 02c8 E7E6     		b	.L15
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 23
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 23
 
 
  699              	.L14:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  260:Src/pwm_curr_fdbk.c ****           pHandle->midDuty = (uint16_t)wTimePhB;
  735              		.loc 1 260 11 is_stmt 1 view .LVU277
  260:Src/pwm_curr_fdbk.c ****           pHandle->midDuty = (uint16_t)wTimePhB;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 24
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 24
 
 
  736              		.loc 1 260 30 is_stmt 0 view .LVU278
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  398:Src/pwm_curr_fdbk.c **** __weak void PWMC_SwitchOffPWM(PWMC_Handle_t *pHandle)
  399:Src/pwm_curr_fdbk.c **** {
  775              		.loc 1 399 1 is_stmt 1 view -0
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 25
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 25
 
 
  776              		.cfi_startproc
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  428:Src/pwm_curr_fdbk.c ****   {
  429:Src/pwm_curr_fdbk.c **** #endif
  430:Src/pwm_curr_fdbk.c ****     pHandle->pFctSwitchOnPwm(pHandle);
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 26
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 26
 
 
  804              		.loc 1 430 5 view .LVU293
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  830 0000 10B5     		push	{r4, lr}
  831              	.LCFI5:
  832              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 27
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 27
 
 
  833              		.cfi_offset 4, -8
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  856              		.cfi_def_cfa_offset 8
  857              		@ sp needed
  858 0010 10BD     		pop	{r4, pc}
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 28
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 28
 
 
  859              	.LVL72:
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  899 003a 0120     		movs	r0, #1
  900              	.LVL77:
  484:Src/pwm_curr_fdbk.c **** #ifdef NULL_PTR_CHECK_PWR_CUR_FDB
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 29
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 29
 
 
  901              		.loc 1 484 5 is_stmt 1 view .LVU320
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  503:Src/pwm_curr_fdbk.c ****   *
  504:Src/pwm_curr_fdbk.c ****   * @param in: Value needing to be passed through the filter (Iq and Id).
  505:Src/pwm_curr_fdbk.c ****   * @param out_buf: LPF buffer.
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 30
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 30
 
 
  506:Src/pwm_curr_fdbk.c ****   * @param t: Low pass filter constant.
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  556:Src/pwm_curr_fdbk.c ****   }
  557:Src/pwm_curr_fdbk.c ****   else
  558:Src/pwm_curr_fdbk.c ****   {
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 31
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 31
 
 
  559:Src/pwm_curr_fdbk.c **** #endif
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  522:Src/pwm_curr_fdbk.c ****     x = (*out_buf) >> 15; //cstat !MISRAC2012-Rule-1.3_n !ATH-shift-neg !MISRAC2012-Rule-10.1_R6
  982              		.loc 1 522 5 view .LVU342
  522:Src/pwm_curr_fdbk.c ****     x = (*out_buf) >> 15; //cstat !MISRAC2012-Rule-1.3_n !ATH-shift-neg !MISRAC2012-Rule-10.1_R6
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 32
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 32
 
 
  983              		.loc 1 522 34 is_stmt 0 view .LVU343
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1021 0036 A363     		str	r3, [r4, #56]
  1022              	.LBE24:
  1023              	.LBE26:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 33
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 33
 
 
  1024              		.loc 1 567 19 view .LVU360
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1054              		.loc 1 583 20 view .LVU372
  1055 005e C1F3C033 		ubfx	r3, r1, #15, #1
  1056 0062 03FA81F1 		sxtah	r1, r3, r1
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 34
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 34
 
 
  1057 0066 4910     		asrs	r1, r1, #1
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  606:Src/pwm_curr_fdbk.c **** {
  1089              		.loc 1 606 1 is_stmt 1 view -0
  1090              		.cfi_startproc
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 35
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 35
 
 
  1091              		@ args = 0, pretend = 0, frame = 0
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1118              		.loc 1 635 3 view .LVU385
  636:Src/pwm_curr_fdbk.c **** #ifdef NULL_PTR_CHECK_PWR_CUR_FDB
  637:Src/pwm_curr_fdbk.c ****   if (MC_NULL == pHandle)
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 36
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 36
 
 
  638:Src/pwm_curr_fdbk.c ****   {
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1143              	.L72:
  648:Src/pwm_curr_fdbk.c ****         LL_GPIO_ResetOutputPin(pHandle->pwm_en_v_port, pHandle->pwm_en_v_pin);
  1144              		.loc 1 648 9 is_stmt 1 view .LVU397
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 37
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 37
 
 
  649:Src/pwm_curr_fdbk.c ****         LL_GPIO_ResetOutputPin(pHandle->pwm_en_w_port, pHandle->pwm_en_w_pin);
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
   36:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** /** @defgroup GPIO_LL GPIO
   37:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   * @{
   38:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   */
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 38
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 38
 
 
   39:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** /** MISRA C:2012 deviation rule has been granted for following rules:
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
   93:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** 
   94:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****                               GPIO HW configuration can be modified afterwards using unitary functi
   95:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 39
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 39
 
 
   96:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   uint32_t Alternate;    /*!< Specifies the Peripheral to be connected to the selected pins.
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  150:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   */
  151:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** 
  152:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** /** @defgroup GPIO_LL_EC_OUTPUT Output Type
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 40
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 40
 
 
  153:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   * @{
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  207:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   */
  208:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** 
  209:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** /**
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 41
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 41
 
 
  210:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   * @}
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  264:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_2
  265:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_3
  266:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_4
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 42
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 42
 
 
  267:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_5
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  321:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   return (uint32_t)(READ_BIT(GPIOx->MODER,
  322:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****                              (GPIO_MODER_MODE0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) 
  323:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 43
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 43
 
 
  324:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** 
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  378:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_11
  379:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_12
  380:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_13
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 44
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 44
 
 
  381:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_14
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  435:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   * @note   Refer to datasheet for frequency specifications and the power
  436:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         supply and load conditions for each speed.
  437:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   * @rmtoll OSPEEDR      OSPEEDy       LL_GPIO_GetPinSpeed
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 45
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 45
 
 
  438:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   * @param  GPIOx GPIO Port
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  492:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PULL_UP
  493:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PULL_DOWN
  494:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   * @retval None
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 46
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 46
 
 
  495:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   */
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  549:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   * @param  Alternate This parameter can be one of the following values:
  550:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_AF_0
  551:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_AF_1
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 47
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 47
 
 
  552:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_AF_2
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  606:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** {
  607:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   return (uint32_t)(READ_BIT(GPIOx->AFR[0],
  608:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****                              (GPIO_AFRL_AFSEL0 << (POSITION_VAL(Pin) * 4U))) >> (POSITION_VAL(Pin) 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 48
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 48
 
 
  609:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** }
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  663:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_14
  664:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_15
  665:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   * @retval Returned value can be one of the following values:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 49
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 49
 
 
  666:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_AF_0
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  720:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** }
  721:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** 
  722:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** /**
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 50
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 50
 
 
  723:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   * @brief  Disconnect analog switch to ADC input of several pins for a dedicated port.
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  777:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_15
  778:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_ALL
  779:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   * @retval None
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 51
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 51
 
 
  780:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   */
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  834:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   */
  835:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** 
  836:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** /** @defgroup GPIO_LL_EF_Data_Access Data Access
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 52
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 52
 
 
  837:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   * @{
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  891:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** 
  892:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h **** /**
  893:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   * @brief  Return full output data register value for a dedicated port.
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 53
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 53
 
 
  894:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   * @rmtoll ODR          ODy           LL_GPIO_ReadOutputPort
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  948:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_11
  949:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_12
  950:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_13
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 54
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 54
 
 
  951:Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_14
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1175              		.loc 2 987 3 view .LVU407
  1176              	.LBE31:
  1177              	.LBE30:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 55
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 55
 
 
  650:Src/pwm_curr_fdbk.c ****       }
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1225              		.p2align 2,,3
  1226              		.weak	PWMC_DP_Handler
  1227              		.syntax unified
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 56
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 56
 
 
  1228              		.thumb
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  701:Src/pwm_curr_fdbk.c ****       {
  702:Src/pwm_curr_fdbk.c ****         /* Nothing to do */
  703:Src/pwm_curr_fdbk.c ****       }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 57
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 57
 
 
  704:Src/pwm_curr_fdbk.c ****     }
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1286              	.LBE39:
  1287              	.LBE38:
  697:Src/pwm_curr_fdbk.c ****         LL_GPIO_ResetOutputPin(pHandle->pwm_en_w_port, pHandle->pwm_en_w_pin);
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 58
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 58
 
 
  1288              		.loc 1 697 9 is_stmt 1 view .LVU444
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1333              	.LCFI18:
  1334              		.cfi_restore 4
  1335              		.cfi_def_cfa_offset 0
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 59
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 59
 
 
  1336 003c 7A30     		adds	r0, r0, #122
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  742:Src/pwm_curr_fdbk.c ****     pHandle->OverVoltageFlag = true;
  1365              		.loc 1 742 30 view .LVU467
  1366 0004 4FF0010C 		mov	ip, #1
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 60
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 60
 
 
  741:Src/pwm_curr_fdbk.c ****     pHandle->OverVoltageFlag = true;
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1400              		@ args = 0, pretend = 0, frame = 0
  1401              		@ frame_needed = 0, uses_anonymous_args = 0
  1402              		@ link register save eliminated.
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 61
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 61
 
 
  760:Src/pwm_curr_fdbk.c ****   uint16_t retVal = MC_NO_FAULTS;
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1434              		.loc 1 780 3 is_stmt 1 view .LVU492
  781:Src/pwm_curr_fdbk.c **** 
  782:Src/pwm_curr_fdbk.c ****   if (true == pHandle->driverProtectionFlag)
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 62
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 62
 
 
  1435              		.loc 1 782 3 view .LVU493
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  795:Src/pwm_curr_fdbk.c **** /**
  796:Src/pwm_curr_fdbk.c ****   * @brief  Sets the over current threshold through the DAC reference voltage.
  797:Src/pwm_curr_fdbk.c ****   *
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 63
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 63
 
 
  798:Src/pwm_curr_fdbk.c ****   * @param  pHandle:  Handler of the current instance of the PWM component.
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1503              		.cfi_startproc
  1504              		@ args = 0, pretend = 0, frame = 0
  1505              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 64
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 64
 
 
  1506              		@ link register save eliminated.
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1537 0006 7047     		bx	lr
  1538              		.cfi_endproc
  1539              	.LFE1107:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 65
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 65
 
 
  1541              		.section	.text.PWMC_DPWM_ModeDisable,"ax",%progbits
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  875:Src/pwm_curr_fdbk.c ****   *
  876:Src/pwm_curr_fdbk.c ****   * @retval true if DPWM Mode is enabled, **false** otherwise.
  877:Src/pwm_curr_fdbk.c ****   */
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 66
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 66
 
 
  878:Src/pwm_curr_fdbk.c **** //cstat !MISRAC2012-Rule-8.13
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1608 0000 C369     		ldr	r3, [r0, #28]
  1609 0002 1847     		bx	r3	@ indirect register sibling call
  1610              	.LVL134:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 67
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 67
 
 
  1611              		.loc 1 902 5 is_stmt 0 view .LVU527
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1649              	.LFB1112:
  923:Src/pwm_curr_fdbk.c **** #ifdef NULL_PTR_CHECK_PWR_CUR_FDB
  924:Src/pwm_curr_fdbk.c ****   }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 68
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 68
 
 
  925:Src/pwm_curr_fdbk.c **** #endif
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  956:Src/pwm_curr_fdbk.c ****   *
  957:Src/pwm_curr_fdbk.c ****   */
  958:Src/pwm_curr_fdbk.c **** //cstat !MISRAC2012-Rule-8.13 !RED-func-no-effect
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 69
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 69
 
 
  959:Src/pwm_curr_fdbk.c **** __weak void PWMC_RLTurnOnLowSidesAndStart(PWMC_Handle_t *pHandle)
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  986:Src/pwm_curr_fdbk.c ****   {
  987:Src/pwm_curr_fdbk.c ****     /* Nothing to do */
  988:Src/pwm_curr_fdbk.c ****   }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 70
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 70
 
 
  989:Src/pwm_curr_fdbk.c ****   else
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
 1018:Src/pwm_curr_fdbk.c **** }
  1731              		.loc 1 1018 1 view .LVU545
  1732 0002 7047     		bx	lr
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 71
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 71
 
 
  1733              		.cfi_endproc
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1768              	PWMC_RegisterSwitchonPwmCallBack:
  1769              	.LVL144:
  1770              	.LFB1117:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 72
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 72
 
 
 1042:Src/pwm_curr_fdbk.c **** 
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
 1074:Src/pwm_curr_fdbk.c **** {
  1795              		.loc 1 1074 1 is_stmt 1 view -0
  1796              		.cfi_startproc
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 73
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 73
 
 
  1797              		@ args = 0, pretend = 0, frame = 0
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
 1104:Src/pwm_curr_fdbk.c **** #endif
 1105:Src/pwm_curr_fdbk.c ****     pHandle->pFctTurnOnLowSides = pCallBack;
  1824              		.loc 1 1105 5 view .LVU559
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 74
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 74
 
 
  1825              		.loc 1 1105 33 is_stmt 0 view .LVU560
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1856              		.section	.text.PWMC_RegisterOCPSetRefVoltageCallBack,"ax",%progbits
  1857              		.align	1
  1858              		.p2align 2,,3
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 75
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 75
 
 
  1859              		.weak	PWMC_RegisterOCPSetRefVoltageCallBack
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
 1157:Src/pwm_curr_fdbk.c ****  * @brief Sets the Callback that the PWMC component shall invoke to enable the R/L detection mode.
 1158:Src/pwm_curr_fdbk.c ****  *
 1159:Src/pwm_curr_fdbk.c ****  * @param pCallBack: Pointer on the generic callback.
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 76
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 76
 
 
 1160:Src/pwm_curr_fdbk.c ****  * @param pHandle: Handler of the current instance of the PWMC component.
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
 1187:Src/pwm_curr_fdbk.c ****   if (MC_NULL == pHandle)
 1188:Src/pwm_curr_fdbk.c ****   {
 1189:Src/pwm_curr_fdbk.c ****     /* Nothing to do */
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 77
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 77
 
 
 1190:Src/pwm_curr_fdbk.c ****   }
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
 1219:Src/pwm_curr_fdbk.c ****   }
 1220:Src/pwm_curr_fdbk.c **** #endif
 1221:Src/pwm_curr_fdbk.c **** }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 78
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 78
 
 
  1947              		.loc 1 1221 1 view .LVU581
@@ -4635,83 +4635,83 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 1
  1959              		.file 8 "Inc/mc_type.h"
  1960              		.file 9 "Inc/pwm_curr_fdbk.h"
  1961              		.file 10 "Inc/mc_math.h"
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 79
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 79
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 pwm_curr_fdbk.c
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:20     .text.PWMC_Clear:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:27     .text.PWMC_Clear:00000000 PWMC_Clear
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:54     .text.PWMC_SetOffsetCalib:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:61     .text.PWMC_SetOffsetCalib:00000000 PWMC_SetOffsetCalib
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:83     .text.PWMC_GetOffsetCalib:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:90     .text.PWMC_GetOffsetCalib:00000000 PWMC_GetOffsetCalib
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:112    .text.PWMC_GetPhaseCurrents:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:119    .text.PWMC_GetPhaseCurrents:00000000 PWMC_GetPhaseCurrents
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:136    .text.PWMC_SetPhaseVoltage:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:143    .text.PWMC_SetPhaseVoltage:00000000 PWMC_SetPhaseVoltage
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:759    .text.PWMC_SetPhaseVoltage:00000310 $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:765    .text.PWMC_SwitchOffPWM:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:772    .text.PWMC_SwitchOffPWM:00000000 PWMC_SwitchOffPWM
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:789    .text.PWMC_SwitchOnPWM:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:796    .text.PWMC_SwitchOnPWM:00000000 PWMC_SwitchOnPWM
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:813    .text.PWMC_CurrentReadingCalibr:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:820    .text.PWMC_CurrentReadingCalibr:00000000 PWMC_CurrentReadingCalibr
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:930    .text.PWMC_CalcPhaseCurrentsEst:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:937    .text.PWMC_CalcPhaseCurrentsEst:00000000 PWMC_CalcPhaseCurrentsEst
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1079   .text.PWMC_TurnOnLowSides:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1086   .text.PWMC_TurnOnLowSides:00000000 PWMC_TurnOnLowSides
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1103   .text.PWMC_OCP_Handler:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1110   .text.PWMC_OCP_Handler:00000000 PWMC_OCP_Handler
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1224   .text.PWMC_DP_Handler:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1231   .text.PWMC_DP_Handler:00000000 PWMC_DP_Handler
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1344   .text.PWMC_OVP_Handler:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1351   .text.PWMC_OVP_Handler:00000000 PWMC_OVP_Handler
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1388   .text.PWMC_IsFaultOccurred:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1395   .text.PWMC_IsFaultOccurred:00000000 PWMC_IsFaultOccurred
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1468   .text.PWMC_OCPSetReferenceVoltage:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1475   .text.PWMC_OCPSetReferenceVoltage:00000000 PWMC_OCPSetReferenceVoltage
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1492   .text.PWMC_GetTurnOnLowSidesAction:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1499   .text.PWMC_GetTurnOnLowSidesAction:00000000 PWMC_GetTurnOnLowSidesAction
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1517   .text.PWMC_DPWM_ModeEnable:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1524   .text.PWMC_DPWM_ModeEnable:00000000 PWMC_DPWM_ModeEnable
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1542   .text.PWMC_DPWM_ModeDisable:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1549   .text.PWMC_DPWM_ModeDisable:00000000 PWMC_DPWM_ModeDisable
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1567   .text.PWMC_GetDPWM_Mode:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1574   .text.PWMC_GetDPWM_Mode:00000000 PWMC_GetDPWM_Mode
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1592   .text.PWMC_RLDetectionModeEnable:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1599   .text.PWMC_RLDetectionModeEnable:00000000 PWMC_RLDetectionModeEnable
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1616   .text.PWMC_RLDetectionModeDisable:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1623   .text.PWMC_RLDetectionModeDisable:00000000 PWMC_RLDetectionModeDisable
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1640   .text.PWMC_RLDetectionModeSetDuty:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1647   .text.PWMC_RLDetectionModeSetDuty:00000000 PWMC_RLDetectionModeSetDuty
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1665   .text.PWMC_RLTurnOnLowSidesAndStart:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1672   .text.PWMC_RLTurnOnLowSidesAndStart:00000000 PWMC_RLTurnOnLowSidesAndStart
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1689   .text.PWMC_SetAlignFlag:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1696   .text.PWMC_SetAlignFlag:00000000 PWMC_SetAlignFlag
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1713   .text.PWMC_RegisterGetPhaseCurrentsCallBack:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1720   .text.PWMC_RegisterGetPhaseCurrentsCallBack:00000000 PWMC_RegisterGetPhaseCurrentsCallBack
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1737   .text.PWMC_RegisterSwitchOffPwmCallBack:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1744   .text.PWMC_RegisterSwitchOffPwmCallBack:00000000 PWMC_RegisterSwitchOffPwmCallBack
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1761   .text.PWMC_RegisterSwitchonPwmCallBack:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1768   .text.PWMC_RegisterSwitchonPwmCallBack:00000000 PWMC_RegisterSwitchonPwmCallBack
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s 			page 80
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:20     .text.PWMC_Clear:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:27     .text.PWMC_Clear:00000000 PWMC_Clear
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:54     .text.PWMC_SetOffsetCalib:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:61     .text.PWMC_SetOffsetCalib:00000000 PWMC_SetOffsetCalib
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:83     .text.PWMC_GetOffsetCalib:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:90     .text.PWMC_GetOffsetCalib:00000000 PWMC_GetOffsetCalib
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:112    .text.PWMC_GetPhaseCurrents:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:119    .text.PWMC_GetPhaseCurrents:00000000 PWMC_GetPhaseCurrents
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:136    .text.PWMC_SetPhaseVoltage:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:143    .text.PWMC_SetPhaseVoltage:00000000 PWMC_SetPhaseVoltage
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:759    .text.PWMC_SetPhaseVoltage:00000310 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:765    .text.PWMC_SwitchOffPWM:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:772    .text.PWMC_SwitchOffPWM:00000000 PWMC_SwitchOffPWM
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:789    .text.PWMC_SwitchOnPWM:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:796    .text.PWMC_SwitchOnPWM:00000000 PWMC_SwitchOnPWM
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:813    .text.PWMC_CurrentReadingCalibr:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:820    .text.PWMC_CurrentReadingCalibr:00000000 PWMC_CurrentReadingCalibr
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:930    .text.PWMC_CalcPhaseCurrentsEst:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:937    .text.PWMC_CalcPhaseCurrentsEst:00000000 PWMC_CalcPhaseCurrentsEst
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1079   .text.PWMC_TurnOnLowSides:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1086   .text.PWMC_TurnOnLowSides:00000000 PWMC_TurnOnLowSides
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1103   .text.PWMC_OCP_Handler:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1110   .text.PWMC_OCP_Handler:00000000 PWMC_OCP_Handler
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1224   .text.PWMC_DP_Handler:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1231   .text.PWMC_DP_Handler:00000000 PWMC_DP_Handler
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1344   .text.PWMC_OVP_Handler:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1351   .text.PWMC_OVP_Handler:00000000 PWMC_OVP_Handler
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1388   .text.PWMC_IsFaultOccurred:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1395   .text.PWMC_IsFaultOccurred:00000000 PWMC_IsFaultOccurred
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1468   .text.PWMC_OCPSetReferenceVoltage:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1475   .text.PWMC_OCPSetReferenceVoltage:00000000 PWMC_OCPSetReferenceVoltage
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1492   .text.PWMC_GetTurnOnLowSidesAction:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1499   .text.PWMC_GetTurnOnLowSidesAction:00000000 PWMC_GetTurnOnLowSidesAction
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1517   .text.PWMC_DPWM_ModeEnable:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1524   .text.PWMC_DPWM_ModeEnable:00000000 PWMC_DPWM_ModeEnable
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1542   .text.PWMC_DPWM_ModeDisable:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1549   .text.PWMC_DPWM_ModeDisable:00000000 PWMC_DPWM_ModeDisable
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1567   .text.PWMC_GetDPWM_Mode:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1574   .text.PWMC_GetDPWM_Mode:00000000 PWMC_GetDPWM_Mode
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1592   .text.PWMC_RLDetectionModeEnable:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1599   .text.PWMC_RLDetectionModeEnable:00000000 PWMC_RLDetectionModeEnable
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1616   .text.PWMC_RLDetectionModeDisable:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1623   .text.PWMC_RLDetectionModeDisable:00000000 PWMC_RLDetectionModeDisable
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1640   .text.PWMC_RLDetectionModeSetDuty:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1647   .text.PWMC_RLDetectionModeSetDuty:00000000 PWMC_RLDetectionModeSetDuty
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1665   .text.PWMC_RLTurnOnLowSidesAndStart:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1672   .text.PWMC_RLTurnOnLowSidesAndStart:00000000 PWMC_RLTurnOnLowSidesAndStart
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1689   .text.PWMC_SetAlignFlag:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1696   .text.PWMC_SetAlignFlag:00000000 PWMC_SetAlignFlag
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1713   .text.PWMC_RegisterGetPhaseCurrentsCallBack:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1720   .text.PWMC_RegisterGetPhaseCurrentsCallBack:00000000 PWMC_RegisterGetPhaseCurrentsCallBack
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1737   .text.PWMC_RegisterSwitchOffPwmCallBack:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1744   .text.PWMC_RegisterSwitchOffPwmCallBack:00000000 PWMC_RegisterSwitchOffPwmCallBack
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1761   .text.PWMC_RegisterSwitchonPwmCallBack:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1768   .text.PWMC_RegisterSwitchonPwmCallBack:00000000 PWMC_RegisterSwitchonPwmCallBack
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s 			page 80
 
 
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1785   .text.PWMC_RegisterReadingCalibrationCallBack:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1792   .text.PWMC_RegisterReadingCalibrationCallBack:00000000 PWMC_RegisterReadingCalibrationCallBack
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1809   .text.PWMC_RegisterTurnOnLowSidesCallBack:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1816   .text.PWMC_RegisterTurnOnLowSidesCallBack:00000000 PWMC_RegisterTurnOnLowSidesCallBack
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1833   .text.PWMC_RegisterSampPointSectXCallBack:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1840   .text.PWMC_RegisterSampPointSectXCallBack:00000000 PWMC_RegisterSampPointSectXCallBack
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1857   .text.PWMC_RegisterOCPSetRefVoltageCallBack:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1864   .text.PWMC_RegisterOCPSetRefVoltageCallBack:00000000 PWMC_RegisterOCPSetRefVoltageCallBack
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1881   .text.PWMC_RegisterRLDetectionModeEnableCallBack:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1888   .text.PWMC_RegisterRLDetectionModeEnableCallBack:00000000 PWMC_RegisterRLDetectionModeEnableCallBack
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1905   .text.PWMC_RegisterRLDetectionModeDisableCallBack:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1912   .text.PWMC_RegisterRLDetectionModeDisableCallBack:00000000 PWMC_RegisterRLDetectionModeDisableCallBack
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1929   .text.PWMC_RegisterRLDetectionModeSetDutyCallBack:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccxRLTGc.s:1936   .text.PWMC_RegisterRLDetectionModeSetDutyCallBack:00000000 PWMC_RegisterRLDetectionModeSetDutyCallBack
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1785   .text.PWMC_RegisterReadingCalibrationCallBack:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1792   .text.PWMC_RegisterReadingCalibrationCallBack:00000000 PWMC_RegisterReadingCalibrationCallBack
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1809   .text.PWMC_RegisterTurnOnLowSidesCallBack:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1816   .text.PWMC_RegisterTurnOnLowSidesCallBack:00000000 PWMC_RegisterTurnOnLowSidesCallBack
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1833   .text.PWMC_RegisterSampPointSectXCallBack:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1840   .text.PWMC_RegisterSampPointSectXCallBack:00000000 PWMC_RegisterSampPointSectXCallBack
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1857   .text.PWMC_RegisterOCPSetRefVoltageCallBack:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1864   .text.PWMC_RegisterOCPSetRefVoltageCallBack:00000000 PWMC_RegisterOCPSetRefVoltageCallBack
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1881   .text.PWMC_RegisterRLDetectionModeEnableCallBack:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1888   .text.PWMC_RegisterRLDetectionModeEnableCallBack:00000000 PWMC_RegisterRLDetectionModeEnableCallBack
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1905   .text.PWMC_RegisterRLDetectionModeDisableCallBack:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1912   .text.PWMC_RegisterRLDetectionModeDisableCallBack:00000000 PWMC_RegisterRLDetectionModeDisableCallBack
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1929   .text.PWMC_RegisterRLDetectionModeSetDutyCallBack:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccRB2Md8.s:1936   .text.PWMC_RegisterRLDetectionModeSetDutyCallBack:00000000 PWMC_RegisterRLDetectionModeSetDutyCallBack
 
 UNDEFINED SYMBOLS
 MCM_Rev_Park

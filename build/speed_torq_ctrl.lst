@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
   26:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** 
   27:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** #include "mc_type.h"
   28:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 2
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 2
 
 
   29:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** #define CHECK_BOUNDARY
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
   77:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****     pHandle->Mode = pHandle->ModeDefault;
   78:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****     pHandle->SpeedRefUnitExt = ((int32_t)pHandle->MecSpeedRefUnitDefault) * 65536;
   37              		.loc 1 78 33 is_stmt 0 view .LVU2
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 3
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 3
 
 
   38 0000 B0F92CC0 		ldrsh	ip, [r0, #44]
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
   81:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****     pHandle->RampRemainingStep = 0U;
   74              		.loc 1 81 32 view .LVU19
   75 0026 C360     		str	r3, [r0, #12]
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 4
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 4
 
 
   82:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****     pHandle->IncDecAmount = 0;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  106              	.LFE1089:
  108              		.section	.text.STC_GetSpeedSensor,"ax",%progbits
  109              		.align	1
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 5
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 5
 
 
  110              		.p2align 2,,3
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  134:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   * - Called before each motor restart.
  135:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   */
  136:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** __weak void STC_Clear(SpeednTorqCtrl_Handle_t *pHandle)
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 6
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 6
 
 
  137:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  177              	.LFB1092:
  158:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** 
  159:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** /**
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 7
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 7
 
 
  160:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   * @brief  Gets the current mechanical rotor speed reference
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  191:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   * @retval int16_t current motor torque reference. This value represents
  192:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   *         actually the Iq current expressed in digit.
  193:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   *
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 8
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 8
 
 
  194:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   * - @ref SpeednTorqCtrl_Handle_t::TorqueRef "TorqueRef" represents
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  225:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   *         MCM_TORQUE_MODE to enable the Torque mode or MCM_SPEED_MODE to
  226:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   *         enable the Speed mode.
  227:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   * @retval none
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 9
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 9
 
 
  228:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   *
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  254              	STC_GetControlMode:
  255              	.LVL13:
  256              	.LFB1095:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 10
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 10
 
 
  257:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  288:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   *         If STC is in Speed mode hTargetFinal is the value of mechanical
  289:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   *         rotor speed reference at the end of the ramp expressed in the unit 
  290:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   *         defined by [SPEED_UNIT](measurement_units.md).
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 11
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 11
 
 
  291:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   * @param  hDurationms: the duration of the ramp expressed in milliseconds. It
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  308:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   bool allowedRange = true;
  302              		.loc 1 308 1 view .LVU64
  303 0006 0446     		mov	r4, r0
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 12
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 12
 
 
  304 0008 0E46     		mov	r6, r1
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  357:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****         allowedRange = false;
  358:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****       }
  359:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****       else if (hTargetFinal < pHandle->MinAppNegativeMecSpeedUnit)
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 13
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 13
 
 
  360:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****       {
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  414:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****   return (allowedRange);
  323              		.loc 1 414 3 is_stmt 1 view .LVU72
  415:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 14
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 14
 
 
  324              		.loc 1 415 1 is_stmt 0 view .LVU73
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  388:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****         }
  362              		.loc 1 388 11 is_stmt 1 view .LVU90
  388:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****         }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 15
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 15
 
 
  363              		.loc 1 388 30 is_stmt 0 view .LVU91
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  401 0062 6680     		strh	r6, [r4, #2]	@ movhi
  399:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****         wAux /= 1000U;
  402              		.loc 1 399 14 view .LVU109
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 16
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 16
 
 
  403 0064 05FB03F3 		mul	r3, r5, r3
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  441              		.cfi_endproc
  442              	.LFE1096:
  444              		.section	.text.STC_StopRamp,"ax",%progbits
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 17
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 17
 
 
  445              		.align	1
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  472              		.section	.text.STC_CalcTorqueReference,"ax",%progbits
  473              		.align	1
  474              		.p2align 2,,3
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 18
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 18
 
 
  475              		.weak	STC_CalcTorqueReference
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  498              		.cfi_offset 4, -12
  499              		.cfi_offset 5, -8
  500              		.cfi_offset 14, -4
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 19
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 19
 
 
  476:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****     {
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  496:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****       /* Set the backup value of hTargetFinal */
  497:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****       wCurrentReference = ((int32_t)pHandle->TargetFinal) * 65536;
  498:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****       pHandle->RampRemainingStep = 0U;
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 20
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 20
 
 
  499:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****     }
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  546 0026 38BD     		pop	{r3, r4, r5, pc}
  547              	.LVL34:
  548              	.L30:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 21
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 21
 
 
  494:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c ****     {
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  518:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** 
  584              		.loc 1 518 26 view .LVU184
  585 0044 09B2     		sxth	r1, r1
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 22
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 22
 
 
  586 0046 2069     		ldr	r0, [r4, #16]
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  619              		.loc 1 555 3 view .LVU193
  556:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** #endif
  557:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** }
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 23
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 23
 
 
  620              		.loc 1 557 1 is_stmt 0 view .LVU194
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  659              		.thumb_func
  661              	STC_GetMinAppNegativeMecSpeedUnit:
  662              	.LVL46:
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 24
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 24
 
 
  663              	.LFB1101:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  689              		.loc 1 605 1 is_stmt 1 view -0
  690              		.cfi_startproc
  691              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 25
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 25
 
 
  692              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  633:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** {
  720              		.loc 1 633 1 is_stmt 1 view -0
  721              		.cfi_startproc
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 26
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 26
 
 
  722              		@ args = 0, pretend = 0, frame = 0
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  758              	.LVL55:
  759              	.LFB1104:
  653:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** 
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 27
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 27
 
 
  654:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** /**
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  785 0016 02B0     		add	sp, sp, #8
  786              	.LCFI5:
  787              		.cfi_def_cfa_offset 0
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 28
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 28
 
 
  788              		@ sp needed
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  707:MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c **** }
  817              		.loc 1 707 1 view .LVU238
  818 0006 7047     		bx	lr
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 29
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 29
 
 
  819              		.cfi_endproc
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  852              		.loc 1 728 81 view .LVU245
  853 000a 0004     		lsls	r0, r0, #16
  854              		.loc 1 728 30 view .LVU246
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 30
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 30
 
 
  855 000c 6060     		str	r0, [r4, #4]
@@ -1761,50 +1761,50 @@ ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 1
  869              		.file 7 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h"
  870              		.file 8 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h"
  871              		.file 9 "MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_torq_ctrl.h"
-ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s 			page 31
+ARM GAS  C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s 			page 31
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 speed_torq_ctrl.c
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:20     .text.STC_Init:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:27     .text.STC_Init:00000000 STC_Init
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:85     .text.STC_SetSpeedSensor:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:92     .text.STC_SetSpeedSensor:00000000 STC_SetSpeedSensor
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:109    .text.STC_GetSpeedSensor:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:116    .text.STC_GetSpeedSensor:00000000 STC_GetSpeedSensor
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:134    .text.STC_Clear:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:141    .text.STC_Clear:00000000 STC_Clear
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:168    .text.STC_GetMecSpeedRefUnit:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:175    .text.STC_GetMecSpeedRefUnit:00000000 STC_GetMecSpeedRefUnit
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:193    .text.STC_GetTorqueRef:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:200    .text.STC_GetTorqueRef:00000000 STC_GetTorqueRef
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:218    .text.STC_SetControlMode:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:225    .text.STC_SetControlMode:00000000 STC_SetControlMode
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:247    .text.STC_GetControlMode:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:254    .text.STC_GetControlMode:00000000 STC_GetControlMode
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:272    .text.STC_ExecRamp:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:279    .text.STC_ExecRamp:00000000 STC_ExecRamp
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:440    .text.STC_ExecRamp:00000084 $d
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:445    .text.STC_StopRamp:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:452    .text.STC_StopRamp:00000000 STC_StopRamp
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:473    .text.STC_CalcTorqueReference:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:480    .text.STC_CalcTorqueReference:00000000 STC_CalcTorqueReference
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:604    .text.STC_GetMecSpeedRefUnitDefault:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:611    .text.STC_GetMecSpeedRefUnitDefault:00000000 STC_GetMecSpeedRefUnitDefault
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:629    .text.STC_GetMaxAppPositiveMecSpeedUnit:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:636    .text.STC_GetMaxAppPositiveMecSpeedUnit:00000000 STC_GetMaxAppPositiveMecSpeedUnit
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:654    .text.STC_GetMinAppNegativeMecSpeedUnit:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:661    .text.STC_GetMinAppNegativeMecSpeedUnit:00000000 STC_GetMinAppNegativeMecSpeedUnit
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:679    .text.STC_RampCompleted:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:686    .text.STC_RampCompleted:00000000 STC_RampCompleted
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:710    .text.STC_StopSpeedRamp:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:717    .text.STC_StopSpeedRamp:00000000 STC_StopSpeedRamp
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:750    .text.STC_GetDefaultIqdref:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:757    .text.STC_GetDefaultIqdref:00000000 STC_GetDefaultIqdref
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:794    .text.STC_SetNominalCurrent:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:801    .text.STC_SetNominalCurrent:00000000 STC_SetNominalCurrent
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:823    .text.STC_ForceSpeedReferenceToCurrentSpeed:00000000 $t
-C:\Users\ep_ygh\AppData\Local\Temp\ccMpHvoW.s:830    .text.STC_ForceSpeedReferenceToCurrentSpeed:00000000 STC_ForceSpeedReferenceToCurrentSpeed
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:20     .text.STC_Init:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:27     .text.STC_Init:00000000 STC_Init
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:85     .text.STC_SetSpeedSensor:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:92     .text.STC_SetSpeedSensor:00000000 STC_SetSpeedSensor
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:109    .text.STC_GetSpeedSensor:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:116    .text.STC_GetSpeedSensor:00000000 STC_GetSpeedSensor
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:134    .text.STC_Clear:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:141    .text.STC_Clear:00000000 STC_Clear
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:168    .text.STC_GetMecSpeedRefUnit:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:175    .text.STC_GetMecSpeedRefUnit:00000000 STC_GetMecSpeedRefUnit
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:193    .text.STC_GetTorqueRef:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:200    .text.STC_GetTorqueRef:00000000 STC_GetTorqueRef
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:218    .text.STC_SetControlMode:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:225    .text.STC_SetControlMode:00000000 STC_SetControlMode
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:247    .text.STC_GetControlMode:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:254    .text.STC_GetControlMode:00000000 STC_GetControlMode
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:272    .text.STC_ExecRamp:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:279    .text.STC_ExecRamp:00000000 STC_ExecRamp
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:440    .text.STC_ExecRamp:00000084 $d
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:445    .text.STC_StopRamp:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:452    .text.STC_StopRamp:00000000 STC_StopRamp
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:473    .text.STC_CalcTorqueReference:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:480    .text.STC_CalcTorqueReference:00000000 STC_CalcTorqueReference
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:604    .text.STC_GetMecSpeedRefUnitDefault:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:611    .text.STC_GetMecSpeedRefUnitDefault:00000000 STC_GetMecSpeedRefUnitDefault
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:629    .text.STC_GetMaxAppPositiveMecSpeedUnit:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:636    .text.STC_GetMaxAppPositiveMecSpeedUnit:00000000 STC_GetMaxAppPositiveMecSpeedUnit
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:654    .text.STC_GetMinAppNegativeMecSpeedUnit:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:661    .text.STC_GetMinAppNegativeMecSpeedUnit:00000000 STC_GetMinAppNegativeMecSpeedUnit
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:679    .text.STC_RampCompleted:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:686    .text.STC_RampCompleted:00000000 STC_RampCompleted
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:710    .text.STC_StopSpeedRamp:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:717    .text.STC_StopSpeedRamp:00000000 STC_StopSpeedRamp
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:750    .text.STC_GetDefaultIqdref:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:757    .text.STC_GetDefaultIqdref:00000000 STC_GetDefaultIqdref
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:794    .text.STC_SetNominalCurrent:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:801    .text.STC_SetNominalCurrent:00000000 STC_SetNominalCurrent
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:823    .text.STC_ForceSpeedReferenceToCurrentSpeed:00000000 $t
+C:\Users\ep_ygh\AppData\Local\Temp\ccelmSe6.s:830    .text.STC_ForceSpeedReferenceToCurrentSpeed:00000000 STC_ForceSpeedReferenceToCurrentSpeed
 
 UNDEFINED SYMBOLS
 PID_SetIntegralTerm

@@ -20,6 +20,8 @@ build/register_interface.o: Src/register_interface.c Inc/mc_type.h \
  Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h \
  Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h \
  Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h \
+ Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac.h \
+ Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac_ex.h \
  Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h \
  Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h \
  Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h \
@@ -46,14 +48,18 @@ build/register_interface.o: Src/register_interface.c Inc/mc_type.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_torq_ctrl.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h \
+ Inc/mc_perf.h \
+ MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/trajectory_ctrl.h \
+ MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_torq_ctrl.h \
+ MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/enc_align_ctrl.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h \
+ MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/L4xx/Inc/r3_1_l4xx_pwm_curr_fdbk.h \
  Inc/pwm_curr_fdbk.h Inc/mc_config.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h \
+ MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/ntc_temperature_sensor.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/revup_ctrl.h \
- MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_torq_ctrl.h \
- MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_speed_pos_fdbk.h \
  Inc/mc_configuration_registers.h Inc/regular_conversion_manager.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/r_divider_bus_voltage_sensor.h \
@@ -61,16 +67,15 @@ build/register_interface.o: Src/register_interface.c Inc/mc_type.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/bus_voltage_sensor.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_bus_voltage_sensor.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pqd_motor_power_measurement.h \
- MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/open_loop.h \
+ MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h \
+ MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/enc_align_ctrl.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/ramp_ext_mngr.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/circle_limitation.h \
- MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_speed_pos_fdbk.h \
- MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h \
  Inc/mcp_config.h Inc/aspep.h Inc/parameters_conversion.h Inc/mc_math.h \
  Inc/parameters_conversion_l4xx.h Inc/pmsm_motor_parameters.h \
  Inc/drive_parameters.h Inc/power_stage_parameters.h \
  MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \
- MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h \
+ MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h Inc/dac_ui.h \
  Inc/mc_configuration_registers.h
 Inc/mc_type.h:
 Inc/mc_stm_types.h:
@@ -96,6 +101,8 @@ Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h:
 Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:
 Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h:
 Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h:
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac.h:
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac_ex.h:
 Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h:
 Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h:
 Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h:
@@ -125,15 +132,19 @@ Inc/pwm_curr_fdbk.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_torq_ctrl.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h:
+Inc/mc_perf.h:
+MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/trajectory_ctrl.h:
+MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_torq_ctrl.h:
+MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/enc_align_ctrl.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h:
+MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/L4xx/Inc/r3_1_l4xx_pwm_curr_fdbk.h:
 Inc/pwm_curr_fdbk.h:
 Inc/mc_config.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h:
+MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/ntc_temperature_sensor.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/revup_ctrl.h:
-MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_torq_ctrl.h:
-MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_speed_pos_fdbk.h:
 Inc/mc_configuration_registers.h:
 Inc/regular_conversion_manager.h:
@@ -142,11 +153,10 @@ Inc/regular_conversion_manager.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/bus_voltage_sensor.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_bus_voltage_sensor.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pqd_motor_power_measurement.h:
-MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/open_loop.h:
+MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h:
+MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/enc_align_ctrl.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/ramp_ext_mngr.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/circle_limitation.h:
-MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_speed_pos_fdbk.h:
-MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h:
 Inc/mcp_config.h:
 Inc/aspep.h:
 Inc/parameters_conversion.h:
@@ -157,4 +167,5 @@ Inc/drive_parameters.h:
 Inc/power_stage_parameters.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h:
 MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h:
+Inc/dac_ui.h:
 Inc/mc_configuration_registers.h:
