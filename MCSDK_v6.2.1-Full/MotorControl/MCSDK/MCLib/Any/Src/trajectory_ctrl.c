@@ -56,7 +56,52 @@
   * @param  pENC handler of the current instance of the EncAlignCtrl component.
  
   */
-void TC_Init(PosCtrl_Handle_t *pHandle, PID_Handle_t *pPIDPosReg, SpeednTorqCtrl_Handle_t *pSTC, ENCODER_Handle_t *pENC)
+// void TC_Init(PosCtrl_Handle_t *pHandle, PID_Handle_t *pPIDPosReg, SpeednTorqCtrl_Handle_t *pSTC, ENCODER_Handle_t *pENC)
+// {
+
+//   pHandle->MovementDuration = 0.0f;
+//   pHandle->AngleStep = 0.0f;
+//   pHandle->SubStep[0] = 0.0f;
+//   pHandle->SubStep[1] = 0.0f;
+//   pHandle->SubStep[2] = 0.0f;
+//   pHandle->SubStep[3] = 0.0f;
+//   pHandle->SubStep[4] = 0.0f;
+//   pHandle->SubStep[5] = 0.0f;
+
+//   pHandle->SubStepDuration = 0;
+
+//   pHandle->Jerk = 0.0f;
+//   pHandle->CruiseSpeed = 0.0f;
+//   pHandle->Acceleration = 0.0f;
+//   pHandle->Omega = 0.0f;
+//   pHandle->OmegaPrev = 0.0f;
+//   pHandle->Theta = 0.0f;
+//   pHandle->ThetaPrev = 0.0f;
+//   pHandle->ReceivedTh = 0.0f;
+//   pHandle->TcTick = 0;
+//   pHandle->ElapseTime = 0.0f;
+
+//   pHandle->PositionControlRegulation = DISABLE;
+//   pHandle->PositionCtrlStatus = TC_READY_FOR_COMMAND;
+
+//   pHandle->pENC = pENC;
+//   pHandle->pSTC = pSTC;
+//   pHandle->PIDPosRegulator = pPIDPosReg;
+
+//   pHandle->MecAngleOffset = 0;
+// }
+
+
+
+/**
+  * @brief  Initializes the handle of position control.
+  * @param  pHandle handler of the current instance of the Position Control component.
+  * @param  pPIDPosReg pointer on the handler of the current instance of PID used for the position regulation.
+  * @param  pSTC pointer on the handler of the current instance of the SpeednTorqCtrl component.
+  * @param  pENC handler of the current instance of the EncAlignCtrl component.
+ 
+  */
+void TC_Init(PosCtrl_Handle_t *pHandle, PID_Handle_t *pPIDPosReg, SpeednTorqCtrl_Handle_t *pSTC, HALL_Handle_t *pHALL)
 {
 
   pHandle->MovementDuration = 0.0f;
@@ -84,13 +129,12 @@ void TC_Init(PosCtrl_Handle_t *pHandle, PID_Handle_t *pPIDPosReg, SpeednTorqCtrl
   pHandle->PositionControlRegulation = DISABLE;
   pHandle->PositionCtrlStatus = TC_READY_FOR_COMMAND;
 
-  pHandle->pENC = pENC;
+  pHandle->pHALL = pHALL;
   pHandle->pSTC = pSTC;
   pHandle->PIDPosRegulator = pPIDPosReg;
 
   pHandle->MecAngleOffset = 0;
 }
-
 /**
   * @brief  Configures the trapezoidal speed trajectory.
   * @param  pHandle handler of the current instance of the Position Control component.

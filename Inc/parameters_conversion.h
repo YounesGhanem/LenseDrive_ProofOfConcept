@@ -193,7 +193,7 @@
 #define M1_PULSE_NBR                           ((4 * (M1_ENCODER_PPR)) - 1)
 #define M1_ENC_IC_FILTER_LL                   LL_TIM_IC_FILTER_FDIV1
 #define M1_ENC_IC_FILTER                      9
-#define SPD_TIM_M1_IRQHandler                  TIM3_IRQHandler
+//#define SPD_TIM_M1_IRQHandler                  TIM3_IRQHandler
 
 #define LPF_FILT_CONST                         ((int16_t)(32767 * 0.5))
 /* MMI Table Motor 1 MAX_MODULATION_100_PER_CENT */

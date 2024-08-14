@@ -36,7 +36,7 @@
 #include "mcp_config.h"
 #include "dac_ui.h"
 #include "mc_app_hooks.h"
-
+#include <math.h>
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
@@ -57,7 +57,8 @@
 /* Private variables----------------------------------------------------------*/
 
 static FOCVars_t FOCVars[NBR_OF_MOTORS];
-static EncAlign_Handle_t *pEAC[NBR_OF_MOTORS];
+// static EncAlign_Handle_t *pEAC[NBR_OF_MOTORS];
+static HallAlign_Handle_t* pHAC[NBR_OF_MOTORS];
 
 static PWMC_Handle_t *pwmcHandle[NBR_OF_MOTORS];
 //cstat !MISRAC2012-Rule-8.9_a
@@ -149,22 +150,31 @@ __weak void MCboot( MCI_Handle_t* pMCIList[NBR_OF_MOTORS] )
     /******************************************************/
     ENC_Init (&ENCODER_M1);
 
+    /* Hall sensor init */
+    HALL_Init(&HALL_M1);
+    
+
     /******************************************************/
     /*   Main encoder alignment component initialization  */
     /******************************************************/
-    EAC_Init(&EncAlignCtrlM1,pSTC[M1],&VirtualSpeedSensorM1,&ENCODER_M1);
-    pEAC[M1] = &EncAlignCtrlM1;
+    //EAC_Init(&EncAlignCtrlM1,pSTC[M1],&VirtualSpeedSensorM1,&ENCODER_M1);
+    HAC_Init(&HallAlignCtrlM1,pSTC[M1], &VirtualSpeedSensorM1, &HALL_M1);
+    
 
+    //pEAC[M1] = &EncAlignCtrlM1;
+    pHAC[M1] = &HallAlignCtrlM1;
     /******************************************************/
     /*   Position Control component initialization        */
     /******************************************************/
     PID_HandleInit(&PID_PosParamsM1);
-    TC_Init(&PosCtrlM1, &PID_PosParamsM1, &SpeednTorqCtrlM1, &ENCODER_M1);
+    //TC_Init(&PosCtrlM1, &PID_PosParamsM1, &SpeednTorqCtrlM1, &ENCODER_M1);
+    TC_Init(&PosCtrlM1, &PID_PosParamsM1, &SpeednTorqCtrlM1, &HALL_M1);
 
     /******************************************************/
     /*   Speed & torque component initialization          */
     /******************************************************/
-    STC_Init(pSTC[M1],&PIDSpeedHandle_M1, &ENCODER_M1._Super);
+    // STC_Init(pSTC[M1],&PIDSpeedHandle_M1, &ENCODER_M1._Super);
+    STC_Init(pSTC[M1],&PIDSpeedHandle_M1, &HALL_M1._Super);
 
     /****************************************************/
     /*   Virtual speed sensor component initialization  */
@@ -772,28 +782,28 @@ __weak uint8_t TSK_HighFrequencyTask(void)
   uint16_t hFOCreturn;
   uint8_t bMotorNbr = 0;
   MC_Perf_Measure_Start(&PerfTraces, MEASURE_TSK_HighFrequencyTaskM1);
-  /* USER CODE BEGIN HighFrequencyTask 0 */
 
-  /* USER CODE END HighFrequencyTask 0 */
+  // if (LL_ADC_IsActiveFlag_JEOS( ADC2 ))
+  // {
+  //     HALL_M1.rawAdcValues[0] = LL_ADC_REG_ReadConversionData12(ADC2);
+  //     HALL_M1.rawAdcValues[1]=LL_ADC_REG_ReadConversionData12(ADC2);
+  //     HALL_M1.rawAdcValues[2] = LL_ADC_REG_ReadConversionData12(ADC2);
+      (void)HALL_CalcAngle(&HALL_M1);
+  // }
 
-  (void)ENC_CalcAngle(&ENCODER_M1);   /* If not sensorless then 2nd parameter is MC_NULL */
+  //(void)HALL_CalcAngle(&HALL_M1);
+  //(void)(ENC_CalcAngle)(&ENCODER_M1);
 
-  /* USER CODE BEGIN HighFrequencyTask SINGLEDRIVE_1 */
 
-  /* USER CODE END HighFrequencyTask SINGLEDRIVE_1 */
   hFOCreturn = FOC_CurrControllerM1();
-  /* USER CODE BEGIN HighFrequencyTask SINGLEDRIVE_2 */
 
-  /* USER CODE END HighFrequencyTask SINGLEDRIVE_2 */
   if(hFOCreturn == MC_DURATION)
   {
     MCI_FaultProcessing(&Mci[M1], MC_DURATION, 0);
   }
   else
   {
-    /* USER CODE BEGIN HighFrequencyTask SINGLEDRIVE_3 */
 
-    /* USER CODE END HighFrequencyTask SINGLEDRIVE_3 */
   }
   DAC_Exec(&DAC_Handle);
   /* USER CODE BEGIN HighFrequencyTask 1 */
@@ -924,9 +934,14 @@ __weak void TSK_SafetyTask_PWMOFF(uint8_t bMotor)
   if (MCI_GetFaultState(&Mci[bMotor]) != (uint32_t)MC_NO_FAULTS)
   {
     /* Reset Encoder state */
-    if (pEAC[bMotor] != MC_NULL)
+    // if (pEAC[bMotor] != MC_NULL)
+    // {
+    //   EAC_SetRestartState(pEAC[bMotor], false);
+    // }
+    //Reset Hall state
+    if(pHAC[bMotor] != MC_NULL)
     {
-      EAC_SetRestartState(pEAC[bMotor], false);
+      HAC_SetRestartState(pHAC[bMotor], false);
     }
     else
     {
@@ -1046,8 +1061,6 @@ __weak void UI_HandleStartStopButton_cb (void)
   */
 __weak void mc_lock_pins (void)
 {
-LL_GPIO_LockPin(M1_ENCODER_A_GPIO_Port, M1_ENCODER_A_Pin);
-LL_GPIO_LockPin(M1_ENCODER_B_GPIO_Port, M1_ENCODER_B_Pin);
 LL_GPIO_LockPin(M1_PWM_UH_GPIO_Port, M1_PWM_UH_Pin);
 LL_GPIO_LockPin(M1_PWM_VH_GPIO_Port, M1_PWM_VH_Pin);
 LL_GPIO_LockPin(M1_DP_GPIO_Port, M1_DP_Pin);

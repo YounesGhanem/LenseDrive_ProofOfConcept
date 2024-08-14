@@ -64,6 +64,12 @@ void Error_Handler(void);
 #define Start_Stop_Pin GPIO_PIN_13
 #define Start_Stop_GPIO_Port GPIOC
 #define Start_Stop_EXTI_IRQn EXTI15_10_IRQn
+#define HALL_H1_Pin GPIO_PIN_0
+#define HALL_H1_GPIO_Port GPIOC
+#define HALL_H2_Pin GPIO_PIN_1
+#define HALL_H2_GPIO_Port GPIOC
+#define HALL_H3_Pin GPIO_PIN_2
+#define HALL_H3_GPIO_Port GPIOC
 #define M1_BUS_VOLTAGE_Pin GPIO_PIN_0
 #define M1_BUS_VOLTAGE_GPIO_Port GPIOA
 #define M1_CURR_AMPL_U_Pin GPIO_PIN_1
@@ -94,15 +100,6 @@ void Error_Handler(void);
 #define M1_ENCODER_A_GPIO_Port GPIOC
 #define M1_ENCODER_B_Pin GPIO_PIN_7
 #define M1_ENCODER_B_GPIO_Port GPIOC
-//Hall H1 --> PC6
-#define M1_HALLSENSOR_H1_PIN GPIO_PIN_6
-#define M1_HALLSENSOR_H1_PORT GPIOC
-//Hall H2 --> PC7
-#define M1_HALLSENSOR_H2_PIN GPIO_PIN_7
-#define M1_HALLSENSOR_H2_PORT GPIOC
-//Hall H3 --> PC8
-#define M1_HALLSENSOR_H2_PIN GPIO_PIN_8
-#define M1_HALLSENSOR_H2_PORT GPIOC
 #define M1_PWM_UH_Pin GPIO_PIN_8
 #define M1_PWM_UH_GPIO_Port GPIOA
 #define M1_PWM_VH_Pin GPIO_PIN_9

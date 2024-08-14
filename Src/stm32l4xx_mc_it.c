@@ -29,6 +29,7 @@
 #include "stm32l4xx_ll_exti.h"
 #include "mcp_config.h"
 
+
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
@@ -56,7 +57,7 @@
 void ADC1_2_IRQHandler(void);
 void TIMx_UP_M1_IRQHandler(void);
 void TIMx_BRK_M1_IRQHandler(void);
-void SPD_TIM_M1_IRQHandler(void);
+//void SPD_TIM_M1_IRQHandler(void);
 void HardFault_Handler(void);
 void SysTick_Handler(void);
 void EXTI15_10_IRQHandler (void);
@@ -65,21 +66,18 @@ void EXTI15_10_IRQHandler (void);
   * @brief  This function handles ADC1/ADC2 interrupt request.
   * @param  None
   */
+int32_t adcValues[3] ={0};
 void ADC1_2_IRQHandler(void)
 {
-  /* USER CODE BEGIN ADC_IRQn 0 */
 
-  /* USER CODE END ADC_IRQn 0 */
+  
+
   if ( LL_ADC_IsActiveFlag_JEOS( ADC1 ) )
   {
     LL_ADC_ClearFlag_JEOS( ADC1 );
   }
     // Highfrequency task Single or M1
   TSK_HighFrequencyTask();
-
-  /* USER CODE BEGIN ADC_IRQn 1 */
-
-  /* USER CODE END ADC_IRQn 1 */
 }
 
 /**
@@ -131,29 +129,30 @@ void TIMx_BRK_M1_IRQHandler(void)
   * @brief  This function handles TIMx global interrupt request for M1 Speed Sensor.
   * @param  None
   */
-void SPD_TIM_M1_IRQHandler(void)
-{
-  /* USER CODE BEGIN SPD_TIM_M1_IRQn 0 */
+// void SPD_TIM_M1_IRQHandler(void)
+// {
+//   /* USER CODE BEGIN SPD_TIM_M1_IRQn 0 */
 
-  /* USER CODE END SPD_TIM_M1_IRQn 0 */
+//   /* USER CODE END SPD_TIM_M1_IRQn 0 */
 
- /* Encoder Timer UPDATE IT is dynamicaly enabled/disabled, checking enable state is required */
-  if (LL_TIM_IsEnabledIT_UPDATE (ENCODER_M1.TIMx) && LL_TIM_IsActiveFlag_UPDATE (ENCODER_M1.TIMx))
-  {
-    LL_TIM_ClearFlag_UPDATE(ENCODER_M1.TIMx);
-    ENC_IRQHandler(&ENCODER_M1);
-    /* USER CODE BEGIN M1 ENCODER_Update */
+//  /* Encoder Timer UPDATE IT is dynamicaly enabled/disabled, checking enable state is required */
+//   if (LL_TIM_IsEnabledIT_UPDATE (ENCODER_M1.TIMx) && LL_TIM_IsActiveFlag_UPDATE (ENCODER_M1.TIMx))
+//   {
+//     LL_TIM_ClearFlag_UPDATE(ENCODER_M1.TIMx);
+//     ENC_IRQHandler(&ENCODER_M1);
 
-    /* USER CODE END M1 ENCODER_Update   */
-  }
-  else
-  {
-  /* No other IT to manage for encoder config */
-  }
-  /* USER CODE BEGIN SPD_TIM_M1_IRQn 1 */
+//     /* USER CODE BEGIN M1 ENCODER_Update */
 
-  /* USER CODE END SPD_TIM_M1_IRQn 1 */
-}
+//     /* USER CODE END M1 ENCODER_Update   */
+//   }
+//   else
+//   {
+//   /* No other IT to manage for encoder config */
+//   }
+//   /* USER CODE BEGIN SPD_TIM_M1_IRQn 1 */
+
+//   /* USER CODE END SPD_TIM_M1_IRQn 1 */
+// }
 
 /**
   * @brief This function handles DMA_RX_A channel DMACH_RX_A global interrupt.
