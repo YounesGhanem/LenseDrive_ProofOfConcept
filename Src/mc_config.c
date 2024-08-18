@@ -266,21 +266,9 @@ HALL_Handle_t HALL_M1 =
 
 };
 
-
-
 /**
   * @brief  Encoder Alignment Controller parameters Motor 1.
   */
-EncAlign_Handle_t EncAlignCtrlM1 =
-{
-  .hEACFrequencyHz = MEDIUM_FREQUENCY_TASK_RATE,
-  .hFinalTorque    = FINAL_I_ALIGNMENT,
-  .hElAngle        = ALIGNMENT_ANGLE_S16,
-  .hDurationms     = M1_ALIGNMENT_DURATION,
-  .bElToMecRatio   = POLE_PAIR_NUM,
-};
-
-
 HallAlign_Handle_t HallAlignCtrlM1 = 
 {
   .hEACFrequencyHz = MEDIUM_FREQUENCY_TASK_RATE,

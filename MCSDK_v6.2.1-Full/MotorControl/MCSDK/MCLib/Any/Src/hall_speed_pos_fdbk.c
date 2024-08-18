@@ -53,7 +53,49 @@ __weak void HALL_Init(HALL_Handle_t *pHandle)
   #endif
 }
 
+/**
+  * @brief  It set instantaneous rotor mechanical angle.
+  *         As a consequence, timer counter is computed and updated.
+  * @param  pHandle: handler of the current instance of the encoder component
+  * @param  hMecAngle new value of rotor mechanical angle in [s16degree](measurement_units.md) format.
+  */
+ //TODO : Review this function
+__weak void HALL_SetMecAngle(HALL_Handle_t *pHandle, int16_t hMecAngle)
+{
+#ifdef NULL_PTR_CHECK_ENC_SPD_POS_FDB
+  if (NULL == pHandle)
+  {
+    /* Nothing to do */
+  }
+  else
+  {
+#endif
+    TIM_TypeDef *TIMx = pHandle->TIMx;
 
+    uint16_t hAngleCounts;
+    uint16_t hMecAngleuint;
+    int16_t localhMecAngle = hMecAngle;
+
+    pHandle->_Super.hMecAngle = localhMecAngle;
+    pHandle->_Super.hElAngle = localhMecAngle * (int16_t)pHandle->_Super.bElToMecRatio;
+    if (localhMecAngle < 0)
+    {
+      localhMecAngle *= -1;
+      hMecAngleuint = ((uint16_t)65535 - ((uint16_t)localhMecAngle));
+    }
+    else
+    {
+      hMecAngleuint = (uint16_t)localhMecAngle;
+    }
+
+    //TODO
+    //hAngleCounts = (uint16_t)((((uint32_t)hMecAngleuint) * ((uint32_t)pHandle->PulseNumber)) / 65535U);
+
+    TIMx->CNT = (uint16_t)hAngleCounts;
+#ifdef NULL_PTR_CHECK_ENC_SPD_POS_FDB
+  }
+#endif
+}
 __weak int16_t HALL_CalcAngle(HALL_Handle_t *pHandle)
 {
   int16_t retVal = 0;

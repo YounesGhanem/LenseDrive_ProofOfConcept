@@ -36,7 +36,7 @@
 #include "mcp_config.h"
 #include "dac_ui.h"
 #include "mc_app_hooks.h"
-#include <math.h>
+
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
@@ -57,9 +57,8 @@
 /* Private variables----------------------------------------------------------*/
 
 static FOCVars_t FOCVars[NBR_OF_MOTORS];
-// static EncAlign_Handle_t *pEAC[NBR_OF_MOTORS];
+static EncAlign_Handle_t *pEAC[NBR_OF_MOTORS];
 static HallAlign_Handle_t* pHAC[NBR_OF_MOTORS];
-
 static PWMC_Handle_t *pwmcHandle[NBR_OF_MOTORS];
 //cstat !MISRAC2012-Rule-8.9_a
 static RampExtMngr_Handle_t *pREMNG[NBR_OF_MOTORS];   /*!< Ramp manager used to modify the Iq ref
@@ -149,33 +148,28 @@ __weak void MCboot( MCI_Handle_t* pMCIList[NBR_OF_MOTORS] )
     /*   Main speed sensor component initialization       */
     /******************************************************/
     ENC_Init (&ENCODER_M1);
-
-    /* Hall sensor init */
+        /* Hall sensor init */
     HALL_Init(&HALL_M1);
-    
 
     /******************************************************/
     /*   Main encoder alignment component initialization  */
     /******************************************************/
     //EAC_Init(&EncAlignCtrlM1,pSTC[M1],&VirtualSpeedSensorM1,&ENCODER_M1);
-    HAC_Init(&HallAlignCtrlM1,pSTC[M1], &VirtualSpeedSensorM1, &HALL_M1);
-    
-
     //pEAC[M1] = &EncAlignCtrlM1;
+
+    HAC_Init(&HallAlignCtrlM1,pSTC[M1], &VirtualSpeedSensorM1, &HALL_M1);
     pHAC[M1] = &HallAlignCtrlM1;
     /******************************************************/
     /*   Position Control component initialization        */
-    /******************************************************/
+    /******************************************************/    
     PID_HandleInit(&PID_PosParamsM1);
-    //TC_Init(&PosCtrlM1, &PID_PosParamsM1, &SpeednTorqCtrlM1, &ENCODER_M1);
+       //TC_Init(&PosCtrlM1, &PID_PosParamsM1, &SpeednTorqCtrlM1, &ENCODER_M1);
     TC_Init(&PosCtrlM1, &PID_PosParamsM1, &SpeednTorqCtrlM1, &HALL_M1);
-
     /******************************************************/
     /*   Speed & torque component initialization          */
     /******************************************************/
     // STC_Init(pSTC[M1],&PIDSpeedHandle_M1, &ENCODER_M1._Super);
     STC_Init(pSTC[M1],&PIDSpeedHandle_M1, &HALL_M1._Super);
-
     /****************************************************/
     /*   Virtual speed sensor component initialization  */
     /****************************************************/
@@ -454,9 +448,14 @@ __weak void TSK_MediumFrequencyTaskM1(void)
               ENC_Clear(&ENCODER_M1);
               FOC_Clear( M1 );
 
-              if (EAC_IsAligned(&EncAlignCtrlM1) == false)
+              // if (EAC_IsAligned(&EncAlignCtrlM1) == false)
+              // {
+              //   EAC_StartAlignment(&EncAlignCtrlM1);
+              //   Mci[M1].State = ALIGNMENT;
+              // }
+              if (HAC_IsAligned(&HallAlignCtrlM1) == false)
               {
-                EAC_StartAlignment(&EncAlignCtrlM1);
+                HAC_StartAlignment(&HallAlignCtrlM1);
                 Mci[M1].State = ALIGNMENT;
               }
               else
@@ -487,8 +486,10 @@ __weak void TSK_MediumFrequencyTaskM1(void)
           }
           else
           {
-            bool isAligned = EAC_IsAligned(&EncAlignCtrlM1);
-            bool EACDone = EAC_Exec(&EncAlignCtrlM1);
+            // bool isAligned = EAC_IsAligned(&EncAlignCtrlM1);
+            // bool EACDone = EAC_Exec(&EncAlignCtrlM1);
+            bool isAligned = HAC_IsAligned(&HallAlignCtrlM1);
+            bool EACDone = HAC_Exec(&HallAlignCtrlM1);
             if ((isAligned == false)  && (EACDone == false))
             {
               qd_t IqdRef;
@@ -793,17 +794,19 @@ __weak uint8_t TSK_HighFrequencyTask(void)
 
   //(void)HALL_CalcAngle(&HALL_M1);
   //(void)(ENC_CalcAngle)(&ENCODER_M1);
-
-
   hFOCreturn = FOC_CurrControllerM1();
+  /* USER CODE BEGIN HighFrequencyTask SINGLEDRIVE_2 */
 
+  /* USER CODE END HighFrequencyTask SINGLEDRIVE_2 */
   if(hFOCreturn == MC_DURATION)
   {
     MCI_FaultProcessing(&Mci[M1], MC_DURATION, 0);
   }
   else
   {
+    /* USER CODE BEGIN HighFrequencyTask SINGLEDRIVE_3 */
 
+    /* USER CODE END HighFrequencyTask SINGLEDRIVE_3 */
   }
   DAC_Exec(&DAC_Handle);
   /* USER CODE BEGIN HighFrequencyTask 1 */
@@ -938,7 +941,7 @@ __weak void TSK_SafetyTask_PWMOFF(uint8_t bMotor)
     // {
     //   EAC_SetRestartState(pEAC[bMotor], false);
     // }
-    //Reset Hall state
+        //Reset Hall state
     if(pHAC[bMotor] != MC_NULL)
     {
       HAC_SetRestartState(pHAC[bMotor], false);
@@ -1061,6 +1064,8 @@ __weak void UI_HandleStartStopButton_cb (void)
   */
 __weak void mc_lock_pins (void)
 {
+// LL_GPIO_LockPin(M1_ENCODER_A_GPIO_Port, M1_ENCODER_A_Pin);
+// LL_GPIO_LockPin(M1_ENCODER_B_GPIO_Port, M1_ENCODER_B_Pin);
 LL_GPIO_LockPin(M1_PWM_UH_GPIO_Port, M1_PWM_UH_Pin);
 LL_GPIO_LockPin(M1_PWM_VH_GPIO_Port, M1_PWM_VH_Pin);
 LL_GPIO_LockPin(M1_DP_GPIO_Port, M1_DP_Pin);

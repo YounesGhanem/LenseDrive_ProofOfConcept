@@ -75,7 +75,7 @@ __weak void HAC_Init(HallAlign_Handle_t *pHandle, SpeednTorqCtrl_Handle_t *pSTC,
   * STC (Speed and Torque Controller) to execute the required torque ramp.
   * @param  pHandle: handler of the current instance of the EncAlignCtrl component.
   */
-__weak void EAC_StartAlignment(HallAlign_Handle_t* pHandle)
+__weak void HAC_StartAlignment(HallAlign_Handle_t* pHandle)
 {
 #ifdef NULL_PTR_CHECK_ENC_ALI_CTRL
   if (NULL == pHandle)
@@ -122,7 +122,8 @@ __weak void EAC_StartAlignment(HallAlign_Handle_t* pHandle)
   * @retval bool It returns true when the programmed alignment has been
   *         completed.
   */
-__weak bool EAC_Exec(HallAlign_Handle_t* pHandle)
+// __weak bool EAC_Exec(HallAlign_Handle_t* pHandle)
+__weak bool HAC_Exec(HallAlign_Handle_t* pHandle)
 {
   bool retVal = true;
 #ifdef NULL_PTR_CHECK_ENC_ALI_CTRL
