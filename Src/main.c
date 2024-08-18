@@ -122,6 +122,16 @@ int main(void)
 
   /* Initialize interrupts */
   MX_NVIC_Init();
+
+  if(HAL_ADCEx_Calibration_Start(&hadc2,ADC_SINGLE_ENDED) != HAL_OK)
+	  Error_Handler();
+
+  if(HAL_ADC_Start_IT(&hadc2) != HAL_OK)
+	  Error_Handler();
+
+  // start pwm generation
+  if(HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1) != HAL_OK)
+	  Error_Handler();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */

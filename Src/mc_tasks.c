@@ -364,7 +364,7 @@ __weak void TSK_MediumFrequencyTaskM1(void)
   /* USER CODE END MediumFrequencyTask M1 0 */
 
   int16_t wAux = 0;
-  (void)ENC_CalcAvrgMecSpeedUnit(&ENCODER_M1, &wAux);
+  (void)ENC_CalcAvrgMecSpeedUnit(&ENCODER_M1, &wAux);  // TODO
   PQD_CalcElMotorPower(pMPM[M1]);
 
   if (MCI_GetCurrentFaults(&Mci[M1]) == MC_NO_FAULTS)
